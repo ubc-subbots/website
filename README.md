@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# UBC Subbots Website 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official website for the UBC Subbots team, showcasing our autonomous underwater vehicle (AUV) project and team members for the 2025 RoboSub competition.
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository
 
-### `npm test`
+```bash
+git clone https://github.com/your-username/subbotsWebsite.git
+cd subbotsWebsite
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The site will be available at [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+## 🛠️ Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Runs the development server
+- `npm test` - Runs the test suite
+- `npm run build` - Creates a production build
+- `npm run format` - Formats code using Prettier
+- `npm run lint` - Runs ESLint to check code quality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎨 Features
 
-## Learn More
+- Responsive design for all device sizes
+- Interactive 3D model viewer
+- Team member showcase
+- Project documentation
+- Social media integration
+- Contact form
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💻 Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React.js
+- Three.js for 3D rendering
+- CSS3 with modern animations
+- FontAwesome icons
+- React Router for navigation
 
-### Code Splitting
+## 📝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature/improvement`)
+6. Create a Pull Request
 
-### Analyzing the Bundle Size
+## ✨ Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Originally created by:
 
-### Making a Progressive Web App
+- Ruhani Mittal
+- Krishna Garcha
+- Joel Hempel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Modified and maintained by the UBC Subbots Software Team.
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Deployment
+## 🤝 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+UBC Subbots - [Website](https://ubcsubbots.com) | [LinkedIn](https://www.linkedin.com/company/ubc-subbots/) | [Instagram](https://www.instagram.com/ubcsubbots/)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more information about UBC Subbots and our competition participation, visit our [website](https://ubcsubbots.com).
