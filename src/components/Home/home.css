@@ -1,0 +1,183 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: -5.5rem;
+}
+
+.Container {
+  height: fit-content;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+      ellipse at 50% -10%,
+      rgba(0, 4, 131, 0.3),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 20% 10%,
+      rgba(112, 170, 252, 0.6),
+      transparent 90%
+    ),
+    radial-gradient(
+      ellipse at 80% 15%,
+      rgba(161, 176, 248, 0.7),
+      transparent 90%
+    ),
+    linear-gradient(to bottom, #f7f0ff 0%, rgba(255, 233, 33, 0.534) 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.title2 {
+  color: rgb(9, 7, 69);
+  font-size: 6rem;
+  /* -webkit-text-stroke: 1px white;
+    text-stroke: 1px white; */
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  /* font-variation-settings:
+    "wdth" 100; */
+}
+
+.title3 {
+  color: rgb(9, 7, 69);
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.canvas-wrapper {
+  width: 100vw;
+  height: 70vh;
+  background-color: transparent;
+  /* position: relative; */
+}
+
+canvas {
+  display: block;
+}
+
+.home-subtitle {
+  height: 25vh;
+  /* font-family: "Poppins", serif; */
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: #f9ec7c;
+  gap: 2rem;
+  transition: background-color 0.4s ease;
+}
+
+.home-subtitle1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(9, 7, 69);
+  letter-spacing: 1px;
+}
+
+.home-subtitle.scrolled {
+   /* new color on scroll */
+  background-color: rgba(9, 7, 69, 0.841);
+}
+
+.home-subtitle.scrolled .home-subtitle1 {
+ /* switch text color for contrast */
+  color: #f9ec7ce3;
+}
+
+.teams {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.home-software {
+  z-index: 1;
+  height: 40vh;
+  width: 33.33%;
+  background-image: url("../../assets/home_software.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-electrical {
+  z-index: 1;
+  height: 40vh;
+  width: 33.33%;
+  background-image: url("../../assets/home_electrical.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-mechanical {
+  z-index: 1;
+  height: 40vh;
+  width: 33.33%;
+  background-image: url("../../assets/home_mechanical.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-software-content, .home-electrical-content, .home-mechanical-content {
+  background-color: rgba(2, 1, 21, 0.615);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-software-title, .home-electrical-title, .home-mechanical-title  {
+  font-size: 1rem;
+  background-color: #f9ec7c;
+  background-color: #fff9c6ae;
+  backdrop-filter: blur(5px);
+  padding: 1rem 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 1rem;
+  transition: background-color 0.4s ease;
+}
+
+.home-software-title:hover, .home-electrical-title:hover, .home-mechanical-title:hover {
+  background-color: #f9ec7c;
+  color: rgb(9, 7, 69);
+}

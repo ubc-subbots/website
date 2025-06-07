@@ -1,0 +1,141 @@
+.nav-container {
+    width: 100vw;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to bottom,rgba(201, 225, 246, 0.326), rgba(238, 247, 255, 0));
+    /* backdrop-filter: blur(1px); */
+  }
+  
+  .nav-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 5.5rem;
+    height: auto;
+  }
+  
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(9, 7, 69);
+    padding: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .menu-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  .overlayMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(9, 7, 69, 0.75);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(25px);
+    gap: 1.5rem;
+    justify-content: center;
+    z-index: 100;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .overlayMenu.open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .overlayMenuItem {
+    font-size: 1.1rem;
+    /* color: rgb(9, 7, 69); */
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: font-weight 0.2s ease;
+  }
+  
+  .overlayMenuItem:hover {
+    font-weight: 700;
+  }
+  
+  /* CONTACT BUTTON IN DROPDOWN */
+  .overlayContact {
+    color: black;
+    background-color: rgb(255, 230, 0);
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgb(9, 7, 69);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .overlayContact:hover {
+    transform: scale(1.05);
+  }
+
+  .overlayClose {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2rem;      /* also increased */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .overlayClose:hover {
+    transform: scale(1.2);
+  }
+
+  .navbar-socials {
+    margin-top: 2rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .linkedin, .instagram, .facebook {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .linkedin:hover, .instagram:hover, .facebook:hover {
+    transform: scale(1.2);
+  }
+  
+  .instagram, .facebook {
+    width: 3rem;
+    height: auto;
+}
+
+.linkedin {
+    width: 3.5rem;
+    height: auto;
+}
