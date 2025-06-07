@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  margin-top: -5.5rem;
+  margin-top: 6.5rem;
 }
 
 .members-title {
@@ -30,7 +30,7 @@
 }
 
 .member-title2 {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   max-width: 80%;
   font-weight: 500;
 }
@@ -67,15 +67,59 @@
 .electrical-title {
   letter-spacing: 1.5px;
   margin-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  height: 2.5rem;
   color: rgb(9, 7, 69);
+  line-height: 1;
 }
 
 .align1 {
+  margin: 1rem 0;
+
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.icon-common {
+  font-size: 2rem;
+  color: rgb(9, 7, 69);
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .members-container {
+    margin-top: 4rem;
+  }
+
+  .member-title2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .member-title1 {
+    font-size: 2rem;
+  }
+
+  .admin-title,
+  .software-title,
+  .mechanical-title,
+  .electrical-title {
+    font-size: 1.5rem;
+  }
+
+  .icon-common {
+    font-size: 1.5rem;
+    color: rgb(9, 7, 69);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin-left: 0.5rem;
+  }
 }

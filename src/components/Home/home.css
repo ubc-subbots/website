@@ -18,15 +18,15 @@
     radial-gradient(ellipse at 50% -10%, rgba(0, 4, 131, 0.3), transparent 60%),
     radial-gradient(
       ellipse at 20% 10%,
-      rgba(112, 170, 252, 0.6),
+      rgba(4, 147, 186, 0.6),
       transparent 90%
     ),
     radial-gradient(
       ellipse at 80% 15%,
-      rgba(161, 176, 248, 0.7),
+      rgba(72, 93, 194, 0.7),
       transparent 90%
     ),
-    linear-gradient(to bottom, #f7f0ff 0%, rgba(255, 233, 33, 0.534) 100%);
+    linear-gradient(to bottom, #ffffff 0%, rgba(231, 230, 222, 0.534) 100%);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .title2 {
@@ -86,27 +87,25 @@ canvas {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #f9ec7c;
   gap: 2rem;
-  transition: background-color 0.4s ease;
+  /* transition: background-color 0.4s ease; */
+  background-color: #0493ba;
 }
 
 .home-subtitle1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: rgb(9, 7, 69);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #f7f0ff;
   letter-spacing: 1px;
 }
-
+/* 
 .home-subtitle.scrolled {
-  /* new color on scroll */
-  background-color: rgba(9, 7, 69, 0.841);
-}
-
+  background-color: #0493ba;
+} */
+/* 
 .home-subtitle.scrolled .home-subtitle1 {
-  /* switch text color for contrast */
-  color: #f9ec7ce3;
-}
+  color: #f7b63e;
+} */
 
 .teams {
   display: flex;
@@ -163,7 +162,6 @@ canvas {
 .home-electrical-title,
 .home-mechanical-title {
   font-size: 1rem;
-  background-color: #f9ec7c;
   background-color: #fff9c6ae;
   backdrop-filter: blur(5px);
   padding: 1rem 1rem;
@@ -185,17 +183,14 @@ canvas {
 @media (max-width: 964px) {
   /* MAIN TITLES */
   .title2 {
-    font-size: 3rem;
+    font-size: 4rem;
   } /* was 6rem */
   .title3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   } /* was 2rem  */
-  .title {
-    padding: 1.25rem 1rem;
-  }
 
   .Container {
-    padding-top: 5.5rem;
+    padding-top: 5rem;
   }
 
   .canvas-wrapper {
@@ -242,16 +237,19 @@ canvas {
 
 /* Medium screens (tablets and small desktops) */
 @media (min-width: 964px) and (max-width: 1129px) {
+  .title {
+    font-size: 4rem;
+  }
   /* MAIN TITLES */
   .title2 {
-    font-size: rem;
+    font-size: 6rem;
   } /* was 6rem */
   .title3 {
-    font-size: 1rem;
+    font-size: 2rem;
   } /* was 2rem  */
 
   .Container {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .canvas-wrapper {

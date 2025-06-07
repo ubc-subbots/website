@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './navbar.css';
 import { faBarsStaggered, faTimes } from '@fortawesome/free-solid-svg-icons';

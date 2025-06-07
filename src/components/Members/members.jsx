@@ -102,14 +102,7 @@ export default function members() {
             {/* Admin + Business */}
             <div className='align1'>
               <span className='admin-title'>ADMIN + BUSINESS</span>
-              <FontAwesomeIcon
-                icon={faBriefcase}
-                style={{
-                  fontSize: '3.5rem',
-                  color: 'rgb(9, 7, 69)',
-                  marginLeft: '0.5rem',
-                }}
-              />
+              <FontAwesomeIcon icon={faBriefcase} className='icon-common' />
             </div>
             <div className='align'>
               {AdminMembers.map((member, index) => (
@@ -128,14 +121,7 @@ export default function members() {
           <div className='mechanical'>
             <div className='align1'>
               <span className='mechanical-title'>ACTUATOR</span>
-              <FontAwesomeIcon
-                icon={faTools}
-                style={{
-                  fontSize: '3rem',
-                  color: 'rgb(9, 7, 69)',
-                  marginLeft: '0.5rem',
-                }}
-              />
+              <FontAwesomeIcon icon={faTools} className='icon-common' />
             </div>
             <div className='align'>
               {ActuatorMembers.map((member, index) => (
@@ -154,14 +140,7 @@ export default function members() {
           <div className='electrical'>
             <div className='align1'>
               <span className='electrical-title'>ELECTRICAL</span>
-              <FontAwesomeIcon
-                icon={faCarBattery}
-                style={{
-                  fontSize: '3rem',
-                  color: 'rgb(9, 7, 69)',
-                  marginLeft: '0.5rem',
-                }}
-              />
+              <FontAwesomeIcon icon={faCarBattery} className='icon-common' />
             </div>
             <div className='align'>
               {ElectricalMembers.map((member, index) => (
@@ -181,14 +160,7 @@ export default function members() {
         <div className='software'>
           <div className='align1'>
             <span className='software-title'>SOFTWARE</span>
-            <FontAwesomeIcon
-              icon={faCode}
-              style={{
-                fontSize: '3rem',
-                color: 'rgb(9, 7, 69)',
-                marginLeft: '0.5rem',
-              }}
-            />
+            <FontAwesomeIcon icon={faCode} className='icon-common' />
           </div>
           <div className='align'>
             {SoftwareMembers.map((member, index) => (
