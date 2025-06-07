@@ -72,7 +72,7 @@ export const SoftwareMembers = [
   {
     image: '/images/members/Joel_Hempel.png',
     name: 'Joel Hempel',
-    role: 'Autonomous Navigation Engineer',
+    role: 'Autonomous Navigation Engineer + Website',
     linkedin: 'https://www.linkedin.com/in/joelhempel',
   },
   {
@@ -87,7 +87,7 @@ export default function members() {
     <div className='members-container'>
       <div className='members-title'>
         <img
-          src='/images/members/team_photo_2024.jpg'
+          src='/images/members/team_photo_2024_resized.jpg'
           alt='group'
           className='group'
         />

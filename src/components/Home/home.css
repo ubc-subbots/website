@@ -182,7 +182,7 @@ canvas {
   color: rgb(9, 7, 69);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 964px) {
   /* MAIN TITLES */
   .title2 {
     font-size: 3rem;
@@ -241,7 +241,7 @@ canvas {
 }
 
 /* Medium screens (tablets and small desktops) */
-@media (min-width: 769px) and (max-width: 1129px) {
+@media (min-width: 964px) and (max-width: 1129px) {
   /* MAIN TITLES */
   .title2 {
     font-size: rem;

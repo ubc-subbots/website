@@ -63,7 +63,7 @@
   right: 0;
   width: 250px;
   height: 100vh;
-  background-color: rgba(9, 7, 69, 0.75);
+  background-color: rgba(9, 7, 69, 1);
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -175,6 +175,12 @@
 .linkedin {
   width: 3.5rem;
   height: auto;
+}
+
+@media (max-width: 1183px) {
+  .overlayMenu {
+    width: 100%;
+  }
 }
 
 /* ----------  MOBILE < 768 px  ---------- */
