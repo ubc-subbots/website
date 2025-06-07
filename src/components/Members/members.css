@@ -1,75 +1,81 @@
-.members-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    margin-top: -5.5rem;
+.members-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-top: -5.5rem;
 }
 
 .members-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .group {
-    width: 100%;
-    /* -webkit-mask-
+  width: 100%;
+  /* -webkit-mask-
     image: linear-gradient(to bottom, black 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%); */
 }
 
 .member-title1 {
-    color: rgb(9, 7, 69);
-    font-size: 3rem;
-    font-weight: 700;
-    padding-top: 1rem;
+  color: rgb(9, 7, 69);
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 1rem;
 }
 
 .member-title2 {
-    font-size: 1.05rem;
-    max-width: 80%;
-    font-weight: 500;
+  font-size: 1.05rem;
+  max-width: 80%;
+  font-weight: 500;
 }
 
-.members{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2rem;
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 .align {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.admin, .mechanical, .electrical, .software {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.admin,
+.mechanical,
+.electrical,
+.software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.admin-title, .software-title, .mechanical-title, .electrical-title {
-    letter-spacing: 1.5px;
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(9, 7, 69);
+.admin-title,
+.software-title,
+.mechanical-title,
+.electrical-title {
+  letter-spacing: 1.5px;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(9, 7, 69);
 }
 
 .align1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,39 +1,39 @@
-import React from "react";
-import "./about.css";
-import Goal from "../../assets/goal.jpg";
-import About from "../../assets/robot.jpg";
+import React from 'react';
+import './about.css';
+import Goal from '../../assets/goal.jpg';
+import About from '../../assets/robot.jpg';
 
 export default function about() {
   const cards = [
     {
-      image: "/images/members/team_photo_2024.jpg",
-      title: "OUR MISSION",
+      image: '/images/members/team_photo_2024.jpg',
+      title: 'OUR MISSION',
       description:
-        "UBC Subbots is a student team building autonomous underwater vehicles (AUVs) for the annual RoboSub competition in San Diego.",
+        'UBC Subbots is a student team building autonomous underwater vehicles (AUVs) for the annual RoboSub competition in San Diego.',
     },
     {
       image: About,
-      title: "WHAT WE DO",
+      title: 'WHAT WE DO',
       description:
-        "We design and build systems for navigation, waterproofing, hydrodynamics, and mechanical actuation—combining skills from engineering and computer science.",
+        'We design and build systems for navigation, waterproofing, hydrodynamics, and mechanical actuation—combining skills from engineering and computer science.',
     },
     {
       image: Goal,
-      title: "OUR GOALS",
+      title: 'OUR GOALS',
       description:
-        "We build from scratch to deepen learning, improve every year, and prepare students for real-world careers in robotics and engineering.",
+        'We build from scratch to deepen learning, improve every year, and prepare students for real-world careers in robotics and engineering.',
     },
   ];
 
   return (
-    <div className="about-container">
-      <div className="about-content">
-        <div className="about-text-container">
-          <div className="gap">
+    <div className='about-container'>
+      <div className='about-content'>
+        <div className='about-text-container'>
+          <div className='gap'>
             {/* <span className="about-title1">WHO</span> */}
-            <span className="about-title">WHO WE ARE?</span>
+            <span className='about-title'>WHO WE ARE?</span>
           </div>
-          <span className="about-subtitle">
+          <span className='about-subtitle'>
             UBC Subbots is a student-led team that designs and builds autonomous
             underwater vehicles (AUVs) for the annual RoboSub competition in San
             Diego. We develop systems for navigation, waterproofing,

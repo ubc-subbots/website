@@ -1,57 +1,59 @@
 .learning-container {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem 2rem;
-    height: fit-content;
-    padding-top: 2rem;
-    gap: 4rem;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+  height: fit-content;
+  padding-top: 2rem;
+  gap: 4rem;
 }
 
-.what-we-do-title, .what-we-learn-title {
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+.what-we-do-title,
+.what-we-learn-title {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 
-.what-we-do, .what-we-learn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.what-we-do,
+.what-we-learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.what-we-do-content, .what-we-learn-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    gap: 1rem;
+.what-we-do-content,
+.what-we-learn-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1rem;
 }
-
 
 .point {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    width: 35rem;
-    height: 4rem;
-    background-color: rgb(216, 216, 216);
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
-    border: black 0.5px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 35rem;
+  height: 4rem;
+  background-color: rgb(216, 216, 216);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  border: black 0.5px solid;
 }
 
 .point-icon {
-    display: flex;
-    flex-direction: row;
-    gap:2.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5px;
 }
 
 .point-title {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .point-description {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }

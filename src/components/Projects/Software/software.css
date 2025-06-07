@@ -1,66 +1,65 @@
 .projects-software-container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
-    height: fit-content;
-    padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  height: fit-content;
+  padding-top: 2rem;
 }
 
 .projects-software-title {
-    color: rgb(9, 7, 69);
-    font-size: 1.7rem;
-    font-weight: 700;
+  color: rgb(9, 7, 69);
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .projects-software-content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .projects-software-text {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
 }
 
 .projects-software-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-software-description-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgb(9, 7, 69);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(9, 7, 69);
 }
 
 .projects-software-content {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .projects-software-text {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem;
-    flex-shrink: 0;
-    max-width: 50%;
-    align-items: center;
-    gap: 1rem;
-  }
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  .projects-software-button1 {
-    background-color: rgb(255, 230, 0);
-    height: 3rem;
-    width: 80%;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    border: none;
+.projects-software-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  flex-shrink: 0;
+  max-width: 50%;
+  align-items: center;
+  gap: 1rem;
+}
 
-  }
+.projects-software-button1 {
+  background-color: rgb(255, 230, 0);
+  height: 3rem;
+  width: 80%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}

@@ -1,13 +1,13 @@
 .projects-electrical-container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
-    height: fit-content;
-    padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  height: fit-content;
+  padding-top: 2rem;
 }
 
 .projects-electrical-title {
-    color: rgb(9, 7, 69);
-    font-size: 1.7rem;
-    font-weight: 700;
+  color: rgb(9, 7, 69);
+  font-size: 1.7rem;
+  font-weight: 700;
 }

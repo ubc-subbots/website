@@ -71,6 +71,3 @@ export default function ImageCarousel({ images, width = '400px' }) {
     </div>
   );
 }
-
-
-
