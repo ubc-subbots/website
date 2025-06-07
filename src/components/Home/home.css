@@ -86,7 +86,6 @@ canvas {
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 100vw;
   background-color: #f9ec7c;
   gap: 2rem;
   transition: background-color 0.4s ease;
@@ -211,7 +210,7 @@ canvas {
   /* YELLOW BANNER */
   .home-subtitle {
     flex-direction: column; /* stack the three words */
-    gap: 0.5rem;
+    gap: 1rem;
     height: auto;
     padding: 1rem 0;
   }
@@ -238,5 +237,38 @@ canvas {
   .home-mechanical-title {
     font-size: 0.9rem;
     padding: 0.75rem 0.75rem;
+  }
+}
+
+/* Medium screens (tablets and small desktops) */
+@media (min-width: 769px) and (max-width: 1129px) {
+  /* MAIN TITLES */
+  .title2 {
+    font-size: 4rem;
+  } /* was 6rem */
+  .title3 {
+    font-size: 1rem;
+  } /* was 2rem  */
+
+  .Container {
+    padding-top: 3rem;
+  }
+
+  .canvas-wrapper {
+    margin-top: 1rem;
+  }
+
+  /* 3-D CANVAS  */
+  .canvas-wrapper {
+    height: 60vh;
+  }
+
+  /* YELLOW BANNER */
+  .home-subtitle {
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+  .home-subtitle1 {
+    font-size: 1.5rem;
   }
 }
