@@ -51,12 +51,14 @@ const Navbar = () => {
       <div className='nav-content'>
         <img src={Logo} alt='logo' className='logo' />
 
-        <button className='menu-toggle' onClick={toggleMenu}>
-          <FontAwesomeIcon
-            icon={faBarsStaggered}
-            style={{ fontSize: '3rem' }}
-          />
-        </button>
+        {!menuOpen && (
+          <button className='menu-toggle' onClick={toggleMenu}>
+            <FontAwesomeIcon
+              icon={faBarsStaggered}
+              style={{ fontSize: '3rem' }}
+            />
+          </button>
+        )}
       </div>
 
       {menuOpen && (
