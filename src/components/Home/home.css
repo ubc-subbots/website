@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -40,7 +40,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 2rem;
 }
 
 .title2 {
@@ -190,10 +189,18 @@ canvas {
     font-size: 3rem;
   } /* was 6rem */
   .title3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   } /* was 2rem  */
   .title {
     padding: 1.25rem 1rem;
+  }
+
+  .Container {
+    padding-top: 5.5rem;
+  }
+
+  .canvas-wrapper {
+    margin-top: 1rem;
   }
 
   /* 3-D CANVAS  */
