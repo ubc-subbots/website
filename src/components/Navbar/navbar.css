@@ -1,8 +1,10 @@
 .nav-container {
-  padding: 0 2rem;
+  height: 4rem; /* Add explicit height */
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  background: transparent; /* Start transparent */
   top: 0;
   z-index: 10;
   background: linear-gradient(
@@ -11,6 +13,17 @@
     rgba(238, 247, 255, 0)
   );
   /* backdrop-filter: blur(1px); */
+}
+
+.menu-toggle {
+  color: rgb(9, 7, 69);
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.logo {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .nav-content {
@@ -159,4 +172,29 @@
 .linkedin {
   width: 3.5rem;
   height: auto;
+}
+
+/* ----------  MOBILE < 768 px  ---------- */
+@media (max-width: 768px) {
+  /* Shrink side padding */
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  /* Logo icon */
+  .logo {
+    width: 3.5rem;
+  } /* was 5.5rem */
+
+  /* Hamburger icon */
+  .menu-toggle {
+    font-size: 1.5rem; /* was 2rem  */
+    padding: 0.25rem;
+  }
+
+  /* Social icons in the overlay */
+  .navbar-socials img {
+    width: 2rem;
+    height: 2rem;
+  }
 }

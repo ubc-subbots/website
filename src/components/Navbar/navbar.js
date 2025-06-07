@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './navbar.css';
@@ -11,6 +11,18 @@ import Facebook from '../../assets/facebook2.png';
 const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scroll progress (0 to 1) over first 100px of scroll
+      const progress = Math.min(window.scrollY / 100, 1);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleClick = () => {
     navigate('/joinus');
@@ -21,8 +33,21 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const backgroundColor = {
+    r: 255,
+    g: 255,
+    b: 255,
+    a: scrollProgress * 0.9,
+  };
+
   return (
-    <nav className='nav-container'>
+    <nav
+      className='nav-container'
+      style={{
+        backgroundColor: `rgba(${backgroundColor.r}, ${backgroundColor.g}, ${backgroundColor.b}, ${backgroundColor.a})`,
+        backdropFilter: `blur(${scrollProgress * 8}px)`,
+      }}
+    >
       <div className='nav-content'>
         <img src={Logo} alt='logo' className='logo' />
 

@@ -1,23 +1,19 @@
-.Main {
+/* .Main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  top: -5.5rem;
-}
+  min-height: 100vh; 
+  position: relative;
+} 
+*/
 
 .Container {
-  height: fit-content;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh; /*This ensures the home screen looks nice and smooth*/
+
+  box-sizing: border-box;
   overflow-x: hidden;
 
-  height: 100vh;
   background:
     radial-gradient(ellipse at 50% -10%, rgba(0, 4, 131, 0.3), transparent 60%),
     radial-gradient(
@@ -43,8 +39,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .title2 {
@@ -188,8 +184,52 @@ canvas {
   color: rgb(9, 7, 69);
 }
 
-.Main {
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
+@media (max-width: 768px) {
+  /* MAIN TITLES */
+  .title2 {
+    font-size: 3rem;
+  } /* was 6rem */
+  .title3 {
+    font-size: 1.25rem;
+  } /* was 2rem  */
+  .title {
+    padding: 1.25rem 1rem;
+  }
+
+  /* 3-D CANVAS  */
+  .canvas-wrapper {
+    height: 40vh;
+  } /* was 70vh */
+
+  /* YELLOW BANNER */
+  .home-subtitle {
+    flex-direction: column; /* stack the three words */
+    gap: 0.5rem;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .home-subtitle1 {
+    font-size: 1.5rem;
+  }
+
+  /* PROJECT CARDS – stack instead of side by side */
+  .teams {
+    flex-direction: column;
+    height: auto;
+  }
+  .home-software,
+  .home-electrical,
+  .home-mechanical {
+    width: 100%;
+    height: 28vh;
+    background-size: cover;
+  }
+
+  /* Buttons on the project cards */
+  .home-software-title,
+  .home-electrical-title,
+  .home-mechanical-title {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.75rem;
+  }
 }

@@ -15,6 +15,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    // handles color change when scrolling
     const handleScroll = () => {
       setScrolled(window.scrollY > 100); // adjust threshold as needed
     };
