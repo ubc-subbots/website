@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useGLTF } from '@react-three/drei';
+
 import './home.css';
 import About from '../About/about';
-import Robots from '../Robots/robots';
+import { Suspense } from 'react';
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
@@ -22,10 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className='Main'
-      style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}
-    >
+    <div className='Main'>
       <div className='Container'>
         <div className='title'>
           <span className='title2'>UBC SUBBOTS</span>
@@ -39,25 +38,27 @@ export default function Home() {
             camera={{ position: [0, 0, 5], fov: 10 }}
             style={{ background: 'transparent' }}
           >
-            <ambientLight intensity={0.35} />
-            <directionalLight
-              position={[10, 10, 5]}
-              castShadow
-              shadow-mapSize-width={1024}
-              shadow-mapSize-height={1024}
-            />
+            <Suspense fallback={null}>
+              <ambientLight intensity={0.35} />
+              <directionalLight
+                position={[10, 10, 5]}
+                castShadow
+                shadow-mapSize-width={1024}
+                shadow-mapSize-height={1024}
+              />
 
-            {/* Shadow receiving ground */}
-            <mesh
-              rotation={[-Math.PI / 2, 0, 0]}
-              position={[0, -1, 0]}
-              receiveShadow
-            >
-              <planeGeometry args={[10, 10]} />
-              <shadowMaterial opacity={0.3} />
-            </mesh>
+              {/* Shadow receiving ground */}
+              <mesh
+                rotation={[-Math.PI / 2, 0, 0]}
+                position={[0, -1, 0]}
+                receiveShadow
+              >
+                <planeGeometry args={[10, 10]} />
+                <shadowMaterial opacity={0.3} />
+              </mesh>
 
-            <Model castShadow receiveShadow />
+              <Model castShadow receiveShadow />
+            </Suspense>
 
             <OrbitControls
               autoRotate
@@ -100,3 +101,4 @@ export default function Home() {
     </div>
   );
 }
+useGLTF.preload('/model/steelhead.glb');
