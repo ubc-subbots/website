@@ -48,8 +48,12 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={{ x: ['0%', '-100%'] }}
-          transition={{ repeat: Infinity, duration: 7, ease: 'linear' }}
+          animate={{ x: ['0%', '-164%'] }}
+          transition={{
+            repeat: Infinity,
+            duration: 7,
+            ease: 'linear',
+          }}
         >
           {images.concat(images).map((src, index) => (
             <img
