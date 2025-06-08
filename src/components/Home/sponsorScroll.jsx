@@ -18,21 +18,6 @@ const images = [
   '/images/sponsors/ubcmecheng.png',
   '/images/sponsors/waltergage.png',
   '/images/sponsors/solidworks.png',
-  '/images/sponsors/shell.png',
-  '/images/sponsors/4imprint.png',
-  '/images/sponsors/altium.png',
-  '/images/sponsors/apsc.png',
-  '/images/sponsors/ece.png',
-  '/images/sponsors/forestry.png',
-  '/images/sponsors/ieee.png',
-  '/images/sponsors/matlab2.png',
-  '/images/sponsors/phidgets.png',
-  '/images/sponsors/sname.png',
-  '/images/sponsors/spaenaur.png',
-  '/images/sponsors/subc.png',
-  '/images/sponsors/ubcmecheng.png',
-  '/images/sponsors/waltergage.png',
-  '/images/sponsors/solidworks.png',
 ];
 
 export default function SponsorScroll() {
@@ -51,7 +36,7 @@ export default function SponsorScroll() {
           animate={{ x: ['0%', '-164%'] }}
           transition={{
             repeat: Infinity,
-            duration: 7,
+            duration: 17,
             ease: 'linear',
           }}
         >

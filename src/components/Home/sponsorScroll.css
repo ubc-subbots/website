@@ -21,7 +21,7 @@
 .scroll-track {
   display: flex;
   gap: 1rem;
-  animation: scroll 7s linear infinite;
+  /*animation: scroll 7s linear infinite; */
 }
 
 .scroll-img {
@@ -30,6 +30,7 @@
   margin: 0 1rem;
   flex-shrink: 0;
 }
+
 
 @keyframes scroll-left {
   0% {
