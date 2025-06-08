@@ -36,7 +36,7 @@ export default function Home() {
         <div className='canvas-wrapper'>
           <Canvas
             shadows
-            camera={{ position: [0, 0, 5], fov: 10 }}
+            camera={{ position: [0, 0, 5], fov: 12 }}
             style={{ background: 'transparent' }}
           >
             <Suspense fallback={null}>
