@@ -15,15 +15,15 @@
   overflow-x: hidden;
 
   background:
-    radial-gradient(ellipse at 50% -10%, rgba(0, 4, 131, 0.3), transparent 60%),
+    radial-gradient(ellipse at 50% -10%, rgba(17, 10, 80, 0.77), transparent 60%),
     radial-gradient(
       ellipse at 20% 10%,
-      rgba(4, 147, 186, 0.6),
+      rgba(66, 167, 255, 0.7),
       transparent 90%
     ),
     radial-gradient(
       ellipse at 80% 15%,
-      rgba(72, 93, 194, 0.7),
+      rgba(68, 146, 255, 0.9),
       transparent 90%
     ),
     linear-gradient(to bottom, #ffffff 0%, rgba(231, 230, 222, 0.534) 100%);
@@ -44,10 +44,11 @@
 }
 
 .title2 {
-  color: rgb(9, 7, 69);
+  /* color: rgb(9, 7, 69); */
+  color: #ffd60a;
   font-size: 6rem;
-  /* -webkit-text-stroke: 1px white;
-    text-stroke: 1px white; */
+  -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 650;
@@ -57,11 +58,12 @@
 }
 
 .title3 {
-  color: rgb(9, 7, 69);
+  /* color: rgb(9, 7, 69); */
+  color: #ffc300;
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -89,7 +91,8 @@ canvas {
   justify-content: center;
   gap: 2rem;
   /* transition: background-color 0.4s ease; */
-  background-color: #0493ba;
+  /* background-color: #0493ba; */
+  background-color: rgba(11, 10, 80, 0.778);
 }
 
 .home-subtitle1 {
@@ -162,32 +165,31 @@ canvas {
 .home-electrical-title,
 .home-mechanical-title {
   font-size: 1rem;
-  background-color: #fff9c6ae;
-  backdrop-filter: blur(5px);
-  padding: 1rem 1rem;
-  font-weight: 600;
+  background-color: #ffdf3d;
+  padding: 0.75rem 0.75rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
   border-radius: 1rem;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .home-software-title:hover,
 .home-electrical-title:hover,
 .home-mechanical-title:hover {
-  background-color: #f9ec7c;
-  color: rgb(9, 7, 69);
+  background-color: #ffce2d;
+  transform: scale(1.05);
 }
 
 @media (max-width: 964px) {
-  /* MAIN TITLES */
   .title2 {
-    font-size: 4rem;
-  } /* was 6rem */
+    font-size: 5rem;
+  }
   .title3 {
-    font-size: 1.5rem;
-  } /* was 2rem  */
+    font-size: 2rem;
+  }
 
   .Container {
     padding-top: 5rem;
@@ -197,10 +199,9 @@ canvas {
     margin-top: 1rem;
   }
 
-  /* 3-D CANVAS  */
   .canvas-wrapper {
-    height: 40vh;
-  } /* was 70vh */
+    height: 50vh;
+  }
 
   /* YELLOW BANNER */
   .home-subtitle {
@@ -237,9 +238,6 @@ canvas {
 
 /* Medium screens (tablets and small desktops) */
 @media (min-width: 964px) and (max-width: 1129px) {
-  .title {
-    font-size: 4rem;
-  }
   /* MAIN TITLES */
   .title2 {
     font-size: 6rem;
@@ -249,7 +247,7 @@ canvas {
   } /* was 2rem  */
 
   .Container {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .canvas-wrapper {

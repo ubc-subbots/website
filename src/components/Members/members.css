@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  margin-top: 6.5rem;
+  /* margin-top: -6.5rem; */
 }
 
 .members-title {
@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .group {
@@ -23,16 +24,18 @@
 }
 
 .member-title1 {
-  color: rgb(9, 7, 69);
+  /* color: rgb(9, 7, 69); */
+  color: #001d3d;
   font-size: 3rem;
   font-weight: 700;
   padding-top: 1rem;
 }
 
 .member-title2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   max-width: 80%;
-  font-weight: 500;
+  font-weight: 400;
+  color: #003566;
 }
 
 .members {

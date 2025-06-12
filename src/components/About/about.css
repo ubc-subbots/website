@@ -18,10 +18,11 @@
   flex-direction: row;
   gap: 1rem;
 }
+
 .about-title {
   font-size: 3rem;
   font-weight: 700;
-  color: rgb(9, 7, 69);
+  color: #001d3d;
   text-align: center;
 }
 
@@ -36,8 +37,8 @@
 
 .about-subtitle {
   font-size: 1rem;
-  font-weight: 500;
-  color: rgb(9, 7, 69);
+  font-weight: 400;
+  color: #003566;
   text-align: center;
   margin-top: 0.5rem;
   max-width: 60%;
