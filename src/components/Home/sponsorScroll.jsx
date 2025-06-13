@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import './sponsorScroll.css';
 import { motion } from 'framer-motion';
 
@@ -21,6 +21,12 @@ const images = [
 ];
 
 export default function SponsorScroll() {
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className='sponsor-section'>
       <div className='scroll-title'>
