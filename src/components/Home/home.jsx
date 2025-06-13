@@ -40,7 +40,7 @@ export default function Home() {
             style={{ background: 'transparent' }}
           >
             <Suspense fallback={null}>
-              <ambientLight intensity={0.35} />
+              <ambientLight intensity={0.5} />
               <directionalLight
                 position={[10, 10, 5]}
                 castShadow

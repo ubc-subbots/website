@@ -2,12 +2,10 @@
   height: fit-content;
   overflow: hidden;
   width: 100%;
-  background: #f5f5f5;
   background-color: white;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  margin-top: 3rem;
+  margin: 2.5rem auto;
 }
 
 .scroll-wrapper {
@@ -51,5 +49,37 @@
 .scroll-title2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
+  color: #001d3d;
+}
+
+.scroll-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #003566;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .scroll-title2 {
+    font-size: 2.5rem;
+  }
+
+  .scroll-subtitle {
+    font-size: 0.95rem;
+    max-width: 75%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+  .scroll-title2 {
+    font-size: 2rem;
+  }
+
+  .scroll-subtitle {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin-top: 1rem;
+  }
 }

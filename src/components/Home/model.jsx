@@ -6,3 +6,5 @@ export function Model() {
 
   return <primitive object={scene} />;
 }
+
+useGLTF.preload('/model/steelhead.glb');
