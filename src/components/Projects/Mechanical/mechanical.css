@@ -11,3 +11,25 @@
   font-size: 1.7rem;
   font-weight: 700;
 }
+
+.projects-electrical-button1:hover {
+  background-color: #ffc300;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .projects-mechanical-content {
+    flex-direction: column;
+  }
+
+  .projects-mechanical-text {
+    max-width: 90%;
+    text-align: center;
+  }
+}

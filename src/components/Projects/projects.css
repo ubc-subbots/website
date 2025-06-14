@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  top: -5.5rem;
+  padding: 4rem 4rem;
 }
 
 .projects-title {
@@ -12,7 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(9, 7, 69);
+  /* color: rgb(9, 7, 69); */
+  color: #001d3d;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -33,7 +34,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(9, 7, 69);
+  text-align: center;
+  /* color: rgb(9, 7, 69); */
+  color: #001d3d;
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -49,6 +52,7 @@
 .featured-projects-description {
   max-width: 50%;
   text-align: center;
+  color: #003566;
 }
 
 .projects-cards {
@@ -67,7 +71,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(9, 7, 69);
+  /* background-color: rgb(9, 7, 69); */
+  background-color: #001d3d;
   color: white;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -101,7 +106,8 @@
 }
 
 .card-button {
-  background-color: rgb(198, 197, 197);
+  /* background-color: rgb(198, 197, 197); */
+  background-color: rgb(255, 230, 0);;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 0.5rem;
@@ -113,9 +119,8 @@
 }
 
 .card-button:hover {
-  /* background-color: rgb(255, 255, 255); */
-  background-color: rgb(255, 230, 0);
-  /* color: white; */
+  /* background-color: rgb(255, 230, 0); */
+  background-color: #ffce2d;
   transform: scale(1.05);
 }
 
@@ -126,4 +131,11 @@
   flex-direction: column;
   gap: 2rem;
   padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .projects-cards {
+    flex-direction: column;
+  }
 }

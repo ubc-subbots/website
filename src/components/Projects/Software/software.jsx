@@ -12,11 +12,10 @@ import Software1 from '../../../assets/projects-image/software1.png';
 
 const images = [Software1];
 
-export default function software() {
+export default function Software() {
   return (
-    // <Element name='Software-section'>
-    <div className='projects-software-container'>
-      <div>
+    <div id='Software-section' className='projects-software-container'>
+      <div className='mobile'>
         <span className='projects-software-title'>SOFTWARE TEAM </span>
         <FontAwesomeIcon icon={faCode} style={{ fontSize: '1.5rem' }} />
       </div>

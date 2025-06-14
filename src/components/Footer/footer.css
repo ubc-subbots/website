@@ -13,7 +13,8 @@ body {
 .footer-container {
   height: 6rem;
   width: 100%;
-  background-color: rgb(9, 7, 69);
+  /* background-color: rgb(9, 7, 69); */
+  background-color: #001d3d;
   color: white;
   display: flex;
   justify-content: center;

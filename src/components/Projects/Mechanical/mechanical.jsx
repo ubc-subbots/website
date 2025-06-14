@@ -14,8 +14,8 @@ const images = [mech1, mech2, mech3, mech4, mech5];
 
 export default function mechanical() {
   return (
-    <div className='projects-mechanical-container'>
-      <div>
+    <div id='Mechanical-section' className='projects-mechanical-container'>
+      <div className='mobile'>
         <span className='projects-mechanical-title'>MECHANICAL TEAM </span>
         <FontAwesomeIcon icon={faTools} style={{ fontSize: '1.5rem' }} />
       </div>

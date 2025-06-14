@@ -38,7 +38,9 @@
   gap: 1rem;
   width: 35rem;
   height: 4rem;
-  background-color: rgb(216, 216, 216);
+  /* background-color: rgb(216, 216, 216); */
+  background-color: #003566;
+  color: white;
   padding: 1rem 1rem;
   border-radius: 0.5rem;
   border: black 0.5px solid;
@@ -56,4 +58,11 @@
 
 .point-description {
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .learning-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

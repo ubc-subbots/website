@@ -1,17 +1,9 @@
 import React from 'react';
 import './projects.css';
 import {
-  faLaptopCode,
   faCode,
   faCarBattery,
-  faEye,
-  faDharmachakra,
-  faVrCardboard,
-  faBolt,
-  faWaveSquare,
-  faCogs,
   faTools,
-  faRocket,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { Link } from "react-router-dom";
@@ -19,12 +11,25 @@ import Software from './Software/software';
 import Electrical from './Electrical/electrical';
 import Mechanical from './Mechanical/mechanical';
 import { Link } from 'react-scroll';
-
-{
-  /* <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={()=>setShowMenu(false)}>HOME</Link> */
-}
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Projects() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const id = location.hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <div className='projects-maincontainer'>
       <span className='projects-title'>PROJECTS</span>
@@ -66,6 +71,7 @@ export default function Projects() {
         <Card
           title='ELECTRICAL'
           description='Design the interface between the computer and the sea'
+          link='Electrical-section'
         />
         <Card
           title='MECHANICAL'
@@ -89,19 +95,28 @@ function Card(props) {
         {props.title === 'SOFTWARE' && (
           <FontAwesomeIcon
             icon={faCode}
-            style={{ fontSize: '5rem', padding: '1rem' }}
+            style={{
+              fontSize: '5rem',
+              padding: '1rem',
+            }}
           />
         )}
         {props.title === 'ELECTRICAL' && (
           <FontAwesomeIcon
             icon={faCarBattery}
-            style={{ fontSize: '5rem', padding: '1rem' }}
+            style={{
+              fontSize: '5rem',
+              padding: '1rem',
+            }}
           />
         )}
         {props.title === 'MECHANICAL' && (
           <FontAwesomeIcon
             icon={faTools}
-            style={{ fontSize: '5rem', padding: '1rem' }}
+            style={{
+              fontSize: '5rem',
+              padding: '1rem',
+            }}
           />
         )}
         <span className='card-description'>{props.description}</span>

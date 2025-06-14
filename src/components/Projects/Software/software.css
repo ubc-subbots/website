@@ -56,10 +56,32 @@
 }
 
 .projects-software-button1 {
-  background-color: rgb(255, 230, 0);
+  background-color: #ffd60a;
   height: 3rem;
   width: 80%;
   font-size: 1rem;
   border-radius: 0.5rem;
   border: none;
+}
+
+.projects-software-button1:hover {
+  background-color: #ffc300;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .projects-software-content {
+    flex-direction: column;
+  }
+
+  .projects-software-text {
+    max-width: 90%;
+    text-align: center;
+  }
 }

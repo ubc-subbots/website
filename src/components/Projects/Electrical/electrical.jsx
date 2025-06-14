@@ -18,8 +18,8 @@ const images = [elec1, elec2, elec3, elec4, elec5];
 
 export default function electrical() {
   return (
-    <div className='projects-electrical-container'>
-      <div>
+    <div id='Electrical-section' className='projects-electrical-container'>
+      <div className='mobile'>
         <span className='projects-electrical-title'>ELECTRICAL TEAM </span>
         <FontAwesomeIcon icon={faCarBattery} style={{ fontSize: '1.5rem' }} />
       </div>

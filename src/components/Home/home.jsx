@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useGLTF } from '@react-three/drei';
+import { useNavigate } from 'react-router-dom';
 
 import './home.css';
 import About from '../About/about';
@@ -13,6 +14,7 @@ import SponsorScroll from './sponsorScroll.jsx';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // handles color change when scrolling
@@ -80,19 +82,30 @@ export default function Home() {
         <div className='home-software'>
           <div className='home-software-content'>
             {/* <span className="home-software-title">Software Team</span> */}
-            <button className='home-software-title'>Software Projects</button>
+            <button
+              className='home-software-title'
+              onClick={() => navigate('/projects#Software-section')}
+            >
+              Software Projects
+            </button>
           </div>
         </div>
         <div className='home-electrical'>
           <div className='home-electrical-content'>
-            <button className='home-electrical-title'>
+            <button
+              className='home-electrical-title'
+              onClick={() => navigate('/projects#Electrical-section')}
+            >
               Electrical Projects
             </button>
           </div>
         </div>
         <div className='home-mechanical'>
           <div className='home-mechanical-content'>
-            <button className='home-mechanical-title'>
+            <button
+              className='home-mechanical-title'
+              onClick={() => navigate('/projects#Mechanical-section')}
+            >
               Mechanical Projects
             </button>
           </div>
