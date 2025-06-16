@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.803cbc45.css",
+    "main.js": "/website/static/js/main.f76305d9.js",
+    "static/media/elec4.png": "/website/static/media/elec4.66b734be8d814f34ee7e.png",
+    "static/media/elec5.jpg": "/website/static/media/elec5.d75e20f232e55be7c352.jpg",
+    "static/media/home_mechanical.png": "/website/static/media/home_mechanical.aa6b3df8d704fe6f795c.png",
+    "static/media/home_electrical.png": "/website/static/media/home_electrical.25d41cc617de0b73100d.png",
+    "static/media/home_software.png": "/website/static/media/home_software.5afbad8ffae149cc933d.png",
+    "static/media/mech4.jpg": "/website/static/media/mech4.da8004252c5fb269a86d.jpg",
+    "static/media/mech2.jpg": "/website/static/media/mech2.53509a43c8689453d1ef.jpg",
+    "static/media/mech1.jpg": "/website/static/media/mech1.9179993107f0fcbdc634.jpg",
+    "static/media/mech3.jpg": "/website/static/media/mech3.ce3d71e85b59e2654ffe.jpg",
+    "static/media/mech5.jpg": "/website/static/media/mech5.109425ce6a7c633cc23c.jpg",
+    "static/media/robot.jpg": "/website/static/media/robot.d454882add5984eec2e1.jpg",
+    "static/media/goal.jpg": "/website/static/media/goal.eab979105a3cc6b52bf2.jpg",
+    "static/media/elec3.jpg": "/website/static/media/elec3.fe49b25ca01f6beee48c.jpg",
+    "static/media/elec2.PNG": "/website/static/media/elec2.d4406faf8952b31cafb4.PNG",
+    "static/media/insta4.png": "/website/static/media/insta4.7a1cdb8176cf53a9c9e1.png",
+    "static/media/elec1.PNG": "/website/static/media/elec1.70612b9cf6ba6eeba51c.PNG",
+    "static/media/join.jpg": "/website/static/media/join.cd3669f719c691c8690b.jpg",
+    "static/media/software1.png": "/website/static/media/software1.f5e105add8a724551dab.png",
+    "static/media/linkedin2.png": "/website/static/media/linkedin2.aa05b465ee37cd3c39bc.png",
+    "static/media/github3.png": "/website/static/media/github3.6c7b58a3f617d89777dd.png",
+    "static/media/insta2.png": "/website/static/media/insta2.8f207529be0cbb136191.png",
+    "static/media/mail.png": "/website/static/media/mail.16c4036728b58e352120.png",
+    "static/media/facebook3.png": "/website/static/media/facebook3.6dad2a6a390d0dbd3060.png",
+    "index.html": "/website/index.html",
+    "main.803cbc45.css.map": "/website/static/css/main.803cbc45.css.map",
+    "main.f76305d9.js.map": "/website/static/js/main.f76305d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.803cbc45.css",
+    "static/js/main.f76305d9.js"
+  ]
+}
