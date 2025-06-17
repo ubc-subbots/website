@@ -12,7 +12,7 @@ import Member from './member';
 
 export const AdminMembers = [
   {
-    image: '/images/members/Parth.JPG',
+    image: `${process.env.PUBLIC_URL}/images/members/Parth.JPG`,
     name: 'Parth Patel',
     role: 'Relations Director',
     linkedin: 'https://www.linkedin.com/in/parth-patel-433703266/',
@@ -22,13 +22,13 @@ export const AdminMembers = [
 
 export const ActuatorMembers = [
   {
-    image: '/images/members/Aldiyar_Mukatay.jpeg',
+    image: `${process.env.PUBLIC_URL}/images/members/Aldiyar_Mukatay.jpeg`,
     name: 'Aldiyar Mukatay',
     role: 'Actuators Member',
     linkedin: 'https://www.linkedin.com/in/aldiyar-mukatay/',
   },
   {
-    image: '/images/members/Rohin_Dhaliwal.jpeg',
+    image: `${process.env.PUBLIC_URL}/images/members/Rohin_Dhaliwal.jpeg`,
     name: 'Rohin Dhaliwal',
     role: 'Claw System Design',
     linkedin: 'https://www.linkedin.com/in/rohin-dhaliwal-9bb87b220/',
@@ -37,19 +37,19 @@ export const ActuatorMembers = [
 
 export const ElectricalMembers = [
   {
-    image: '/images/members/Abhishek.jpeg',
+    image: `${process.env.PUBLIC_URL}/images/members/Abhishek.jpeg`,
     name: 'Abhishek Raghuwanshi',
     role: 'Electrical Project Lead',
     linkedin: 'https://www.linkedin.com/in/a112r',
   },
   {
-    image: '/images/members/Avery_Cheng.jpeg',
+    image: `${process.env.PUBLIC_URL}/images/members/Avery_Cheng.jpeg`,
     name: 'Avery Cheng',
     role: 'Electrical Team Member',
     linkedin: 'https://www.linkedin.com/in/averybcheng/',
   },
   {
-    image: '/images/members/Samarr.jpg',
+    image: `${process.env.PUBLIC_URL}/images/members/Samarr.jpg`,
     name: 'Samarr Parmaar',
     role: 'Electrical Team Member',
     linkedin: 'https://www.linkedin.com/in/averybcheng/',
@@ -58,25 +58,25 @@ export const ElectricalMembers = [
 
 export const SoftwareMembers = [
   {
-    image: '/images/members/Fei_Kuan.jpg',
+    image: `${process.env.PUBLIC_URL}/images/members/Fei_Kuan.jpg`,
     name: 'Fei Kuan',
     role: 'Software Co-Lead',
     linkedin: 'https://www.linkedin.com/in/feikuan/',
   },
   {
-    image: '/images/members/Marius.png',
+    image: `${process.env.PUBLIC_URL}/images/members/Marius.png`,
     name: 'Marius Shepherd',
     role: 'Software Developer',
     linkedin: 'https://www.linkedin.com/in/mariiimako/',
   },
   {
-    image: '/images/members/Joel_Hempel.png',
+    image: `${process.env.PUBLIC_URL}/images/members/Joel_Hempel.png`,
     name: 'Joel Hempel',
     role: 'Autonomous Navigation Engineer + Website',
     linkedin: 'https://www.linkedin.com/in/joelhempel',
   },
   {
-    image: '/images/members/Ruhani_Mittal.jpg',
+    image: `${process.env.PUBLIC_URL}/images/members/Ruhani_Mittal.jpg`,
     name: 'Ruhani Mittal',
     role: 'Website Lead',
   },
@@ -87,7 +87,7 @@ export default function members() {
     <div className='members-container'>
       <div className='members-title'>
         <img
-          src='/images/members/team_photo_2024_resized.jpg'
+          src={`${process.env.PUBLIC_URL}/images/members/team_photo_2024_resized.jpg`}
           alt='group'
           className='group'
         />
