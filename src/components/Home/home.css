@@ -15,7 +15,11 @@
   overflow-x: hidden;
 
   background:
-    radial-gradient(ellipse at 50% -10%, rgba(17, 10, 80, 0.77), transparent 60%),
+    radial-gradient(
+      ellipse at 50% -10%,
+      rgba(17, 10, 80, 0.77),
+      transparent 60%
+    ),
     radial-gradient(
       ellipse at 20% 10%,
       rgba(66, 167, 255, 0.7),
@@ -44,21 +48,16 @@
 }
 
 .title2 {
-  /* color: rgb(9, 7, 69); */
   color: #ffd60a;
   font-size: 6rem;
   -webkit-text-stroke: 2px black;
-    text-stroke: 2px black;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 650;
   font-style: normal;
-  /* font-variation-settings:
-    "wdth" 100; */
 }
 
 .title3 {
-  /* color: rgb(9, 7, 69); */
   color: #ffc300;
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
@@ -71,7 +70,6 @@
   width: 100vw;
   height: 70vh;
   background-color: transparent;
-  /* position: relative; */
 }
 
 canvas {
@@ -80,7 +78,7 @@ canvas {
 
 .home-subtitle {
   height: 25vh;
-  /* font-family: "Poppins", serif; */
+
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   display: flex;
@@ -90,9 +88,7 @@ canvas {
   text-align: center;
   justify-content: center;
   gap: 2rem;
-  /* transition: background-color 0.4s ease; */
-  /* background-color: #0493ba; */
-  background-color: rgba(11, 10, 80, 0.778);
+  background-color: rgb(0, 30, 61);
 }
 
 .home-subtitle1 {
@@ -101,14 +97,6 @@ canvas {
   color: #f7f0ff;
   letter-spacing: 1px;
 }
-/* 
-.home-subtitle.scrolled {
-  background-color: #0493ba;
-} */
-/* 
-.home-subtitle.scrolled .home-subtitle1 {
-  color: #f7b63e;
-} */
 
 .teams {
   display: flex;

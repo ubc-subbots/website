@@ -43,6 +43,13 @@
   height: auto;
 }
 
+.nav-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(0, 30, 61);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .menu-toggle {
   background: none;
   border: none;
@@ -189,6 +196,10 @@
   .nav-container {
     padding: 0 1rem;
     height: 4rem;
+  }
+
+  .nav-title {
+    font-size: 2rem;
   }
 
   /* Logo icon */

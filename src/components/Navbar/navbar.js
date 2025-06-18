@@ -15,8 +15,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Calculate scroll progress (0 to 1) over first 100px of scroll
-      const progress = Math.min(window.scrollY / 100, 1);
+      // Calculate scroll progress (0 to 1) over first 200px of scroll
+      const progress = Math.min(window.scrollY / 200, 1);
       setScrollProgress(progress);
     };
 
@@ -49,7 +49,19 @@ const Navbar = () => {
       }}
     >
       <div className='nav-content'>
-        <img src={Logo} alt='logo' className='logo' />
+        <NavLink to='/' className='logo-link'>
+          <img src={Logo} alt='logo' className='logo' />
+        </NavLink>
+
+        <div
+          className='nav-title'
+          style={{
+            opacity: scrollProgress,
+            visibility: scrollProgress > 0 ? 'visible' : 'hidden',
+          }}
+        >
+          UBC SUBBOTS
+        </div>
 
         {!menuOpen && (
           <button className='menu-toggle' onClick={toggleMenu}>
