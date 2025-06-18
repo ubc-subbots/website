@@ -48,13 +48,13 @@
 .scroll-title2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #001d3d;
+  color: var(--primary-color);
 }
 
 .scroll-subtitle {
   font-size: 1rem;
   font-weight: 400;
-  color: #003566;
+  color: var(--light-blue-color);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

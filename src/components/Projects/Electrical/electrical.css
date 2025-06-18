@@ -7,13 +7,13 @@
 }
 
 .projects-electrical-title {
-  color: rgb(9, 7, 69);
+  color: var(--primary-color);
   font-size: 1.7rem;
   font-weight: 700;
 }
 
 .projects-software-button1:hover {
-  background-color: #ffc300;
+  background-color: var(--dark-yellow-color);
 }
 
 @media screen and (max-width: 1000px) {

@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   /* color: rgb(9, 7, 69); */
-  color: #001d3d;
+  color: var(--primary-color);
   font-size: 3rem;
   font-weight: 700;
 }
@@ -36,7 +36,7 @@
   align-items: center;
   text-align: center;
   /* color: rgb(9, 7, 69); */
-  color: #001d3d;
+  color: var(--primary-color);
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -52,7 +52,7 @@
 .featured-projects-description {
   max-width: 50%;
   text-align: center;
-  color: #003566;
+  color: var(--light-blue-color);
 }
 
 .projects-cards {
@@ -72,7 +72,7 @@
   flex-direction: column;
   align-items: center;
   /* background-color: rgb(9, 7, 69); */
-  background-color: #001d3d;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -107,7 +107,7 @@
 
 .card-button {
   /* background-color: rgb(198, 197, 197); */
-  background-color: rgb(255, 230, 0);;
+  background-color: var(--light-yellow-color);
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 0.5rem;
@@ -119,8 +119,7 @@
 }
 
 .card-button:hover {
-  /* background-color: rgb(255, 230, 0); */
-  background-color: #ffce2d;
+  background-color: var(--dark-yellow-color);
   transform: scale(1.05);
 }
 

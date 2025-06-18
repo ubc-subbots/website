@@ -15,19 +15,18 @@
   align-items: center;
   margin-bottom: 4rem;
   gap: 1rem;
-  text-align: center
+  text-align: center;
 }
 
 .joinus-title1 {
   /* color: rgb(9, 7, 69); */
-  color: #001d3d;
+  color: var(--primary-color);
   font-size: 3rem;
   font-weight: 700;
 }
 
 .joinus-subcontent {
-  color: rgb(9, 7, 69);
-  color: #003566;
+  color: var(--light-blue-color);
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
@@ -37,10 +36,6 @@
   display: flex;
   flex-direction: column;
 }
-
-/* .joinus-subcontent2 {
-    color: rgb(22, 15, 211);
-} */
 
 .joinus-socials {
   flex-direction: row;
@@ -66,16 +61,15 @@
   transform: scale(1.1);
 }
 
-
 @media screen and (max-width: 640px) {
-.joinus-linkedin,
-.joinus-instagram,
-.joinus-facebook,
-.joinus-github,
-.joinus-mail {
-  height: 5rem;
-  transition: all 0.3s ease-in-out;
-}
+  .joinus-linkedin,
+  .joinus-instagram,
+  .joinus-facebook,
+  .joinus-github,
+  .joinus-mail {
+    height: 5rem;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -86,4 +80,4 @@
     gap: 2rem;
     justify-content: center;
   }
-  }
+}

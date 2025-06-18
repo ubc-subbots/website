@@ -48,7 +48,7 @@
 }
 
 .title2 {
-  color: #ffd60a;
+  color: var(--light-yellow-color);
   font-size: 6rem;
   -webkit-text-stroke: 1px black;
   font-family: 'Open Sans', sans-serif;
@@ -58,7 +58,7 @@
 }
 
 .title3 {
-  color: #ffc300;
+  color: var(--dark-yellow-color);
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
@@ -78,7 +78,6 @@ canvas {
 
 .home-subtitle {
   height: 25vh;
-
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   display: flex;
@@ -88,7 +87,7 @@ canvas {
   text-align: center;
   justify-content: center;
   gap: 2rem;
-  background-color: rgb(0, 30, 61);
+  background-color: var(--primary-color);
 }
 
 .home-subtitle1 {
@@ -153,7 +152,7 @@ canvas {
 .home-electrical-title,
 .home-mechanical-title {
   font-size: 1rem;
-  background-color: #ffdf3d;
+  background-color: var(--light-yellow-color);
   padding: 0.75rem 0.75rem;
   font-weight: 400;
   text-transform: uppercase;

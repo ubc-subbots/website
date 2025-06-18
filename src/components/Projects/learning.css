@@ -39,7 +39,7 @@
   width: 35rem;
   height: 4rem;
   /* background-color: rgb(216, 216, 216); */
-  background-color: #003566;
+  background-color: var(--light-blue-color);
   color: white;
   padding: 1rem 1rem;
   border-radius: 0.5rem;

@@ -1,10 +1,8 @@
 .sponsor-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* height: calc(100vh - 12rem); */
   margin-top: 4rem;
   padding: 1rem 1rem;
 }
@@ -20,15 +18,14 @@
 .sponsor-title1 {
   font-size: 3rem;
   font-weight: 700;
-  /* color: rgb(9, 7, 69); */
-  color: #001d3d;
+  color: var(--primary-color);
 }
 
 .sponsor-title2 {
   padding-top: 0.8rem;
   font-size: 1rem;
   max-width: 80%;
-  color: #003566;
+  color: var(--light-blue-color);
 }
 
 .sponsor-button {
@@ -44,14 +41,14 @@
   border-radius: 1rem;
   border: none;
   margin: 1.5rem 0;
-  background-color: rgb(255, 230, 0);;
+  background-color: var(--light-yellow-color);
   transition: transform 0.3s ease-in-out;
   transition: background-color 0.3s ease;
 }
 
 .sponsor-button:hover {
   transform: scale(1.05);
-  background-color: #ffce2d;
+  background-color: var(--dark-yellow-color);
 }
 
 .scroll-main {
