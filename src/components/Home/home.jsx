@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useNavigate } from 'react-router-dom';
-
 import './home.css';
 import About from '../About/about';
 import { Suspense } from 'react';
-
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Model } from './model.jsx';
 import SponsorScroll from './sponsorScroll.jsx';
-// import homeSoftware from "../../assets/home_software.png";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // handles color change when scrolling
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100); // adjust threshold as needed
+      setScrolled(window.scrollY > 100);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -50,7 +46,6 @@ export default function Home() {
                 shadow-mapSize-height={1024}
               />
 
-              {/* Shadow receiving ground */}
               <mesh
                 rotation={[-Math.PI / 2, 0, 0]}
                 position={[0, -1, 0]}
@@ -81,7 +76,6 @@ export default function Home() {
       <div className='teams'>
         <div className='home-software'>
           <div className='home-software-content'>
-            {/* <span className="home-software-title">Software Team</span> */}
             <button
               className='home-software-title'
               onClick={() => navigate('/projects#Software-section')}

@@ -1,7 +1,5 @@
 import React from 'react';
 import './joinUs.css';
-import Join from '../../assets/join.jpg';
-
 import Linkedin from '../../assets/linkedin3.png';
 import Instagram from '../../assets/insta4.png';
 import Github from '../../assets/github3.png';

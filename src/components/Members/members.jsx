@@ -4,7 +4,6 @@ import {
   faTools,
   faCarBattery,
   faBriefcase,
-  faScrewdriverWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './members.css';

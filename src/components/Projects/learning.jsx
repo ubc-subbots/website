@@ -1,7 +1,5 @@
 import React from 'react';
 import './learning.css';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function learning(props) {
   return (

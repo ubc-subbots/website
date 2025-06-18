@@ -6,7 +6,6 @@ import {
   faTools,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { Link } from "react-router-dom";
 import Software from './Software/software';
 import Electrical from './Electrical/electrical';
 import Mechanical from './Mechanical/mechanical';
