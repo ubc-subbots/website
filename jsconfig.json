@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "paths": {
+      "*": ["*", "*.js", "*.jsx", "*.ts", "*.tsx"]
+    }
+  },
+  "include": ["src/**/*"]
+}
