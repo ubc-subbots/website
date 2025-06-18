@@ -3,21 +3,21 @@ import './sponsorScroll.css';
 import { motion } from 'framer-motion';
 
 const images = [
-  '/images/sponsors/shell.png',
-  '/images/sponsors/4imprint.png',
-  '/images/sponsors/altium.png',
-  '/images/sponsors/apsc.png',
-  '/images/sponsors/ece.png',
-  '/images/sponsors/forestry.png',
-  '/images/sponsors/ieee.png',
-  '/images/sponsors/matlab2.png',
-  '/images/sponsors/phidgets.png',
-  '/images/sponsors/sname.png',
-  '/images/sponsors/spaenaur.png',
-  '/images/sponsors/subc.png',
-  '/images/sponsors/ubcmecheng.png',
-  '/images/sponsors/waltergage.png',
-  '/images/sponsors/solidworks.png',
+  `${process.env.PUBLIC_URL}/images/sponsors/shell.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/4imprint.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/altium.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/apsc.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/ece.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/forestry.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/ieee.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/matlab2.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/phidgets.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/sname.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/spaenaur.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/subc.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/ubcmecheng.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/waltergage.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`,
 ];
 
 export default function SponsorScroll() {
