@@ -48,7 +48,8 @@
 }
 
 .title2 {
-  color: var(--light-yellow-color);
+  color: var(--dark-yellow-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 6rem;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
@@ -58,6 +59,7 @@
 
 .title3 {
   color: var(--dark-yellow-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
