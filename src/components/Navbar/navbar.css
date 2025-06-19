@@ -16,6 +16,10 @@
   );
 }
 
+.nav-content {
+  position: relative; /* Add this */
+}
+
 .menu-toggle {
   color: rgb(9, 7, 69);
   background: rgba(255, 255, 255, 0.5);
@@ -46,6 +50,9 @@
   font-weight: 600;
   color: rgb(0, 30, 61);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu-toggle {
