@@ -7,7 +7,7 @@ import Facebook from '../../assets/facebook2.png';
 export default function () {
   return (
     <div className='footer-container'>
-      <span className='copywrite'>Copywrite @ UBC Subbots 2025</span>
+      <span className='copyright'>Copyright © UBC Subbots 2025</span>
       <div className='footer-links'>
         {/* Linkedin */}
         <a href='https://www.linkedin.com/company/ubc-subbots/'>
