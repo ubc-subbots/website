@@ -52,6 +52,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 900px;
 }
 
 .admin,

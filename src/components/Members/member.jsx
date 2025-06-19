@@ -10,18 +10,22 @@ export default function member(props) {
         <div className='image-container'>
           <img src={props.image} className='link-image' />
           <div className='image-overlay'>
-            <a
-              href={props.linkedin}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='linkedin-icon'
-              style={{ marginRight: '10px' }}
-            >
-              <img src={Linkedin} alt='LinkedIn' />
-            </a>
-            <a href={`mailto:${props.mail}`} className='mail-icon'>
-              <img src={Mail} alt='Mail' />
-            </a>
+            {props.linkedin && (
+              <a
+                href={props.linkedin}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='linkedin-icon'
+                style={{ marginRight: '10px' }}
+              >
+                <img src={Linkedin} alt='LinkedIn' />
+              </a>
+            )}
+            {props.mail && (
+              <a href={`mailto:${props.mail}`} className='mail-icon'>
+                <img src={Mail} alt='Mail' />
+              </a>
+            )}
           </div>
         </div>
         <div className='member-info'>

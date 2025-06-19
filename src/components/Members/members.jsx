@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import {
   faCode,
   faTools,
@@ -9,81 +10,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './members.css';
 import Member from './member';
 
-export const AdminMembers = [
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Parth.JPG`,
-    name: 'Parth Patel',
-    role: 'Relations Director',
-    linkedin: 'https://www.linkedin.com/in/parth-patel-433703266/',
-    mail: 'parthrp15@gmail.com',
-  },
-];
+const TEAM_META = {
+  Admin: { title: 'ADMIN + BUSINESS', icon: faBriefcase },
+  Actuator: { title: 'ACTUATOR', icon: faTools },
+  Electrical: { title: 'ELECTRICAL', icon: faCarBattery },
+  Software: { title: 'SOFTWARE', icon: faCode },
+};
 
-export const ActuatorMembers = [
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Aldiyar_Mukatay.jpeg`,
-    name: 'Aldiyar Mukatay',
-    role: 'Actuators Member',
-    linkedin: 'https://www.linkedin.com/in/aldiyar-mukatay/',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Rohin_Dhaliwal.jpeg`,
-    name: 'Rohin Dhaliwal',
-    role: 'Claw System Design',
-    linkedin: 'https://www.linkedin.com/in/rohin-dhaliwal-9bb87b220/',
-  },
-];
+export default function Members() {
+  const [members, setMembers] = useState([]);
 
-export const ElectricalMembers = [
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Abhishek.jpeg`,
-    name: 'Abhishek Raghuwanshi',
-    role: 'Electrical Project Lead',
-    linkedin: 'https://www.linkedin.com/in/a112r',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Avery_Cheng.jpeg`,
-    name: 'Avery Cheng',
-    role: 'Electrical Team Member',
-    linkedin: 'https://www.linkedin.com/in/averybcheng/',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Samarr.jpg`,
-    name: 'Samarr Parmaar',
-    role: 'Electrical Team Member',
-    linkedin: 'https://www.linkedin.com/in/averybcheng/',
-  },
-];
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/members.json`)
+      .then((res) => res.json())
+      .then(setMembers)
+      .catch(console.error);
+  }, []);
 
-export const SoftwareMembers = [
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Fei_Kuan.jpg`,
-    name: 'Fei Kuan',
-    role: 'Software Co-Lead',
-    linkedin: 'https://www.linkedin.com/in/feikuan/',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Marius.png`,
-    name: 'Marius Shepherd',
-    role: 'Software Developer',
-    linkedin: 'https://www.linkedin.com/in/mariiimako/',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Joel_Hempel.png`,
-    name: 'Joel Hempel',
-    role: 'Autonomous Navigation Engineer + Website',
-    linkedin: 'https://www.linkedin.com/in/joelhempel',
-  },
-  {
-    image: `${process.env.PUBLIC_URL}/images/members/Ruhani_Mittal.jpg`,
-    name: 'Ruhani Mittal',
-    role: 'Website Lead',
-  },
-];
-
-export default function members() {
   return (
     <div className='members-container'>
+      {/* ----- hero / heading ----- */}
       <div className='members-title'>
         <img
           src={`${process.env.PUBLIC_URL}/images/members/team_photo_2024_resized.jpg`}
@@ -92,88 +38,54 @@ export default function members() {
         />
         <span className='member-title1'>MEET THE TEAM</span>
         <span className='member-title2'>
-          United by curiosity and driven by purpose, our 44+ team members bring
-          unique skills and shared passion to every step of the journey!
+          United by curiosity and driven by purpose, our {members.length}+ team
+          members bring unique skills and shared passion to every step of the
+          journey!
         </span>
-
-        <div className='members'>
-          <div className='admin'>
-            {/* Admin + Business */}
-            <div className='align1'>
-              <span className='admin-title'>ADMIN + BUSINESS</span>
-              <FontAwesomeIcon icon={faBriefcase} className='icon-common' />
-            </div>
-            <div className='align'>
-              {AdminMembers.map((member, index) => (
-                <Member
-                  key={index}
-                  image={member.image}
-                  name={member.name}
-                  role={member.role}
-                  linkedin={member.linkedin}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* mechanical */}
-          <div className='mechanical'>
-            <div className='align1'>
-              <span className='mechanical-title'>ACTUATOR</span>
-              <FontAwesomeIcon icon={faTools} className='icon-common' />
-            </div>
-            <div className='align'>
-              {ActuatorMembers.map((member, index) => (
-                <Member
-                  key={index}
-                  image={member.image}
-                  name={member.name}
-                  role={member.role}
-                  linkedin={member.linkedin}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* electrical */}
-          <div className='electrical'>
-            <div className='align1'>
-              <span className='electrical-title'>ELECTRICAL</span>
-              <FontAwesomeIcon icon={faCarBattery} className='icon-common' />
-            </div>
-            <div className='align'>
-              {ElectricalMembers.map((member, index) => (
-                <Member
-                  key={index}
-                  image={member.image}
-                  name={member.name}
-                  role={member.role}
-                  linkedin={member.linkedin}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* software */}
-        <div className='software'>
-          <div className='align1'>
-            <span className='software-title'>SOFTWARE</span>
-            <FontAwesomeIcon icon={faCode} className='icon-common' />
-          </div>
-          <div className='align'>
-            {SoftwareMembers.map((member, index) => (
-              <Member
-                key={index}
-                image={member.image}
-                name={member.name}
-                role={member.role}
-                linkedin={member.linkedin}
-              />
-            ))}
-          </div>
-        </div>
       </div>
+
+      {Object.entries(TEAM_META).map(([teamKey, meta]) => {
+        const teamMembers = members.filter((m) => m.team === teamKey);
+        if (teamMembers.length === 0) return null; // skip empty groups
+
+        return (
+          <section key={teamKey} className={teamKey.toLowerCase()}>
+            <div className='align1'>
+              <span className={`${teamKey.toLowerCase()}-title`}>
+                {meta.title}
+              </span>
+              <FontAwesomeIcon icon={meta.icon} className='icon-common' />
+            </div>
+            <div className='align'>
+              {teamMembers
+                .sort((a, b) => {
+                  // Primary sort: members with images first
+                  const aHasImage = a.image && a.image !== '';
+                  const bHasImage = b.image && b.image !== '';
+                  if (aHasImage && !bHasImage) return -1;
+                  if (!aHasImage && bHasImage) return 1;
+
+                  // Secondary sort: alphabetically by last name
+                  return a.lastName.localeCompare(b.lastName);
+                })
+                .map((m, i) => (
+                  <Member
+                    key={i}
+                    image={
+                      m.image
+                        ? `${process.env.PUBLIC_URL}/images/members/${m.image}`
+                        : `${process.env.PUBLIC_URL}/images/members/default_avatar.png`
+                    }
+                    name={`${m.firstName} ${m.lastName}`}
+                    role={m.role}
+                    linkedin={m.linkedin}
+                    mail={m.mail}
+                  />
+                ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }
