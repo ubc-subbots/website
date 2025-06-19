@@ -14,3 +14,11 @@ body {
   overflow: #ffffff;
   overflow-y: scroll;
 }
+
+/* index.css or App.css */
+:root {
+  --primary-color: #001d3d;
+  --light-blue-color: #003566;
+  --light-yellow-color: rgb(255, 230, 0);
+  --dark-yellow-color: #ffc300;
+}
