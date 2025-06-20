@@ -8,7 +8,7 @@ export default function member(props) {
     <div className='member-card'>
       <div className='member-content'>
         <div className='image-container'>
-          <img src={props.image} className='link-image' />
+          <img src={props.image} className='link-image' alt='Member' />
           <div className='image-overlay'>
             {props.linkedin && (
               <a

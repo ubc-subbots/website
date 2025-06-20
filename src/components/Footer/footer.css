@@ -86,7 +86,6 @@ body {
     height: 4rem;
     padding: 0 1rem;
     flex-direction: column-reverse;
-    gap: 0.5rem;
     height: auto;
     padding: 1rem;
   }
