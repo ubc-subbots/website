@@ -5,6 +5,7 @@ import {
   faTools,
   faCarBattery,
   faBriefcase,
+  faMicrophone,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './members.css';
@@ -15,6 +16,7 @@ const TEAM_META = {
   Actuator: { title: 'ACTUATOR', icon: faTools },
   Electrical: { title: 'ELECTRICAL', icon: faCarBattery },
   Software: { title: 'SOFTWARE', icon: faCode },
+  'Sound Localization': { title: 'SOUND LOCALIZATION', icon: faMicrophone },
 };
 
 export default function Members() {
@@ -51,7 +53,10 @@ export default function Members() {
         return (
           <section key={teamKey} className={teamKey.toLowerCase()}>
             <div className='align1'>
-              <span className={`${teamKey.toLowerCase()}-title`}>
+              <span
+                className={`${teamKey.toLowerCase().replace(/\s+/g, '-')}-title`}
+              >
+                {' '}
                 {meta.title}
               </span>
               <FontAwesomeIcon icon={meta.icon} className='icon-common' />
