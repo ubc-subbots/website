@@ -23,7 +23,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const showTitleAtTop = location.pathname !== '/';
+  const showTitleAtTop = location.pathname === '/members';
 
   const titleOpacity = showTitleAtTop ? 1 : scrollProgress;
   const titleVisibility = showTitleAtTop
