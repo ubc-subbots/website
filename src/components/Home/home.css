@@ -171,6 +171,12 @@ canvas {
   transform: scale(1.05);
 }
 
+@media (max-width: 1378px) {
+  .home-subtitle1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* Medium screens (tablets and small desktops) */
 @media (min-width: 964px) and (max-width: 1129px) {
   /* MAIN TITLES */
@@ -194,13 +200,12 @@ canvas {
     height: 60vh;
   }
 
-  /* YELLOW BANNER */
   .home-subtitle {
     gap: 0.5rem;
     padding: 1rem 0;
   }
   .home-subtitle1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -232,7 +237,7 @@ canvas {
     padding: 1rem 0;
   }
   .home-subtitle1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   /* PROJECT CARDS – stack instead of side by side */
@@ -263,5 +268,9 @@ canvas {
   }
   .title3 {
     font-size: 1.5rem;
+  }
+
+  .home-subtitle1 {
+    font-size: 2rem;
   }
 }
