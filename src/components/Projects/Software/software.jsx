@@ -39,7 +39,9 @@ export default function Software() {
           Software Projects
         </span>
         <div className='projects-software-content'>
-          <ImageCarousel images={images} width='500px' />
+          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <ImageCarousel images={images} />
+          </div>
           <div className='projects-software-text'>
             <span className='projects-software-text1'>
               With little pool access due to the COVID pandemic, we made the

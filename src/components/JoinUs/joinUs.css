@@ -61,6 +61,13 @@
   transform: scale(1.1);
 }
 
+
+@media screen and (max-width: 1000px) {
+  .joinus-title1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .joinus-linkedin,
   .joinus-instagram,

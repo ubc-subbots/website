@@ -36,24 +36,32 @@ export default function Projects() {
         <span className='featured-projects-title'>
           FEATURED PROJECTS - PROPULSION SYSTEM
         </span>
-        <div
-          style={{
-            position: 'relative',
-            paddingBottom: '1rem',
-            overflow: 'hidden',
-          }}
-        >
-          <iframe
-            width='560'
-            height='315'
-            src='https://www.youtube.com/embed/Oo7kQUQVeRs?si=HcsxjI7N7hS3oT1u'
-            title='YouTube video player'
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            referrerpolicy='strict-origin-when-cross-origin'
-            allowfullscreen
-          ></iframe>
+        <div style={{ width: '100%', maxWidth: '600px', margin: '2rem auto' }}>
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              paddingBottom: '56.25%',
+              height: 0,
+            }}
+          >
+            <iframe
+              src='https://www.youtube.com/embed/Oo7kQUQVeRs?si=HcsxjI7N7hS3oT1u'
+              title='YouTube video player'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                border: 0,
+              }}
+            />
+          </div>
         </div>
+
         <span className='featured-projects-description'>
           Here's a video outlining the features and design rationale behind our
           current robot's (Triton) propulsion system from each sub-team's

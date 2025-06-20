@@ -39,7 +39,9 @@ export default function mechanical() {
           Mechanical Projects
         </span>
         <div className='projects-software-content'>
-          <ImageCarousel images={images} width='500px' />
+          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <ImageCarousel images={images} />
+          </div>
           <div className='projects-software-text'>
             <span className='projects-software-text1'>
               With access to in-person workspaces limited during the COVID-era,
