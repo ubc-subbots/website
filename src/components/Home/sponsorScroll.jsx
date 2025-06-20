@@ -39,7 +39,7 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={{ x: ['0%', '-164%'] }}
+          animate={{ x: ['-164%', '0%'] }}
           transition={{
             repeat: Infinity,
             duration: 17,
