@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './navbar.css';
 import { faBarsStaggered, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ import Instagram from '../../assets/insta2.png';
 import Facebook from '../../assets/facebook2.png';
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -23,11 +23,14 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const isMembersPage = location.pathname === '/members';
 
-  const handleClick = () => {
-    navigate('/joinus');
-    setMenuOpen(false);
-  };
+  const titleOpacity = isMembersPage ? 1 : scrollProgress;
+  const titleVisibility = isMembersPage
+    ? 'visible'
+    : scrollProgress > 0
+      ? 'visible'
+      : 'hidden';
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -52,12 +55,11 @@ const Navbar = () => {
         <NavLink to='/' className='logo-link'>
           <img src={Logo} alt='logo' className='logo' />
         </NavLink>
-
         <div
           className='nav-title'
           style={{
-            opacity: scrollProgress,
-            visibility: scrollProgress > 0 ? 'visible' : 'hidden',
+            opacity: titleOpacity,
+            visibility: titleVisibility,
           }}
         >
           UBC SUBBOTS

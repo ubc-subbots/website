@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  /* margin-top: -6.5rem; */
+  margin-top: 6rem;
 }
 
 .members-title {
@@ -60,7 +60,8 @@
 .electrical,
 .actuator,
 .software,
-.sound-localization {
+.sound-localization,
+.co-captains {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +73,8 @@
 .mechanical-title,
 .actuator-title,
 .electrical-title,
-.sound-localization-title {
+.sound-localization-title,
+.co-captains-title {
   letter-spacing: 1.5px;
   margin-top: 1rem;
   font-size: 2rem;
@@ -120,10 +122,10 @@
   .mechanical-title,
   .actuator-title,
   .electrical-title,
-  .sound-localization-title {
+  .sound-localization-title,
+  .co-captains-title {
     font-size: 1.5rem;
   }
-
   .icon-common {
     font-size: 1.5rem;
     color: var(--primary-color);
