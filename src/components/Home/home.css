@@ -9,7 +9,7 @@
 
 .Container {
   width: 100%;
-  height: 100vh; /*This ensures the home screen looks nice and smooth*/
+  height: 100vh;
   user-select: none;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -48,7 +48,8 @@
 }
 
 .title2 {
-  color: var(--dark-yellow-color);
+  color: var(--light-yellow-color);
+  -webkit-text-stroke: black 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 6rem;
   font-family: 'Open Sans', sans-serif;
