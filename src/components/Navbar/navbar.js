@@ -23,10 +23,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const isMembersPage = location.pathname === '/members';
+  const showTitleAtTop = location.pathname !== '/';
 
-  const titleOpacity = isMembersPage ? 1 : scrollProgress;
-  const titleVisibility = isMembersPage
+  const titleOpacity = showTitleAtTop ? 1 : scrollProgress;
+  const titleVisibility = showTitleAtTop
     ? 'visible'
     : scrollProgress > 0
       ? 'visible'
