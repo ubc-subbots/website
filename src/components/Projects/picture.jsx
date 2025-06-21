@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 export default function ImageCarousel({
   images,
   width = '400px',
+  height = 'auto',
   autoPlayInterval = 3000,
   pauseOnHover = true,
   transitionDuration = 500,
@@ -58,6 +59,7 @@ export default function ImageCarousel({
           borderRadius: '12px',
           overflow: 'hidden',
           width: width,
+          height: height,
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -78,9 +80,10 @@ export default function ImageCarousel({
               alt={`Slide ${index}`}
               style={{
                 width: `${100 / images.length}%`,
-                height: 'auto',
+                height: height === 'auto' ? 'auto' : '100%',
                 display: 'block',
                 flexShrink: 0,
+                objectFit: 'cover',
               }}
             />
           ))}

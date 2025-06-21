@@ -8,9 +8,11 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
 import ImageCarousel from '../picture';
-import Software1 from '../../../assets/projects-image/software1.png';
+import software1 from '../../../assets/projects-image/software1.png';
+import software2 from '../../../assets/projects-image/software2.png';
+import software3 from '../../../assets/projects-image/software3.png';
 
-const images = [Software1];
+const images = [software1, software2, software3];
 
 export default function Software() {
   return (
