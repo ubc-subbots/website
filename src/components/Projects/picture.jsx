@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function ImageCarousel({
   images,
-  width = '400px',
+  width = '525px',
   height = 'auto',
   autoPlayInterval = 3000,
   pauseOnHover = true,
@@ -10,6 +10,9 @@ export default function ImageCarousel({
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const containerRef = useRef(null);
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -21,6 +24,30 @@ export default function ImageCarousel({
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  // Touch handling for swipe gestures
+  const handleTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
   };
 
   // Auto-sliding feature
@@ -46,23 +73,47 @@ export default function ImageCarousel({
     }
   };
 
-  // Parse width to get numeric value for calculations
-  const numericWidth = parseInt(width);
+  // Calculate responsive dimensions
+  const screenWidth = window.innerWidth;
+  const isMobile = screenWidth <= 768;
+
+  // Calculate responsive border size (min 3px, max 10px)
+  const borderSize = Math.max(3, Math.min(10, Math.floor(screenWidth / 60)));
+
+  // Calculate responsive border radius
+  const borderRadius = Math.max(4, Math.min(12, borderSize + 2));
+
+  // Calculate responsive padding
+  const sidePadding = Math.max(8, Math.min(20, Math.floor(screenWidth / 20)));
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div
+      style={{
+        width: '100%',
+        padding: `0 ${sidePadding}px`,
+        boxSizing: 'border-box',
+      }}
+    >
       <div
+        ref={containerRef}
         style={{
           position: 'relative',
-          display: 'inline-block',
-          border: '10px solid #444',
-          borderRadius: '12px',
+          width: '100%',
+          maxWidth:
+            typeof width === 'string' && width.includes('px') ? width : '525px',
+          margin: '0 auto',
+          border: `${borderSize}px solid #444`,
+          borderRadius: `${borderRadius}px`,
           overflow: 'hidden',
-          width: width,
           height: height,
+          boxSizing: 'border-box',
+          touchAction: 'pan-y',
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Image container that slides */}
         <div
@@ -84,7 +135,10 @@ export default function ImageCarousel({
                 display: 'block',
                 flexShrink: 0,
                 objectFit: 'cover',
+                userSelect: 'none', // Prevent image selection
+                pointerEvents: 'none', // Prevent image drag
               }}
+              draggable={false}
             />
           ))}
         </div>
