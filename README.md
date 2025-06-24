@@ -14,8 +14,8 @@ Official website for the UBC Subbots team, showcasing our autonomous underwater 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/subbotsWebsite.git
-cd subbotsWebsite
+git clone https://github.com/ubc-subbots/website.git
+cd website
 ```
 
 2. Install dependencies
