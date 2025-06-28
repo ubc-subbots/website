@@ -15,10 +15,31 @@ body {
   overflow-y: scroll;
 }
 
-/* index.css or App.css */
+/* Light mode (default) */
 :root {
   --primary-color: #001d3d;
   --light-blue-color: #003566;
   --light-yellow-color: rgb(255, 230, 0);
   --dark-yellow-color: #ffc300;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+/* Dark mode */
+body.dark-mode {
+  --primary-color: #ffffff;        /* White instead of dark blue */
+  --light-blue-color: #ffffff;     /* White instead of light blue */
+  --light-yellow-color: rgb(255, 230, 0); /* Keep yellow as accent */
+  --dark-yellow-color: #ffc300;    /* Keep yellow as accent */
+  --bg-color: #001d3d;             /* Dark blue background instead of white */
+  --text-color: #ffffff;           /* White text */
+  --card-bg: #003566;              /* Light blue for cards/sections */
+  --border-color: #4a90a4;         /* Light blue borders */
+}
+
+/* Optional: Add smooth transitions for all color changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
