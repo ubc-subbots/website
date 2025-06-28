@@ -1,4 +1,3 @@
-import React from 'react';
 import './member.css';
 import Linkedin from '../../assets/linkedin3.png';
 import Mail from '../../assets/mail.png';

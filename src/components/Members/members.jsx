@@ -7,6 +7,7 @@ import {
   faBriefcase,
   faMicrophone,
   faCrown,
+  faToolbox,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './members.css';
@@ -19,6 +20,7 @@ const TEAM_META = {
   Electrical: { title: 'ELECTRICAL', icon: faCarBattery },
   Software: { title: 'SOFTWARE', icon: faCode },
   'Sound Localization': { title: 'SOUND LOCALIZATION', icon: faMicrophone },
+  'Frames-Enclosures': { title: 'FRAMES & ENCLOSURES', icon: faToolbox },
 };
 
 export default function Members() {
