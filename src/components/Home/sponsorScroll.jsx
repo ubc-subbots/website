@@ -19,7 +19,7 @@ const images = [
   //`${process.env.PUBLIC_URL}/images/sponsors/waltergage.png`,
   //`${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/onshape.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/igen2.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/igen.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/pressing_media.png`,
 ];
 

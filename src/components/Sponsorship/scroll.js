@@ -8,13 +8,15 @@ export default function scroll() {
         <div className='sponsor-gold'>
           <span className='sponsor-gold-title'>GOLD SPONSORS</span>
           <div className='sponsor-gold-logos'>
-            <a href='https://waltergagebook.engineering.ubc.ca/walter-gage-memorial-bursary-in-engineering/'>
+            {/*
+          <a href='https://waltergagebook.engineering.ubc.ca/walter-gage-memorial-bursary-in-engineering/'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/waltergage.png`}
                 alt='Water Gage'
                 className='sponsor-img'
               />
-            </a>
+            </a	>
+          */}
             <a href='https://www.altium.com'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/altium.png`}
@@ -22,13 +24,15 @@ export default function scroll() {
                 className='sponsor-img'
               />
             </a>
+            {/*
             <a href='https://www.4imprint.ca'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/4imprint.png`}
-                alt='4imprint'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/4imprint.png`}
+            alt='4imprint'
+            className='sponsor-img'
+            />
             </a>
+            */}
             <a href='https://ece.ubc.ca'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/ece.png`}
@@ -36,13 +40,15 @@ export default function scroll() {
                 className='sponsor-img'
               />
             </a>
+            {/*
             <a href='https://www.ubcieee.org'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/ieee.png`}
-                alt='IEEE'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/ieee.png`}
+            alt='IEEE'
+            className='sponsor-img'
+            />
             </a>
+            */}
             <a href='https://www.mathworks.com/products/matlab.html'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/matlab2.png`}
@@ -50,13 +56,15 @@ export default function scroll() {
                 className='sponsor-img'
               />
             </a>
+            {/*
             <a href='https://subc.ca'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/subc.png`}
-                alt='SUBC'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/subc.png`}
+            alt='SUBC'
+            className='sponsor-img'
+            />
             </a>
+            */}
             <a href='https://apsc.ubc.ca'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/apsc.png`}
@@ -71,13 +79,16 @@ export default function scroll() {
                 className='sponsor-img'
               />
             </a>
+            {/*
             <a href='https://www.phidgets.com/?'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/phidgets.png`}
-                alt='Phidgets'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/phidgets.png`}
+            alt='Phidgets'
+            className='sponsor-img'
+            />
             </a>
+            */}
+            {/*
             <a href='https://www.shell.ca'>
               <img
                 src={`${process.env.PUBLIC_URL}/images/sponsors/shell.png`}
@@ -85,31 +96,61 @@ export default function scroll() {
                 className='sponsor-img'
               />
             </a>
+            */}
+            {/*
             <a href='https://www.sname.org'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/sname.png`}
-                alt='Sname'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/sname.png`}
+            alt='Sname'
+            className='sponsor-img'
+            />
             </a>
+            */}
+            {/*
             <a href='https://www.solidworks.com'>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`}
-                alt='Solidworks'
-                className='sponsor-img'
-              />
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`}
+            alt='Solidworks'
+            className='sponsor-img'
+            />
             </a>
+            */}
+            {/*
             <a href='https://spaenaur.com'>
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/spaenaur.png`}
+            alt='Spanenaur'
+            className='sponsor-img'
+            />
+            </a>
+            */}
+            {/*
+            <a href='https://forestry.ubc.ca'>
+            <img
+            src={`${process.env.PUBLIC_URL}/images/sponsors/forestry.png`}
+            alt='Forestry'
+            className='sponsor-img'
+            />
+            </a>
+            */}
+            <a href='https://www.onshape.com/en/'>
               <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/spaenaur.png`}
-                alt='Spanenaur'
+                src={`${process.env.PUBLIC_URL}/images/sponsors/onshape.png`}
+                alt='Onshape'
                 className='sponsor-img'
               />
             </a>
-            <a href='https://forestry.ubc.ca'>
+            <a href='https://www.integratedengineers.ca/'>
               <img
-                src={`${process.env.PUBLIC_URL}/images/sponsors/forestry.png`}
-                alt='Forestry'
+                src={`${process.env.PUBLIC_URL}/images/sponsors/igen.png`}
+                alt='UBC Integrated Engineering'
+                className='sponsor-img'
+              />
+            </a>
+            <a href='https://pressing-media.com/'>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/sponsors/pressing_media.png`}
+                alt='Pressing Media'
                 className='sponsor-img'
               />
             </a>

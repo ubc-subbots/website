@@ -18,7 +18,14 @@ export default function sponsorship() {
           our sponsorship package.
         </span>
         <div className='buttons'>
-          <button className='sponsor-button'>Sponsor Now</button>
+          <a
+            href='https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='sponsor-button-link'
+          >
+            <button className='sponsor-button'>Sponsor Now</button>
+          </a>
         </div>
       </div>
       <div className='scroll-main'>
