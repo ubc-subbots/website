@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .group {
@@ -61,6 +62,7 @@
 .actuator,
 .software,
 .sound-localization,
+.frames-enclosures,
 .co-captains {
   display: flex;
   flex-direction: column;
@@ -74,6 +76,7 @@
 .actuator-title,
 .electrical-title,
 .sound-localization-title,
+.frames-enclosures-title,
 .co-captains-title {
   letter-spacing: 1.5px;
   margin-top: 1rem;
@@ -123,9 +126,11 @@
   .actuator-title,
   .electrical-title,
   .sound-localization-title,
+  .frames-enclosures-title,
   .co-captains-title {
     font-size: 1.5rem;
   }
+
   .icon-common {
     font-size: 1.5rem;
     color: var(--primary-color);

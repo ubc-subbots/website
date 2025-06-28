@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useGLTF } from '@react-three/drei';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
 import About from '../About/about';
@@ -37,7 +36,11 @@ export default function Home() {
             camera={{ position: [0, 0, 5], fov: 12 }}
             style={{ background: 'transparent' }}
           >
-            <Suspense fallback={null}>
+            <Suspense
+              fallback={
+                null
+              }
+            >
               <ambientLight intensity={0.5} />
               <directionalLight
                 position={[10, 10, 5]}
@@ -109,4 +112,3 @@ export default function Home() {
     </div>
   );
 }
-useGLTF.preload('/model/steelhead.glb');

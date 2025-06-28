@@ -1,13 +1,13 @@
 [
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Viktor",
     "lastName": "Moreno",
     "program": "IGEN",
     "year": "5+",
     "role": "Co-Captain, F/E Project Lead",
-    "image": "",
-    "linkedin": "",
+    "image": "Viktor.jpeg",
+    "linkedin": "https://www.linkedin.com/in/vmoreno2001/",
     "mail": ""
   },
   {
@@ -22,7 +22,7 @@
     "mail": ""
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Clark",
     "lastName": "Jeffrey",
     "program": "MECH",
@@ -127,8 +127,8 @@
     "program": "MECH",
     "year": "3",
     "role": "Co-Captain",
-    "image": "",
-    "linkedin": "",
+    "image": "Brenna.jpeg",
+    "linkedin": "https://www.linkedin.com/in/brenna-sullivan/",
     "mail": ""
   },
   {
@@ -160,12 +160,12 @@
     "program": "EECE",
     "year": "5+",
     "role": "Software Project Lead",
-    "image": "Fei_Kuan.jpg",
+    "image": "fei.jpeg",
     "linkedin": "https://www.linkedin.com/in/feikuan/",
     "mail": ""
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Charles",
     "lastName": "Polloway",
     "program": "IGEN",
@@ -242,7 +242,7 @@
     "mail": ""
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Sydney",
     "lastName": "Christiansen",
     "program": "BMEG",
@@ -258,7 +258,7 @@
     "lastName": "Hempel",
     "program": "CPSC",
     "year": "4",
-    "role": "Software Team Member",
+    "role": "AUV + Website",
     "image": "Joel_Hempel.png",
     "linkedin": "https://www.linkedin.com/in/joelhempel",
     "mail": "joelhempel35@gmail.com"
@@ -292,12 +292,12 @@
     "program": "PHYS",
     "year": "2",
     "role": "Software Project Lead",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "Dorson.jpg",
+    "linkedin": "https://www.linkedin.com/in/dorson-tang/",
+    "mail": "dorsontang123@gmail.com"
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Mira",
     "lastName": "Jusman",
     "program": "MECH",
@@ -319,7 +319,7 @@
     "mail": ""
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Vince Christian",
     "lastName": "Osorio",
     "program": "MECH",
@@ -357,7 +357,7 @@
     "lastName": "Garcha",
     "program": "CPSC",
     "year": "2",
-    "role": "Software Team Member",
+    "role": "AUV + Website",
     "image": "",
     "linkedin": "https://www.linkedin.com/in/krishna-garcha/",
     "mail": "garchakri@gmail.com"
@@ -374,7 +374,7 @@
     "mail": ""
   },
   {
-    "team": "Actuator",
+    "team": "Frames-Enclosures",
     "firstName": "Chompoonake \"K\"",
     "lastName": "Pochanasomburana",
     "program": "MECH",
@@ -522,7 +522,7 @@
     "lastName": "Mittal",
     "program": "CPSC",
     "year": "3",
-    "role": "Software Team Member",
+    "role": "Website",
     "image": "Ruhani_Mittal.jpg",
     "linkedin": "",
     "mail": ""
