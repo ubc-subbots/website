@@ -87,10 +87,10 @@ export default function Members() {
           );
         } else {
           // Regular team filtering
-          teamMembers = members.filter((m) => m.team === teamKey);
+          teamMembers = members.filter((m) => m.team === teamKey && !m.role.toLowerCase().includes('co-captain'));
         }
 
-        if (teamMembers.length === 0) return null; // skip empty groups
+        if (teamMembers.length === 0) { return null; }
 
         // Sort the team members
         const sortedTeamMembers = sortTeamMembers(teamMembers);
@@ -102,7 +102,9 @@ export default function Members() {
           >
             <div className='align1'>
               <span
-                className={`${teamKey.toLowerCase().replace(/\s+/g, '-')}-title`}
+                className={teamKey === 'CoCaptains'
+                  ? 'co-captains-title'
+                  : `${teamKey.toLowerCase().replace(/\s+/g, '-')}-title`}
               >
                 {meta.title}
               </span>
@@ -118,7 +120,7 @@ export default function Members() {
                       : `${process.env.PUBLIC_URL}/images/subbots-logo/subbots_logo_yellow_round.png`
                   }
                   name={`${m.firstName} ${m.lastName}`}
-                  role={m.role}
+                  role={teamKey === 'CoCaptains' ? '' : m.role} // Hide role for co-captains
                   linkedin={m.linkedin}
                   mail={m.mail}
                 />

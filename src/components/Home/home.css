@@ -15,21 +15,15 @@
   overflow-x: hidden;
 
   background:
-    radial-gradient(
-      ellipse at 50% -10%,
+    radial-gradient(ellipse at 50% -10%,
       rgba(17, 10, 80, 0.77),
-      transparent 60%
-    ),
-    radial-gradient(
-      ellipse at 20% 10%,
+      transparent 60%),
+    radial-gradient(ellipse at 20% 10%,
       rgba(66, 167, 255, 0.7),
-      transparent 90%
-    ),
-    radial-gradient(
-      ellipse at 80% 15%,
+      transparent 90%),
+    radial-gradient(ellipse at 80% 15%,
       rgba(68, 146, 255, 0.9),
-      transparent 90%
-    ),
+      transparent 90%),
     linear-gradient(to bottom, #ffffff 0%, rgba(231, 230, 222, 0.534) 100%);
   background-repeat: no-repeat;
   display: flex;
@@ -49,7 +43,6 @@
 
 .title2 {
   color: var(--light-yellow-color);
-  -webkit-text-stroke: black 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 6rem;
   font-family: 'Open Sans', sans-serif;
@@ -180,13 +173,18 @@ canvas {
 
 /* Medium screens (tablets and small desktops) */
 @media (min-width: 964px) and (max-width: 1129px) {
+
   /* MAIN TITLES */
   .title2 {
     font-size: 6rem;
-  } /* was 6rem */
+  }
+
+  /* was 6rem */
   .title3 {
     font-size: 2rem;
-  } /* was 2rem  */
+  }
+
+  /* was 2rem  */
 
   .Container {
     padding-top: 1rem;
@@ -205,6 +203,7 @@ canvas {
     gap: 0.5rem;
     padding: 1rem 0;
   }
+
   .home-subtitle1 {
     font-size: 2rem;
   }
@@ -214,6 +213,7 @@ canvas {
   .title2 {
     font-size: 5rem;
   }
+
   .title3 {
     font-size: 2rem;
   }
@@ -232,11 +232,13 @@ canvas {
 
   /* YELLOW BANNER */
   .home-subtitle {
-    flex-direction: column; /* stack the three words */
+    flex-direction: column;
+    /* stack the three words */
     gap: 1rem;
     height: auto;
     padding: 1rem 0;
   }
+
   .home-subtitle1 {
     font-size: 2rem;
   }
@@ -246,6 +248,7 @@ canvas {
     flex-direction: column;
     height: auto;
   }
+
   .home-software,
   .home-electrical,
   .home-mechanical {
@@ -267,6 +270,7 @@ canvas {
   .title2 {
     font-size: 3rem;
   }
+
   .title3 {
     font-size: 1.5rem;
   }
@@ -280,6 +284,7 @@ canvas {
   .title2 {
     font-size: 3rem;
   }
+
   .title3 {
     font-size: 1.5rem;
   }
