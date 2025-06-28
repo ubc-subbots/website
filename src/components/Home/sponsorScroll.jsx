@@ -3,21 +3,24 @@ import './sponsorScroll.css';
 import { motion } from 'framer-motion';
 
 const images = [
-  `${process.env.PUBLIC_URL}/images/sponsors/shell.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/4imprint.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/shell.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/4imprint.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/altium.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/apsc.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/ece.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/forestry.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/ieee.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/forestry.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/ieee.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/matlab2.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/phidgets.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/sname.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/spaenaur.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/subc.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/phidgets.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/sname.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/spaenaur.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/subc.png`,
   `${process.env.PUBLIC_URL}/images/sponsors/ubcmecheng.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/waltergage.png`,
-  `${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/waltergage.png`,
+  //`${process.env.PUBLIC_URL}/images/sponsors/solidworks.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/onshape.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/igen2.png`,
+  `${process.env.PUBLIC_URL}/images/sponsors/pressing_media.png`,
 ];
 
 export default function SponsorScroll() {
@@ -39,7 +42,7 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={{ x: ['-164%', '0%'] }}
+          animate={{ x: ['-142%', '-10.5%'] }}
           transition={{
             repeat: Infinity,
             duration: 17,

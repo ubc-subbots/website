@@ -22,11 +22,18 @@
   /*animation: scroll 7s linear infinite; */
 }
 
+/*.scroll-img {*/
+/*  height: 5rem;*/
+/*  width: auto;*/
+/*  margin: 0 1rem;*/
+/*  flex-shrink: 0;*/
+/*}*/
 .scroll-img {
-  height: 5rem;
-  width: auto;
+  width: 400px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the entire image is visible */
   margin: 0 1rem;
-  flex-shrink: 0;
+  max-height: 100px; /* Optional: set a maximum height */
 }
 
 @keyframes scroll-left {
