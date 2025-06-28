@@ -58,7 +58,6 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
   .scroll-title2 {
     font-size: 2.5rem;
   }
@@ -71,7 +70,6 @@
 
 /* Mobile screens */
 @media (max-width: 768px) {
-
   .scroll-title2 {
     font-size: 2rem;
   }

@@ -263,7 +263,6 @@ canvas {
   }
 }
 
-
 @media (max-width: 500px) {
   .title2 {
     font-size: 3rem;
@@ -276,7 +275,6 @@ canvas {
     padding-top: 5rem;
   }
 }
-
 
 @media (max-width: 480px) {
   .title2 {

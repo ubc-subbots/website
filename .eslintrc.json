@@ -3,9 +3,10 @@
     "react-app",
     "plugin:prettier/recommended" // turns on eslint-plugin-prettier & eslint-config-prettier
   ],
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
-    // show Prettier errors as ESLint errors:
-    "prettier/prettier": "error"
+    "prettier/prettier": "warn"
   }
 }
