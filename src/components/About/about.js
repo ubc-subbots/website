@@ -31,7 +31,7 @@ export default function about() {
         <div className='about-text-container'>
           <div className='gap'>
             {/* <span className="about-title1">WHO</span> */}
-            <span className='about-title'>WHO WE ARE?</span>
+            <span className='about-title'>WHO ARE WE?</span>
           </div>
           <span className='about-subtitle'>
             UBC Subbots is a student-led team that designs and builds autonomous
