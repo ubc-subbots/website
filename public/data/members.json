@@ -6,9 +6,9 @@
     "program": "IGEN",
     "year": "5+",
     "role": "Co-Captain, F/E Project Lead",
-    "image": "Viktor.jpeg",
+    "image": "Victor_Moreno.JPG",
     "linkedin": "https://www.linkedin.com/in/vmoreno2001/",
-    "mail": ""
+    "mail": "viktor.moreno123@gmail.com"
   },
   {
     "team": "Sound Localization",
@@ -72,9 +72,9 @@
     "program": "ENPH",
     "year": "3",
     "role": "Electrical Team Member",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "Samuel_Wu.jpg",
+    "linkedin": "https://www.linkedin.com/in/samuel-wu-080890221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "mail": "samuelwu011@gmail.com"
   },
   {
     "team": "Actuator",
@@ -193,9 +193,9 @@
     "program": "IGEN",
     "year": "3",
     "role": "Actuators Team Member",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "Vincent_Vong.JPG",
+    "linkedin": "linkedin.com/in/vincentvong39",
+    "mail": "vincentvong39@gmail.com"
   },
   {
     "team": "Electrical",
@@ -248,9 +248,9 @@
     "program": "BMEG",
     "year": "3",
     "role": "F/E Team Member",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "Sydney_Christiansen.JPEG",
+    "linkedin": "www.linkedin.com/in/sydneychristiansen",
+    "mail": "sydneypchristiansen@gmail.com"
   },
   {
     "team": "Software",
@@ -292,9 +292,9 @@
     "program": "PHYS",
     "year": "2",
     "role": "Software Project Lead",
-    "image": "Dorson.jpg",
-    "linkedin": "https://www.linkedin.com/in/dorson-tang/",
-    "mail": "dorsontang123@gmail.com"
+    "image": "",
+    "linkedin": "",
+    "mail": ""
   },
   {
     "team": "Frames-Enclosures",
@@ -358,9 +358,9 @@
     "program": "CPSC",
     "year": "2",
     "role": "AUV + Website",
-    "image": "",
-    "linkedin": "https://www.linkedin.com/in/krishna-garcha/",
-    "mail": "garchakri@gmail.com"
+    "image": "Krishna_Garcha.jpeg",
+    "linkedin": "https://www.linkedin.com/in/krishna-garcha/https://www.linkedin.com/in/krishna-garcha?originalSubdomain=ca",
+    "mail": "garchakri@gmail.comgarchakri@gmail.com"
   },
   {
     "team": "Actuator",
@@ -457,9 +457,9 @@
     "program": "EECE",
     "year": "5+",
     "role": "Electrical Project Lead",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "David_Chung.jpg",
+    "linkedin": "www.linkedin.com/in/d-chung-dc2332",
+    "mail": "davidc2332@gmail.com"
   },
   {
     "team": "Admin",
@@ -479,9 +479,9 @@
     "program": "EECE",
     "year": "4",
     "role": "Sound Localization Team Member",
-    "image": "",
-    "linkedin": "",
-    "mail": ""
+    "image": "Kieran_Ross.png",
+    "linkedin": "https://www.linkedin.com/in/kieranross5451/",
+    "mail": "kieranross5451@gmail.com"
   },
   {
     "team": "Electrical",
@@ -524,8 +524,8 @@
     "year": "3",
     "role": "Website",
     "image": "Ruhani_Mittal.jpg",
-    "linkedin": "",
-    "mail": ""
+    "linkedin": "https://www.linkedin.com/in/ruhanimittal/",
+    "mail": "ruhanimttl@gmail.com"
   },
   {
     "team": "Electrical",
@@ -570,5 +570,16 @@
     "image": "Rohin_Dhaliwal.jpeg",
     "linkedin": "https://www.linkedin.com/in/rohin-dhaliwal-9bb87b220/",
     "mail": ""
+  },
+  {
+    "team": "Actuator",
+    "firstName": "Yasin",
+    "lastName": "Kurji",
+    "program": "",
+    "year": "",
+    "role": "Member",
+    "image": "Yasin_Kurji.jpeg",
+    "linkedin": "https://www.linkedin.com/in/yasinkurji/",
+    "mail": "yasinkurji@gmail.com"
   }
 ]
