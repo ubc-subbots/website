@@ -15,7 +15,7 @@ const images = [mech1, mech2, mech3, mech4, mech5];
 export default function mechanical() {
   return (
     <div id='Mechanical-section' className='projects-mechanical-container'>
-      <div className='mobile'>
+      <div className='title-container'>
         <span className='projects-mechanical-title'>MECHANICAL TEAM </span>
         <FontAwesomeIcon icon={faTools} style={{ fontSize: '1.5rem' }} />
       </div>
@@ -48,30 +48,30 @@ export default function mechanical() {
               we have focused primarily on CAD design, and on figuring out
               manufacturing techniques for said designs once in-person work is
               allowed again. The mechanical team is divided into three
-              sub-teams, represented by the buttons below. Feel free to click on
+              sub-teams, represented by the divs below. Feel free to click on
               each one to see what they've been working on.
             </span>
-            <button className='projects-software-button1'>
+            <div className='projects-mechanical-key-point'>
               <FontAwesomeIcon
                 icon={faCogs}
                 style={{ marginRight: '0.5rem' }}
               />
               Waterproofing and Enclosures
-            </button>
-            <button className='projects-software-button1'>
+            </div>
+            <div className='projects-mechanical-key-point'>
               <FontAwesomeIcon
                 icon={faTools}
                 style={{ marginRight: '0.5rem' }}
               />
               Actuators
-            </button>
-            <button className='projects-software-button1'>
+            </div>
+            <div className='projects-mechanical-key-point'>
               <FontAwesomeIcon
                 icon={faRocket}
                 style={{ marginRight: '0.5rem' }}
               />
               Frames and Hydrodynamics
-            </button>
+            </div>
           </div>
         </div>
       </div>

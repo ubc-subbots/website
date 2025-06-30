@@ -4,6 +4,7 @@ import {
   faCode,
   faEye,
   faDharmachakra,
+  faMobile
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
@@ -17,7 +18,7 @@ const images = [software1, software2, software3];
 export default function Software() {
   return (
     <div id='Software-section' className='projects-software-container'>
-      <div className='mobile'>
+      <div className='title-container'>
         <span className='projects-software-title'>SOFTWARE TEAM </span>
         <FontAwesomeIcon icon={faCode} style={{ fontSize: '1.5rem' }} />
       </div>
@@ -55,17 +56,24 @@ export default function Software() {
               cameras see and another to simulate our robot's dynamics. You can
               learn more about each of these simulations below:
             </span>
-            <button className='projects-software-button1'>
+            <div className='projects-software-key-point'>
               <FontAwesomeIcon icon={faEye} style={{ marginRight: '0.5rem' }} />
               Computer Vision
-            </button>
-            <button className='projects-software-button1'>
+            </div>
+            <div className='projects-software-key-point'>
               <FontAwesomeIcon
                 icon={faDharmachakra}
                 style={{ marginRight: '0.5rem' }}
               />
               Control System
-            </button>
+            </div>
+            <div className='projects-software-key-point'>
+              <FontAwesomeIcon
+                icon={faMobile}
+                style={{ marginRight: '0.5rem' }}
+              />
+              Web Development
+            </div>
           </div>
         </div>
       </div>

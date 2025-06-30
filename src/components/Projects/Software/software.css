@@ -6,9 +6,13 @@
   padding-top: 2rem;
 }
 
+.title-container {
+  text-align: center;
+}
+
 .projects-software-title {
   color: var(--primary-color);
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -55,26 +59,22 @@
   gap: 1rem;
 }
 
-.projects-software-button1 {
+.projects-software-key-point {
   background-color: var(--light-yellow-color);
   height: 3rem;
   width: 80%;
   font-size: 1rem;
   border-radius: 0.5rem;
   border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.projects-software-button1:hover {
-  background-color: var(--dark-yellow-color);
-}
 
 @media screen and (max-width: 1000px) {
-  .mobile {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-  }
+
 
   .projects-software-content {
     flex-direction: column;
@@ -83,5 +83,13 @@
   .projects-software-text {
     max-width: 90%;
     text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .projects-software-key-point {
+    width: 20rem;
   }
 }

@@ -46,6 +46,7 @@ export default function Projects() {
         <Card
           title='MECHANICAL'
           description='Push the physical limits of underwater mechanics'
+          link="Mechanical-section"
         />
       </div>
       <div className='project-types'>
@@ -58,14 +59,7 @@ export default function Projects() {
           FEATURED PROJECT: PROPULSION SYSTEM
         </span>
         <div style={{ width: '100%', maxWidth: '600px', margin: '2rem auto' }}>
-          <div
-            style={{
-              position: 'relative',
-              width: '100%',
-              paddingBottom: '56.25%',
-              height: 0,
-            }}
-          >
+          <div className='video-embedding'>
             <iframe
               src='https://www.youtube.com/embed/Oo7kQUQVeRs?si=HcsxjI7N7hS3oT1u'
               title='YouTube video player'
@@ -90,7 +84,7 @@ export default function Projects() {
           Competiton.
         </span>
       </div>
-    </div>
+    </div >
   );
 }
 

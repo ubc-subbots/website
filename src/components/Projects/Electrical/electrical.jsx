@@ -19,7 +19,7 @@ const images = [elec1, elec2, elec3, elec4, elec5];
 export default function electrical() {
   return (
     <div id='Electrical-section' className='projects-electrical-container'>
-      <div className='mobile'>
+      <div className='title-container'>
         <span className='projects-electrical-title'>ELECTRICAL TEAM </span>
         <FontAwesomeIcon icon={faCarBattery} style={{ fontSize: '1.5rem' }} />
       </div>
@@ -57,27 +57,27 @@ export default function electrical() {
               to a dynamic environment. Here are some of the projects the
               electrical team is currently working on:
             </span>
-            <button className='projects-software-button1'>
+            <div className='projects-electrical-key-point'>
               <FontAwesomeIcon
                 icon={faBolt}
                 style={{ marginRight: '0.5rem' }}
               />
               Power Distribution
-            </button>
-            <button className='projects-software-button1'>
+            </div>
+            <div className='projects-electrical-key-point'>
               <FontAwesomeIcon
                 icon={faWaveSquare}
                 style={{ marginRight: '0.5rem' }}
               />
               Sound Localization
-            </button>
-            <button className='projects-software-button1'>
+            </div>
+            <div className='projects-electrical-key-point'>
               <FontAwesomeIcon
                 icon={faCarBattery}
                 style={{ marginRight: '0.5rem' }}
               />
               Battery Management
-            </button>
+            </div>
           </div>
         </div>
       </div>
