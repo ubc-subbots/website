@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import './electrical.css';
 import {
   faCarBattery,
@@ -8,6 +8,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
 import ImageCarousel from '../picture';
+import Modal from '../modal.js'
+import content from '../../../content';
 import elec1 from '../../../assets/projects-image/elec1.PNG';
 import elec2 from '../../../assets/projects-image/elec2.PNG';
 import elec3 from '../../../assets/projects-image/elec3.jpg';
@@ -16,7 +18,27 @@ import elec5 from '../../../assets/projects-image/elec5.jpg';
 
 const images = [elec1, elec2, elec3, elec4, elec5];
 
-export default function electrical() {
+export default function Electrical() {
+  const [modalData, setModalData] = useState(null);
+
+  const openModal = (type) => {
+    console.log('Clicked:', type);
+    if (!content) return;
+    const details = content.projects.project.electrical.detail;
+    const item = details.find((d) => d.header === type);
+    if (item) {
+      console.log('Modal Data:', item);
+      setModalData({
+        header: item.header,
+        body: item.bodyFull,
+        images: item.carousel?.images || [],
+        captions: item.carousel?.captions || [],
+      });
+    }
+  };
+
+  const closeModal = () => setModalData(null);
+
   return (
     <div id='Electrical-section' className='projects-electrical-container'>
       <div className='title-container'>
@@ -57,21 +79,24 @@ export default function electrical() {
               to a dynamic environment. Here are some of the projects the
               electrical team is currently working on:
             </span>
-            <div className='projects-electrical-key-point'>
+            <button className='projects-electrical-key-point'
+            onClick={() => openModal('Power Distribution')}>
               <FontAwesomeIcon
                 icon={faBolt}
                 style={{ marginRight: '0.5rem' }}
               />
               Power Distribution
-            </div>
-            <div className='projects-electrical-key-point'>
+            </button>
+            <button className='projects-electrical-key-point'
+             onClick={() => openModal('Sound Localization')}>
               <FontAwesomeIcon
                 icon={faWaveSquare}
                 style={{ marginRight: '0.5rem' }}
               />
               Sound Localization
-            </div>
-            <div className='projects-electrical-key-point'>
+            </button>
+            <div className='projects-electrical-key-point'
+             onClick={() => openModal('Battery Management')}>
               <FontAwesomeIcon
                 icon={faCarBattery}
                 style={{ marginRight: '0.5rem' }}
@@ -81,6 +106,17 @@ export default function electrical() {
           </div>
         </div>
       </div>
+      {modalData && (
+        <Modal header={modalData.header} onClose={closeModal}>
+          <div>
+            <ImageCarousel images={modalData.images} />
+          </div>
+          <div
+            className="modal-body text-gray-800"
+            dangerouslySetInnerHTML={{ __html: modalData.body }}
+          ></div>
+        </Modal>
+      )}
     </div>
   );
 }

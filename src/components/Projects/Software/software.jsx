@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import './software.css';
 import {
   faCode,
@@ -8,6 +8,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
+import Modal from '../modal.js'
+import content from '../../../content';
 import ImageCarousel from '../picture';
 import software1 from '../../../assets/projects-image/software1.png';
 import software2 from '../../../assets/projects-image/software2.png';
@@ -16,6 +18,27 @@ import software3 from '../../../assets/projects-image/software3.png';
 const images = [software1, software2, software3];
 
 export default function Software() {
+  const [modalData, setModalData] = useState(null);
+
+  const openModal = (type) => {
+    console.log('Clicked:', type);
+    if (!content) return;
+    const details = content.projects.project.software.detail;
+    const item = details.find((d) => d.header === type);
+    if (item) {
+      console.log('Modal Data:', item);
+      setModalData({
+        header: item.header,
+        body: item.bodyFull,
+        images: item.carousel?.images || [],
+        captions: item.carousel?.captions || [],
+      });
+    }
+  };
+
+  const closeModal = () => setModalData(null);
+
+
   return (
     <div id='Software-section' className='projects-software-container'>
       <div className='title-container'>
@@ -56,18 +79,22 @@ export default function Software() {
               cameras see and another to simulate our robot's dynamics. You can
               learn more about each of these simulations below:
             </span>
-            <div className='projects-software-key-point'>
+            <button
+              className='projects-software-key-point'
+              onClick={() => openModal('Computer Vision')}
+            >
               <FontAwesomeIcon icon={faEye} style={{ marginRight: '0.5rem' }} />
               Computer Vision
-            </div>
-            <div className='projects-software-key-point'>
+            </button>
+            <button className='projects-software-key-point'
+            onClick={() => openModal('Control System')}>
               <FontAwesomeIcon
                 icon={faDharmachakra}
                 style={{ marginRight: '0.5rem' }}
               />
               Control System
-            </div>
-            <div className='projects-software-key-point'>
+            </button>
+            <div className='projects-software-key-point2'>
               <FontAwesomeIcon
                 icon={faMobile}
                 style={{ marginRight: '0.5rem' }}
@@ -77,6 +104,17 @@ export default function Software() {
           </div>
         </div>
       </div>
+      {modalData && (
+  <Modal header={modalData.header} onClose={closeModal}>
+    <div>
+      <ImageCarousel images={modalData.images} />
+    </div>
+    <div
+      className="modal-body text-gray-800"
+      dangerouslySetInnerHTML={{ __html: modalData.body }}
+    ></div>
+  </Modal>
+)}
     </div>
     // </Element>
   );

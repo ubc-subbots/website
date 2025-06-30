@@ -1,9 +1,11 @@
-import React from 'react';
+import { useState } from 'react';
 import './mechanical.css';
 import { faCogs, faTools, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
 import ImageCarousel from '../picture';
+import Modal from '../modal.js';
+import content from '../../../content';
 import mech1 from '../../../assets/projects-image/mech1.jpg';
 import mech2 from '../../../assets/projects-image/mech2.jpg';
 import mech3 from '../../../assets/projects-image/mech3.jpg';
@@ -12,7 +14,27 @@ import mech5 from '../../../assets/projects-image/mech5.jpg';
 
 const images = [mech1, mech2, mech3, mech4, mech5];
 
-export default function mechanical() {
+export default function Mechanical() {
+  const [modalData, setModalData] = useState(null);
+
+  const openModal = (type) => {
+    console.log('Clicked:', type);
+    if (!content) return;
+    const details = content.projects.project.mechanical.detail;
+    const item = details.find((d) => d.header === type);
+    if (item) {
+      console.log('Modal Data:', item);
+      setModalData({
+        header: item.header,
+        body: item.bodyFull,
+        images: item.carousel?.images || [],
+        captions: item.carousel?.captions || [],
+      });
+    }
+  };
+
+  const closeModal = () => setModalData(null);
+
   return (
     <div id='Mechanical-section' className='projects-mechanical-container'>
       <div className='title-container'>
@@ -51,30 +73,48 @@ export default function mechanical() {
               sub-teams, represented by the divs below. Feel free to click on
               each one to see what they've been working on.
             </span>
-            <div className='projects-mechanical-key-point'>
+            <button
+              className='projects-mechanical-key-point'
+              onClick={() => openModal('Waterproofing and Enclosures')}
+            >
               <FontAwesomeIcon
                 icon={faCogs}
                 style={{ marginRight: '0.5rem' }}
               />
               Waterproofing and Enclosures
-            </div>
-            <div className='projects-mechanical-key-point'>
+            </button>
+            <button
+              className='projects-mechanical-key-point'
+              onClick={() => openModal('Actuators')}
+            >
               <FontAwesomeIcon
                 icon={faTools}
                 style={{ marginRight: '0.5rem' }}
               />
               Actuators
-            </div>
-            <div className='projects-mechanical-key-point'>
+            </button>
+            <button className='projects-mechanical-key-point'
+            onClick={() => openModal('Frames and Hydrodynamics')}>
               <FontAwesomeIcon
                 icon={faRocket}
                 style={{ marginRight: '0.5rem' }}
               />
               Frames and Hydrodynamics
-            </div>
+            </button>
           </div>
         </div>
       </div>
+      {modalData && (
+        <Modal header={modalData.header} onClose={closeModal}>
+          <div>
+            <ImageCarousel images={modalData.images} />
+          </div>
+          <div
+            className="modal-body text-gray-800"
+            dangerouslySetInnerHTML={{ __html: modalData.body }}
+          ></div>
+        </Modal>
+      )}
     </div>
   );
 }

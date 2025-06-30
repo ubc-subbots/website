@@ -70,8 +70,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.projects-software-key-point:hover {
+  background-color: #ffce2d;
+  transform: scale(1.05);
+  opacity: 1;
 }
 
+.projects-software-key-point2 {
+  background-color: var(--light-yellow-color);
+  height: 3rem;
+  width: 80%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -85,8 +106,6 @@
     text-align: center;
   }
 }
-
-
 
 @media screen and (max-width: 450px) {
   .projects-software-key-point {

@@ -32,28 +32,6 @@ export default function Projects() {
   return (
     <div className='projects-maincontainer'>
       <span className='projects-title'>PROJECTS</span>
-      <div className='projects-cards'>
-        <Card
-          title='SOFTWARE'
-          description='Create and refine subaquatic artificial intelligence'
-          link='Software-section'
-        />
-        <Card
-          title='ELECTRICAL'
-          description='Design the interface between the computer and the sea'
-          link='Electrical-section'
-        />
-        <Card
-          title='MECHANICAL'
-          description='Push the physical limits of underwater mechanics'
-          link="Mechanical-section"
-        />
-      </div>
-      <div className='project-types'>
-        <Software />
-        <Electrical />
-        <Mechanical />
-      </div>
       <div className='featured-projects'>
         <span className='featured-projects-title'>
           FEATURED PROJECTS - STEELHEAD

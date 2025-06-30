@@ -27,6 +27,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.projects-mechanical-key-point:hover {
+  background-color: #ffce2d;
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 
