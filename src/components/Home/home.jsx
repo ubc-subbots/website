@@ -83,26 +83,7 @@ export default function Home() {
       </div>
       <About />
       <div className='teams'>
-        <div className='home-software'>
-          <div className='team-image-container'>
-            <LazyLoadImage
-              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.png`}
-              alt='Software Team'
-              className='team-background-image'
-              effect="blur"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div className='home-software-content'>
-            <button
-              className='home-software-title'
-              onClick={() => navigate('/projects#Software-section')}
-            >
-              Software Projects
-            </button>
-          </div>
-        </div>
+
         <div className='home-electrical'>
           <div className='team-image-container'>
             <LazyLoadImage
@@ -140,6 +121,26 @@ export default function Home() {
               onClick={() => navigate('/projects#Mechanical-section')}
             >
               Mechanical Projects
+            </button>
+          </div>
+        </div>
+        <div className='home-software'>
+          <div className='team-image-container'>
+            <LazyLoadImage
+              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.png`}
+              alt='Software Team'
+              className='team-background-image'
+              effect="blur"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div className='home-software-content'>
+            <button
+              className='home-software-title'
+              onClick={() => navigate('/projects#Software-section')}
+            >
+              Software Projects
             </button>
           </div>
         </div>
