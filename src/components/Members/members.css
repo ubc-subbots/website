@@ -53,9 +53,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 900px;
+  max-width: 75vw;
 }
 
+.CoCaptains,
 .admin,
 .mechanical,
 .electrical,
@@ -70,6 +71,7 @@
   justify-content: center;
 }
 
+.CoCaptains-title,
 .admin-title,
 .software-title,
 .mechanical-title,
