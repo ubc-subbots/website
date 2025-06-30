@@ -89,10 +89,15 @@ export default function Members() {
           );
         } else {
           // Regular team filtering
-          teamMembers = members.filter((m) => m.team === teamKey && !m.role.toLowerCase().includes('co-captain'));
+          teamMembers = members.filter(
+            (m) =>
+              m.team === teamKey && !m.role.toLowerCase().includes('co-captain')
+          );
         }
 
-        if (teamMembers.length === 0) { return null; }
+        if (teamMembers.length === 0) {
+          return null;
+        }
 
         // Sort the team members
         const sortedTeamMembers = sortTeamMembers(teamMembers);
@@ -104,9 +109,11 @@ export default function Members() {
           >
             <div className='align1'>
               <span
-                className={teamKey === 'CoCaptains'
-                  ? 'co-captains-title'
-                  : `${teamKey.toLowerCase().replace(/\s+/g, '-')}-title`}
+                className={
+                  teamKey === 'CoCaptains'
+                    ? 'co-captains-title'
+                    : `${teamKey.toLowerCase().replace(/\s+/g, '-')}-title`
+                }
               >
                 {meta.title}
               </span>

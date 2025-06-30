@@ -2,7 +2,9 @@ import React from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function Model() {
-  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/model/compressed_steelhead.glb`);
+  const { scene } = useGLTF(
+    `${process.env.PUBLIC_URL}/model/compressed_steelhead.glb`
+  );
   return <primitive object={scene} />;
 }
 

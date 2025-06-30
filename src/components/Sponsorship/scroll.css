@@ -1,6 +1,8 @@
 .sponsor-img {
   width: auto;
-  height: 6rem;
+  height: 8rem;
+  max-width: 100%;
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -16,6 +18,8 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .sponsor-gold-logos {
@@ -23,12 +27,52 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  width: 100%;
 }
 
+/* mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .sponsor-img {
+    height: 6rem;
+    max-width: 200px;
+  }
+  
+  .sponsor-gold-logos {
+    gap: 1rem; /* Reduce gap on mobile */
+    padding: 0 0.5rem;
+  }
+  
+  .sponsor-gold,
+  .sponsor-silver,
+  .sponsor-bronze {
+    gap: 1.5rem; /* Reduce gap between sections */
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsor-img {
+    height: 4.5rem;
+    max-width: 160px;
+  }
+  
+  .sponsor-gold-logos {
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sponsor-gold,
+  .sponsor-silver,
+  .sponsor-bronze {
+    gap: 1rem;
+  }
+}
+
+/* Keep existing title styles */
 .sponsor-gold-title {
   font-size: 2rem;
   font-weight: 700;
-  /* color: rgb(130, 126, 0); */
   color: #d4af37;
   margin-bottom: 1rem;
 }
@@ -47,4 +91,21 @@
   font-weight: 700;
   color: #b87333;
   margin-bottom: 1rem;
+}
+
+/* Make titles responsive too */
+@media screen and (max-width: 768px) {
+  .sponsor-gold-title,
+  .sponsor-silver-title,
+  .sponsor-bronze-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsor-gold-title,
+  .sponsor-silver-title,
+  .sponsor-bronze-title {
+    font-size: 1.25rem;
+  }
 }

@@ -9,7 +9,6 @@
   background: transparent;
   top: 0;
   z-index: 10;
-
 }
 
 .nav-content {
@@ -196,7 +195,6 @@
 
 /* ----------  MOBILE < 768 px  ---------- */
 @media (max-width: 768px) {
-
   /* Shrink side padding */
   .nav-container {
     padding: 0 1rem;
