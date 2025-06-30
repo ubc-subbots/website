@@ -9,7 +9,6 @@ import { Model } from './model.jsx';
 import SponsorScroll from './sponsorScroll.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
@@ -38,11 +37,7 @@ export default function Home() {
             camera={{ position: [0, 0, 5], fov: 12 }}
             style={{ background: 'transparent' }}
           >
-            <Suspense
-              fallback={
-                null
-              }
-            >
+            <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight
                 position={[10, 10, 5]}
@@ -60,10 +55,7 @@ export default function Home() {
                 <shadowMaterial opacity={0.3} />
               </mesh>
 
-              <Model
-                castShadow
-                receiveShadow
-              />
+              <Model castShadow receiveShadow />
             </Suspense>
 
             <OrbitControls
@@ -71,7 +63,6 @@ export default function Home() {
               autoRotateSpeed={1.5}
               enableZoom={false}
               enablePan={true}
-
             />
           </Canvas>
         </div>
@@ -83,16 +74,15 @@ export default function Home() {
       </div>
       <About />
       <div className='teams'>
-
         <div className='home-electrical'>
           <div className='team-image-container'>
             <LazyLoadImage
               src={`${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`}
               alt='Electrical Team'
               className='team-background-image'
-              effect="blur"
-              width="100%"
-              height="100%"
+              effect='blur'
+              width='100%'
+              height='100%'
             />
           </div>
           <div className='home-electrical-content'>
@@ -110,9 +100,9 @@ export default function Home() {
               src={`${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`}
               alt='Mechanical Team'
               className='team-background-image'
-              effect="blur"
-              width="100%"
-              height="100%"
+              effect='blur'
+              width='100%'
+              height='100%'
             />
           </div>
           <div className='home-mechanical-content'>
@@ -130,9 +120,9 @@ export default function Home() {
               src={`${process.env.PUBLIC_URL}/images/main-page/software-team.png`}
               alt='Software Team'
               className='team-background-image'
-              effect="blur"
-              width="100%"
-              height="100%"
+              effect='blur'
+              width='100%'
+              height='100%'
             />
           </div>
           <div className='home-software-content'>

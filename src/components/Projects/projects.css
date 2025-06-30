@@ -5,7 +5,56 @@
   align-items: center;
   width: 100%;
   padding: 2rem 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+@media screen and (max-width: 964px) {
+  .projects-maincontainer {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-maincontainer {
+    padding-top: 6rem; /* Navbar is 4rem + 2rem spacing */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-cards {
+    flex-direction: column;
+  }
+
+  .card-container {
+    width: 80%;
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  .featured-projects-description {
+    width: 90%;
+    max-width: 90vw;
+  }
+
+  .projects-title {
+    font-size: 2.5rem;
+  }
+
+  .featured-projects-title {
+    font-size: 2rem;
+  }
+}
+
+/*.projects-maincontainer {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  width: 100%;*/
+/*  padding: 2rem 2rem;*/
+/*}*/
 
 .projects-title {
   display: flex;

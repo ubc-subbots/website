@@ -51,15 +51,14 @@ export default function about() {
             Diego.
           </span>
           <span className='about-subtitle-mobile'>
-            We develop systems for navigation, waterproofing,
-            hydrodynamics, and mechanical actuation, integrating expertise from
-            engineering and computer science.
+            We develop systems for navigation, waterproofing, hydrodynamics, and
+            mechanical actuation, integrating expertise from engineering and
+            computer science.
           </span>
           <span className='about-subtitle-mobile'>
-            By building everything from
-            scratch, we aim to deepen our learning, improve year over year, and
-            equip students with real-world experience in robotics and
-            engineering.
+            By building everything from scratch, we aim to deepen our learning,
+            improve year over year, and equip students with real-world
+            experience in robotics and engineering.
           </span>
         </div>
       </div>

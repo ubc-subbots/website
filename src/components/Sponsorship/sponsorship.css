@@ -5,7 +5,43 @@
   flex-direction: column;
   margin-top: 4rem;
   padding: 1rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
 }
+
+@media screen and (max-width: 964px) {
+  .sponsor-container {
+    margin-top: 7rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor-container {
+    margin-top: 6rem; /* Navbar is 4rem + 2rem spacing */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sponsor-title1 {
+    font-size: 2.5rem;
+  }
+
+  .sponsor-title2 {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+}
+
+/*.sponsor-container {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  flex-direction: column;*/
+/*  margin-top: 4rem;*/
+/*  padding: 1rem 1rem;*/
+/*}*/
 
 .sponsor-titles {
   display: flex;
