@@ -1,4 +1,3 @@
-/* PROJECTS PAGE FIXES */
 .projects-maincontainer {
   display: flex;
   flex-direction: column;
@@ -6,15 +5,13 @@
   align-items: center;
   width: 100%;
   padding: 2rem 2rem;
-  /* Add these for mobile navbar compatibility */
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-/* Add proper top padding for mobile like your home page */
 @media screen and (max-width: 964px) {
   .projects-maincontainer {
-    padding-top: 7rem; /* Account for fixed navbar + some spacing */
+    padding-top: 7rem;
   }
 }
 
@@ -38,7 +35,7 @@
 
   .featured-projects-description {
     width: 90%;
-    max-width: 90vw; /* Changed from 90dvw to 90vw for better compatibility */
+    max-width: 90vw;
   }
 
   .projects-title {

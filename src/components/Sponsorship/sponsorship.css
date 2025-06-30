@@ -1,4 +1,3 @@
-/* SPONSORS PAGE FIXES */
 .sponsor-container {
   display: flex;
   flex-direction: column;
@@ -6,16 +5,14 @@
   flex-direction: column;
   margin-top: 4rem;
   padding: 1rem 1rem;
-  /* Add these for mobile navbar compatibility */
   box-sizing: border-box;
   overflow-x: hidden;
   width: 100%;
 }
 
-/* Add proper top spacing for mobile like your home page */
 @media screen and (max-width: 964px) {
   .sponsor-container {
-    margin-top: 7rem; /* Account for fixed navbar + some spacing */
+    margin-top: 7rem;
     padding: 1rem;
   }
 }

@@ -1,7 +1,7 @@
 .sponsor-img {
   width: auto;
-  height: 8rem;
-  max-width: 100%;
+  height: 6.5rem;
+  max-width: 350px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
@@ -34,7 +34,7 @@
 @media screen and (max-width: 768px) {
   .sponsor-img {
     height: 6rem;
-    max-width: 200px;
+    max-width: 280px;
   }
   
   .sponsor-gold-logos {
@@ -52,8 +52,8 @@
 
 @media screen and (max-width: 480px) {
   .sponsor-img {
-    height: 4.5rem;
-    max-width: 160px;
+    height: 5rem;
+    max-width: 255px;
   }
   
   .sponsor-gold-logos {
