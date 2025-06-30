@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './navbar.css';
-import { faBarsStaggered, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Linkedin from '../../assets/linkedin2.png';
 import Instagram from '../../assets/insta2.png';
@@ -12,17 +12,34 @@ const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       // Calculate scroll progress (0 to 1) over first 200px of scroll
       const progress = Math.min(window.scrollY / 200, 1);
       setScrollProgress(progress);
+
+      // Show navbar after scrolling down 100px on home page
+      if (location.pathname === '/') {
+        setShowNavbar(window.scrollY > 100);
+      } else {
+        setShowNavbar(true);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
+
+    // Initialize navbar visibility based on current scroll position
+    if (location.pathname === '/') {
+      setShowNavbar(window.scrollY > 100);
+    } else {
+      setShowNavbar(true);
+    }
+
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
+
   const showTitleAtTop = location.pathname === '/members';
 
   const titleOpacity = showTitleAtTop ? 1 : scrollProgress;
@@ -36,6 +53,13 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScrollClick = () => {
+    window.scrollTo({
+      top: 200,
+      behavior: 'smooth'
+    });
+  };
+
   const backgroundColor = {
     r: 255,
     g: 255,
@@ -43,9 +67,21 @@ const Navbar = () => {
     a: scrollProgress * 0.9,
   };
 
+  // Don't render navbar on home page when not scrolled
+  if (location.pathname === '/' && !showNavbar) {
+    return (
+      <div className="scroll-indicator" onClick={handleScrollClick}>
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          className="scroll-arrow"
+        />
+      </div>
+    );
+  }
+
   return (
     <nav
-      className='nav-container'
+      className={`nav-container ${showNavbar ? 'nav-visible' : 'nav-hidden'}`}
       style={{
         backgroundColor: `rgba(${backgroundColor.r}, ${backgroundColor.g}, ${backgroundColor.b}, ${backgroundColor.a})`,
         backdropFilter: `blur(${scrollProgress * 8}px)`,
