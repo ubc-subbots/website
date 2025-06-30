@@ -56,7 +56,7 @@ export default function Projects() {
       </div>
       <div className='featured-projects'>
         <span className='featured-projects-title'>
-          FEATURED PROJECT: PROPULSION SYSTEM
+          FEATURED PROJECTS - STEELHEAD
         </span>
         <div style={{ width: '100%', maxWidth: '600px', margin: '2rem auto' }}>
           <div className='video-embedding'>
@@ -84,7 +84,29 @@ export default function Projects() {
           Competiton.
         </span>
       </div>
-    </div >
+      <div className='projects-cards'>
+        <Card
+          title='SOFTWARE'
+          description='Create and refine subaquatic artificial intelligence'
+          link='Software-section'
+        />
+        <Card
+          title='ELECTRICAL'
+          description='Design the interface between the computer and the sea'
+          link='Electrical-section'
+        />
+        <Card
+          title='MECHANICAL'
+          description='Push the physical limits of underwater mechanics'
+          link="Mechanical-section"
+        />
+      </div>
+      <div className='project-types'>
+        <Software />
+        <Electrical />
+        <Mechanical />
+      </div>
+    </div>
   );
 }
 

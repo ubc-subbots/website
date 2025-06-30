@@ -6,7 +6,7 @@ import { faBarsStaggered, faTimes, faChevronDown } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Linkedin from '../../assets/linkedin2.png';
 import Instagram from '../../assets/insta2.png';
-import Facebook from '../../assets/facebook2.png';
+import Github from '../../assets/github4.png'
 
 const Navbar = () => {
   const location = useLocation();
@@ -157,10 +157,10 @@ const Navbar = () => {
               <img src={Linkedin} alt='linkedin' width='48' height='48' />
             </a>
             <a href='https://www.instagram.com/ubcsubbots/'>
-              <img src={Instagram} alt='instagram' width='48' height='48' />
+              <img src={Instagram} alt='instagram' width='46' height='46' />
             </a>
-            <a href='https://www.facebook.com/ubc.subbots/'>
-              <img src={Facebook} alt='facebook' width='48' height='48' />
+            <a href='https://github.com/ubc-subbots'>
+              <img src={Github} alt='github' width='50' height='50' />
             </a>
           </div>
         </div>
