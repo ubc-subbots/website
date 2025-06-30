@@ -9,19 +9,16 @@
   background: transparent;
   top: 0;
   z-index: 10;
-  background: linear-gradient(
-    to bottom,
-    rgba(201, 225, 246, 0.326),
-    rgba(238, 247, 255, 0)
-  );
+
 }
 
 .nav-content {
-  position: relative; /* Add this */
+  position: relative;
+  /* Add this */
 }
 
 .menu-toggle {
-  color: rgb(9, 7, 69);
+  color: rgb(0, 0, 0);
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   padding: 0.5rem;
@@ -60,7 +57,7 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: rgb(9, 7, 69);
+  color: rgb(0, 0, 0);
   padding: 0.5rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -137,7 +134,8 @@
   right: 1.5rem;
   background: none;
   border: none;
-  font-size: 2rem; /* also increased */
+  font-size: 2rem;
+  /* also increased */
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -154,6 +152,7 @@
   justify-content: center;
   flex-direction: row;
 }
+
 .navbar-socials img {
   width: 3rem;
   height: 3rem;
@@ -197,6 +196,7 @@
 
 /* ----------  MOBILE < 768 px  ---------- */
 @media (max-width: 768px) {
+
   /* Shrink side padding */
   .nav-container {
     padding: 0 1rem;
@@ -210,11 +210,14 @@
   /* Logo icon */
   .logo {
     width: 3.5rem;
-  } /* was 5.5rem */
+  }
+
+  /* was 5.5rem */
 
   /* Hamburger icon */
   .menu-toggle {
-    font-size: 1.5rem; /* was 2rem  */
+    font-size: 1.5rem;
+    /* was 2rem  */
     padding: 0.25rem;
   }
 

@@ -1,13 +1,21 @@
 import './member.css';
 import Linkedin from '../../assets/linkedin3.png';
 import Mail from '../../assets/mail.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function member(props) {
   return (
     <div className='member-card'>
       <div className='member-content'>
         <div className='image-container'>
-          <img src={props.image} className='link-image' alt='Member' />
+          <LazyLoadImage
+            src={props.image}
+            alt='Member'
+            className='link-image'
+            effect="blur"
+            placeholderSrc="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2Y1ZjVmNSIvPjwvc3ZnPg=="
+
+          />
           <div className='image-overlay'>
             {props.linkedin && (
               <a

@@ -12,6 +12,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './members.css';
 import Member from './member';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const TEAM_META = {
   CoCaptains: { title: 'CO-CAPTAINS', icon: faCrown },
@@ -66,7 +67,7 @@ export default function Members() {
     <div className='members-container'>
       {/* ----- hero / heading ----- */}
       <div className='members-title'>
-        <img
+        <LazyLoadImage
           src={`${process.env.PUBLIC_URL}/images/members/team_photo_2024_resized.jpg`}
           alt='group'
           className='group'

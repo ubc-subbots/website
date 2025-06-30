@@ -7,6 +7,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Model } from './model.jsx';
 import SponsorScroll from './sponsorScroll.jsx';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -58,7 +60,10 @@ export default function Home() {
                 <shadowMaterial opacity={0.3} />
               </mesh>
 
-              <Model castShadow receiveShadow />
+              <Model
+                castShadow
+                receiveShadow
+              />
             </Suspense>
 
             <OrbitControls
@@ -66,6 +71,7 @@ export default function Home() {
               autoRotateSpeed={1.5}
               enableZoom={false}
               enablePan={true}
+
             />
           </Canvas>
         </div>
@@ -78,6 +84,16 @@ export default function Home() {
       <About />
       <div className='teams'>
         <div className='home-software'>
+          <div className='team-image-container'>
+            <LazyLoadImage
+              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.png`}
+              alt='Software Team'
+              className='team-background-image'
+              effect="blur"
+              width="100%"
+              height="100%"
+            />
+          </div>
           <div className='home-software-content'>
             <button
               className='home-software-title'
@@ -88,6 +104,16 @@ export default function Home() {
           </div>
         </div>
         <div className='home-electrical'>
+          <div className='team-image-container'>
+            <LazyLoadImage
+              src={`${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`}
+              alt='Electrical Team'
+              className='team-background-image'
+              effect="blur"
+              width="100%"
+              height="100%"
+            />
+          </div>
           <div className='home-electrical-content'>
             <button
               className='home-electrical-title'
@@ -98,6 +124,16 @@ export default function Home() {
           </div>
         </div>
         <div className='home-mechanical'>
+          <div className='team-image-container'>
+            <LazyLoadImage
+              src={`${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`}
+              alt='Mechanical Team'
+              className='team-background-image'
+              effect="blur"
+              width="100%"
+              height="100%"
+            />
+          </div>
           <div className='home-mechanical-content'>
             <button
               className='home-mechanical-title'
