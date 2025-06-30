@@ -153,6 +153,10 @@ canvas {
   transition: background-color 0.3s ease;
   transition: transform 0.3s ease-in-out;
   z-index: 11;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .home-software-title:hover,
@@ -241,7 +245,6 @@ canvas {
     font-size: 2rem;
   }
 
-  /* PROJECT CARDS – stack instead of side by side */
   .teams {
     flex-direction: column;
     height: auto;
@@ -255,7 +258,6 @@ canvas {
     background-size: cover;
   }
 
-  /* Buttons on the project cards */
   .home-software-title,
   .home-electrical-title,
   .home-mechanical-title {
