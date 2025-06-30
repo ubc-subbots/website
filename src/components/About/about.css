@@ -39,9 +39,20 @@
   font-size: 1rem;
   font-weight: 400;
   color: var(--light-blue-color);
-  text-align: center;
+  text-align: left;
   margin-top: 0.5rem;
   max-width: 60%;
+}
+
+.about-subtitle-mobile {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light-blue-color);
+  text-align: center;
+  margin-top: 0.5rem;
+  max-width: 90%;
+  display: none;
+  /* Hidden by default on desktop */
 }
 
 .about-text-container {
@@ -83,6 +94,13 @@
   }
 
   .about-subtitle {
+    display: none;
+    /* Hide the single paragraph on mobile */
+  }
+
+  .about-subtitle-mobile {
+    display: block;
+    /* Show the separate paragraphs on mobile */
     font-size: 0.9rem;
     max-width: 90%;
     margin-top: 1rem;

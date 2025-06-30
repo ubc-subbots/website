@@ -30,15 +30,33 @@ export default function about() {
       <div className='about-content'>
         <div className='about-text-container'>
           <div className='gap'>
-            {/* <span className="about-title1">WHO</span> */}
             <span className='about-title'>WHO ARE WE?</span>
           </div>
+          {/* Desktop version - single paragraph */}
           <span className='about-subtitle'>
             UBC Subbots is a student-led team that designs and builds autonomous
             underwater vehicles (AUVs) for the annual RoboSub competition in San
             Diego. We develop systems for navigation, waterproofing,
             hydrodynamics, and mechanical actuation, integrating expertise from
             engineering and computer science. By building everything from
+            scratch, we aim to deepen our learning, improve year over year, and
+            equip students with real-world experience in robotics and
+            engineering.
+          </span>
+
+          {/* Mobile version - separate paragraphs */}
+          <span className='about-subtitle-mobile'>
+            UBC Subbots is a student-led team that designs and builds autonomous
+            underwater vehicles (AUVs) for the annual RoboSub competition in San
+            Diego.
+          </span>
+          <span className='about-subtitle-mobile'>
+            We develop systems for navigation, waterproofing,
+            hydrodynamics, and mechanical actuation, integrating expertise from
+            engineering and computer science.
+          </span>
+          <span className='about-subtitle-mobile'>
+            By building everything from
             scratch, we aim to deepen our learning, improve year over year, and
             equip students with real-world experience in robotics and
             engineering.

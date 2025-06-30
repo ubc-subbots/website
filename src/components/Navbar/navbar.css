@@ -62,9 +62,7 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.menu-toggle:hover {
-  transform: scale(1.2);
-}
+
 
 .overlayMenu {
   position: fixed;
