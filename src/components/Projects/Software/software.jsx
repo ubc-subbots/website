@@ -1,14 +1,14 @@
-import {React, useState, useEffect} from 'react';
+import { React, useState, useEffect } from 'react';
 import './software.css';
 import {
   faCode,
   faEye,
   faDharmachakra,
-  faMobile
+  faMobile,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
-import Modal from '../modal.js'
+import Modal from '../modal.js';
 import content from '../../../content';
 import ImageCarousel from '../picture';
 import software1 from '../../../assets/projects-image/software1.png';
@@ -37,7 +37,6 @@ export default function Software() {
   };
 
   const closeModal = () => setModalData(null);
-
 
   return (
     <div id='Software-section' className='projects-software-container'>
@@ -86,35 +85,27 @@ export default function Software() {
               <FontAwesomeIcon icon={faEye} style={{ marginRight: '0.5rem' }} />
               Computer Vision
             </button>
-            <button className='projects-software-key-point'
-            onClick={() => openModal('Control System')}>
+            <button
+              className='projects-software-key-point'
+              onClick={() => openModal('Control System')}
+            >
               <FontAwesomeIcon
                 icon={faDharmachakra}
                 style={{ marginRight: '0.5rem' }}
               />
               Control System
             </button>
-            <div className='projects-software-key-point2'>
-              <FontAwesomeIcon
-                icon={faMobile}
-                style={{ marginRight: '0.5rem' }}
-              />
-              Web Development
-            </div>
           </div>
         </div>
       </div>
       {modalData && (
-  <Modal header={modalData.header} onClose={closeModal}>
-    <div>
-      <ImageCarousel images={modalData.images} />
-    </div>
-    <div
-      className="modal-body text-gray-800"
-      dangerouslySetInnerHTML={{ __html: modalData.body }}
-    ></div>
-  </Modal>
-)}
+        <Modal
+          header={modalData.header}
+          imageSrc={modalData.images[0]}
+          blurb={modalData.body}
+          onClose={closeModal}
+        />
+      )}
     </div>
     // </Element>
   );

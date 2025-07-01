@@ -135,6 +135,23 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Embedded YouTube Video Section */}
+      <div className='home-video-section'>
+        <div className='home-video-title-container'>
+          Learn More About the Team
+        </div>
+        <div className='home-video-wrapper'>
+          <iframe
+            src='https://www.youtube.com/embed/AsdwXIdFwhE'
+            title='UBC Subbots RoboSub 2025'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className='home-video-caption'>UBC Subbots RoboSub 2025</div>
+      </div>
+
       <SponsorScroll />
     </div>
   );

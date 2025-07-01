@@ -93,8 +93,10 @@ export default function Mechanical() {
               />
               Actuators
             </button>
-            <button className='projects-mechanical-key-point'
-            onClick={() => openModal('Frames and Hydrodynamics')}>
+            <button
+              className='projects-mechanical-key-point'
+              onClick={() => openModal('Frames and Hydrodynamics')}
+            >
               <FontAwesomeIcon
                 icon={faRocket}
                 style={{ marginRight: '0.5rem' }}
@@ -105,15 +107,12 @@ export default function Mechanical() {
         </div>
       </div>
       {modalData && (
-        <Modal header={modalData.header} onClose={closeModal}>
-          <div>
-            <ImageCarousel images={modalData.images} />
-          </div>
-          <div
-            className="modal-body text-gray-800"
-            dangerouslySetInnerHTML={{ __html: modalData.body }}
-          ></div>
-        </Modal>
+        <Modal
+          header={modalData.header}
+          imageSrc={modalData.images[0]}
+          blurb={modalData.body}
+          onClose={closeModal}
+        />
       )}
     </div>
   );

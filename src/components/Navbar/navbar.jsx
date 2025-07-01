@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './navbar.css';
-import { faBarsStaggered, faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBarsStaggered,
+  faTimes,
+  faChevronDown,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Linkedin from '../../assets/linkedin2.png';
 import Instagram from '../../assets/insta2.png';
-import Github from '../../assets/github4.png'
+import Github from '../../assets/github4.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -56,7 +60,7 @@ const Navbar = () => {
   const handleScrollClick = () => {
     window.scrollTo({
       top: 200,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
@@ -70,11 +74,8 @@ const Navbar = () => {
   // Don't render navbar on home page when not scrolled
   if (location.pathname === '/' && !showNavbar) {
     return (
-      <div className="scroll-indicator" onClick={handleScrollClick}>
-        <FontAwesomeIcon
-          icon={faChevronDown}
-          className="scroll-arrow"
-        />
+      <div className='scroll-indicator' onClick={handleScrollClick}>
+        <FontAwesomeIcon icon={faChevronDown} className='scroll-arrow' />
       </div>
     );
   }

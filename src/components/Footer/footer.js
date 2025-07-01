@@ -3,6 +3,7 @@ import '../Footer/footer.css';
 import Linkedin from '../../assets/linkedin2.png';
 import Instagram from '../../assets/insta2.png';
 import Facebook from '../../assets/facebook2.png';
+import Github from '../../assets/github4.png';
 
 export default function () {
   return (
@@ -22,6 +23,11 @@ export default function () {
         {/* Facebook */}
         <a href='https://www.facebook.com/ubc.subbots/'>
           <img src={Facebook} alt='facebook' className='facebook2' />
+        </a>
+
+        {/* Github */}
+        <a href='https://github.com/ubc-subbots'>
+          <img src={Github} alt='github' width='50' height='50' />
         </a>
       </div>
     </div>

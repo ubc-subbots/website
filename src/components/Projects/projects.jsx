@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <div className='projects-maincontainer'>
       <span className='projects-title'>PROJECTS</span>
-      <div className='featured-projects'>
+      {/* <div className='featured-projects'>
         <span className='featured-projects-title'>
           FEATURED PROJECTS - STEELHEAD
         </span>
@@ -61,7 +61,7 @@ export default function Projects() {
           perspective. This video was originally made for the RoboSub 2021 AUV
           Competiton.
         </span>
-      </div>
+      </div> */}
       <div className='projects-cards'>
         <Card
           title='SOFTWARE'
@@ -76,7 +76,7 @@ export default function Projects() {
         <Card
           title='MECHANICAL'
           description='Push the physical limits of underwater mechanics'
-          link="Mechanical-section"
+          link='Mechanical-section'
         />
       </div>
       <div className='project-types'>

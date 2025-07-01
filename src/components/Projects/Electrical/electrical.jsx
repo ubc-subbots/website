@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from 'react';
+import { React, useState, useEffect } from 'react';
 import './electrical.css';
 import {
   faCarBattery,
@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
 import ImageCarousel from '../picture';
-import Modal from '../modal.js'
+import Modal from '../modal.js';
 import content from '../../../content';
 import elec1 from '../../../assets/projects-image/elec1.PNG';
 import elec2 from '../../../assets/projects-image/elec2.PNG';
@@ -79,24 +79,30 @@ export default function Electrical() {
               to a dynamic environment. Here are some of the projects the
               electrical team is currently working on:
             </span>
-            <button className='projects-electrical-key-point'
-            onClick={() => openModal('Power Distribution')}>
+            <button
+              className='projects-electrical-key-point'
+              onClick={() => openModal('Power Distribution')}
+            >
               <FontAwesomeIcon
                 icon={faBolt}
                 style={{ marginRight: '0.5rem' }}
               />
               Power Distribution
             </button>
-            <button className='projects-electrical-key-point'
-             onClick={() => openModal('Sound Localization')}>
+            <button
+              className='projects-electrical-key-point'
+              onClick={() => openModal('Sound Localization')}
+            >
               <FontAwesomeIcon
                 icon={faWaveSquare}
                 style={{ marginRight: '0.5rem' }}
               />
               Sound Localization
             </button>
-            <div className='projects-electrical-key-point'
-             onClick={() => openModal('Battery Management')}>
+            <div
+              className='projects-electrical-key-point'
+              onClick={() => openModal('Battery Management')}
+            >
               <FontAwesomeIcon
                 icon={faCarBattery}
                 style={{ marginRight: '0.5rem' }}
@@ -107,15 +113,12 @@ export default function Electrical() {
         </div>
       </div>
       {modalData && (
-        <Modal header={modalData.header} onClose={closeModal}>
-          <div>
-            <ImageCarousel images={modalData.images} />
-          </div>
-          <div
-            className="modal-body text-gray-800"
-            dangerouslySetInnerHTML={{ __html: modalData.body }}
-          ></div>
-        </Modal>
+        <Modal
+          header={modalData.header}
+          imageSrc={modalData.images[0]}
+          blurb={modalData.body}
+          onClose={closeModal}
+        />
       )}
     </div>
   );
