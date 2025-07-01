@@ -328,7 +328,7 @@ canvas {
 }
 
 .home-video-section {
-  background: var(--light-blue-color);
+  background: var(--primary-color);
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
