@@ -9,7 +9,9 @@
   background: transparent;
   top: 0;
   z-index: 100;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .nav-container.nav-hidden {
@@ -49,7 +51,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -111,6 +112,7 @@
 
 .overlayMenu {
   position: fixed;
+  max-width: 100vw;
   top: 0;
   right: 0;
   width: 250px;
@@ -239,7 +241,6 @@
 
 /* ----------  MOBILE < 768 px  ---------- */
 @media (max-width: 768px) {
-
   /* Shrink side padding */
   .nav-container {
     padding: 0 1rem;
