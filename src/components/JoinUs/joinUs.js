@@ -43,7 +43,11 @@ export default function joinUs() {
           <img src={Github} alt='github' className='joinus-github' />
         </a>
 
-        <a href='https://github.com/ubc-subbots'>
+        <a
+          href='mailto:ubc.subbots@gmail.com?subject=Inquiry&body=Hello%20Subbots%20Team,'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <img src={Mail} alt='mail' className='joinus-mail' />
         </a>
       </div>
