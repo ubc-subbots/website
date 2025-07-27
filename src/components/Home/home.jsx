@@ -117,7 +117,7 @@ export default function Home() {
         <div className='home-software'>
           <div className='team-image-container'>
             <LazyLoadImage
-              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.png`}
+              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`}
               alt='Software Team'
               className='team-background-image'
               effect='blur'
