@@ -11,6 +11,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const [modelLoaded, setModelLoaded] = useState(false);
+  const [showPage, setShowPage] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,9 +20,76 @@ export default function Home() {
       setScrolled(window.scrollY > 100);
     };
 
+    // Preload critical images
+    const preloadImages = [
+      `${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`,
+      `${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`,
+      `${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  if (!showPage) {
+    return (
+      <div style={{ 
+        position: 'fixed', 
+        top: 0, 
+        left: 0, 
+        width: '100%', 
+        height: '100%', 
+        display: 'flex', 
+        flexDirection: 'column',
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        backgroundColor: '#000',
+        zIndex: 9999
+      }}>
+        <div style={{ marginBottom: '30px' }}>
+          <span style={{ 
+            fontSize: '48px', 
+            fontWeight: '650', 
+            color: '#ffc300',
+            fontFamily: "'Open Sans', sans-serif",
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)'
+          }}>
+            UBC SUBBOTS
+          </span>
+        </div>
+        <div style={{
+          width: '60px',
+          height: '60px',
+          border: '6px solid #333',
+          borderTop: '6px solid #ffc300',
+          borderRadius: '50%',
+          animation: 'spin 1s linear infinite'
+        }}></div>
+        <style>{`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
+        {/* Hidden canvas to load the model */}
+        <div style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}>
+          <Canvas>
+            <Suspense fallback={null}>
+              <Model onLoad={() => {
+                setModelLoaded(true);
+                setTimeout(() => setShowPage(true), 500);
+              }} />
+            </Suspense>
+          </Canvas>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className='Main'>
@@ -83,6 +152,8 @@ export default function Home() {
               effect='blur'
               width='100%'
               height='100%'
+              threshold={200}
+              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`}
             />
           </div>
           <div className='home-electrical-content'>
@@ -103,6 +174,8 @@ export default function Home() {
               effect='blur'
               width='100%'
               height='100%'
+              threshold={200}
+              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`}
             />
           </div>
           <div className='home-mechanical-content'>
@@ -123,6 +196,8 @@ export default function Home() {
               effect='blur'
               width='100%'
               height='100%'
+              threshold={200}
+              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`}
             />
           </div>
           <div className='home-software-content'>
@@ -144,7 +219,7 @@ export default function Home() {
           <iframe
             src='https://www.youtube.com/embed/AsdwXIdFwhE'
             title='UBC Subbots RoboSub 2025'
-            frameBorder='0'
+            style={{ border: 'none' }}
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
           ></iframe>

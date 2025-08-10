@@ -116,7 +116,7 @@ canvas {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   z-index: 1;
 }
 
@@ -141,7 +141,7 @@ canvas {
 .home-mechanical-title {
   font-size: 1rem;
   background-color: var(--dark-yellow-color);
-  opacity: 0.9;
+  opacity: 0.3;
   padding: 0.75rem 0.75rem;
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
@@ -150,14 +150,8 @@ canvas {
   letter-spacing: 1px;
   border: none;
   border-radius: 1rem;
-  transition: background-color 0.3s ease;
-  transition: transform 0.3s ease-in-out;
   z-index: 11;
-  opacity: 0.3;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease-in-out,
-    opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .home-software-title:hover,
@@ -256,6 +250,10 @@ canvas {
     width: 100%;
     height: 28vh;
     background-size: cover;
+  }
+
+  .team-background-image {
+    object-fit: cover;
   }
 
   .home-software-title,

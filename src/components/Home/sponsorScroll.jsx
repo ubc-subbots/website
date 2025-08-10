@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './sponsorScroll.css';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const images = [
   //`${process.env.PUBLIC_URL}/images/sponsors/shell.png`,
@@ -24,12 +25,39 @@ const images = [
 ];
 
 export default function SponsorScroll() {
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragX, setDragX] = useState(0);
+  const timeoutRef = useRef(null);
+  const navigate = useNavigate();
+
   useEffect(() => {
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
     });
   }, []);
+
+  const handleDragStart = () => {
+    setIsDragging(true);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    // Wait 1 second before resuming auto-scroll
+    timeoutRef.current = setTimeout(() => {
+      setDragX(0);
+    }, 1000);
+  };
+
+  const handleClick = () => {
+    if (!isDragging) {
+      navigate('/sponsorship');
+    }
+  };
+
   return (
     <div className='sponsor-section'>
       <div className='scroll-title'>
@@ -42,12 +70,19 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={{ x: ['-142%', '-10.5%'] }}
+          animate={isDragging ? {} : { x: ['-142%', '-10.5%'] }}
           transition={{
             repeat: Infinity,
             duration: 17,
             ease: 'linear',
           }}
+          drag="x"
+          dragConstraints={{ left: -1000, right: 100 }}
+          onDragStart={handleDragStart}
+          onDragEnd={handleDragEnd}
+          onClick={handleClick}
+          style={{ cursor: 'grab' }}
+          whileDrag={{ cursor: 'grabbing' }}
         >
           {images.concat(images).map((src, index) => (
             <img
