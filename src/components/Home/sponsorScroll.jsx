@@ -26,7 +26,7 @@ const images = [
 
 export default function SponsorScroll() {
   const [isDragging, setIsDragging] = useState(false);
-  const [dragX, setDragX] = useState(0);
+  const [shouldAnimate, setShouldAnimate] = useState(true);
   const timeoutRef = useRef(null);
   const navigate = useNavigate();
 
@@ -39,6 +39,7 @@ export default function SponsorScroll() {
 
   const handleDragStart = () => {
     setIsDragging(true);
+    setShouldAnimate(false);
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
@@ -46,10 +47,10 @@ export default function SponsorScroll() {
 
   const handleDragEnd = () => {
     setIsDragging(false);
-    // Wait 1 second before resuming auto-scroll
+    // Wait before resuming auto-scroll to allow momentum to finish
     timeoutRef.current = setTimeout(() => {
-      setDragX(0);
-    }, 1000);
+      setShouldAnimate(true);
+    }, 3000);
   };
 
   const handleClick = () => {
@@ -70,18 +71,29 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={isDragging ? {} : { x: ['-142%', '-10.5%'] }}
+          animate={shouldAnimate && !isDragging ? { x: ['-142%', '-10.5%'] } : {}}
           transition={{
             repeat: Infinity,
             duration: 17,
             ease: 'linear',
           }}
-          drag="x"
-          dragConstraints={{ left: -1000, right: 100 }}
+          drag='x'
+          dragConstraints={{ left: -3500, right: 200 }}
+          dragMomentum={true}
+          dragElastic={0.2}
+          dragTransition={{ 
+            bounceStiffness: 400, 
+            bounceDamping: 25,
+            power: 0.2,
+            timeConstant: 200
+          }}
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
           onClick={handleClick}
-          style={{ cursor: 'grab' }}
+          style={{ 
+            cursor: 'grab',
+            WebkitOverflowScrolling: 'touch'
+          }}
           whileDrag={{ cursor: 'grabbing' }}
         >
           {images.concat(images).map((src, index) => (

@@ -14,12 +14,16 @@
   position: relative;
   width: 100%;
   padding: 1rem 0;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  touch-action: pan-x; /* Allow horizontal panning */
 }
 
 .scroll-track {
   display: flex;
   gap: 1rem;
   /*animation: scroll 7s linear infinite; */
+  will-change: transform; /* Optimize for animations */
+  backface-visibility: hidden; /* Improve performance */
 }
 
 /*.scroll-img {*/
