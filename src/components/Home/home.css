@@ -90,76 +90,125 @@ canvas {
   letter-spacing: 1px;
 }
 
-.teams {
+.projects-section {
+  background: var(--dark-gradient);
+  padding: 4rem 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 40vh;
+  text-align: center;
 }
 
-.home-software,
-.home-electrical,
-.home-mechanical {
-  z-index: 1;
-  height: 40vh;
-  width: 33.33%;
+.projects-header {
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.home-projects-title {
+  color: var(--dark-yellow-color);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.projects-subtitle {
+  color: #f7f0ff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projects-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.project-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 195, 0, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  width: 280px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
 }
 
-.team-background-image {
+.project-button::before {
+  content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 195, 0, 0.1),
+    transparent
+  );
+  transition: left 0.6s;
 }
 
-.home-software-content,
-.home-electrical-content,
-.home-mechanical-content {
-  background-color: rgba(2, 1, 21, 0.615);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+.project-button:hover::before {
+  left: 100%;
 }
 
-.home-software-title,
-.home-electrical-title,
-.home-mechanical-title {
-  font-size: 1rem;
-  background-color: var(--dark-yellow-color);
-  opacity: 0.3;
-  padding: 0.75rem 0.75rem;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
-  font-weight: 400;
+.project-button:hover {
+  transform: translateY(-8px);
+  border-color: var(--dark-yellow-color);
+  box-shadow:
+    0 15px 35px rgba(255, 195, 0, 0.2),
+    0 5px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 195, 0, 0.08);
+}
+
+.button-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.project-button:hover .button-icon {
+  filter: grayscale(0%);
+}
+
+.button-content h3 {
+  color: var(--dark-yellow-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: none;
-  border-radius: 1rem;
-  z-index: 11;
-  transition: background-color 0.3s ease, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.home-software-title:hover,
-.home-electrical-title:hover,
-.home-mechanical-title:hover {
-  background-color: #ffce2d;
-  transform: scale(1.05);
-  opacity: 1;
+.button-content p {
+  color: #f7f0ff;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 
 @media (max-width: 1378px) {
@@ -252,10 +301,6 @@ canvas {
     background-size: cover;
   }
 
-  .team-background-image {
-    object-fit: cover;
-  }
-
   .home-software-title,
   .home-electrical-title,
   .home-mechanical-title {
@@ -296,38 +341,17 @@ canvas {
   }
 }
 
-.team-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.team-background-image {
-  width: 100%;
-  height: 100%;
-}
-
-.home-software-content,
-.home-electrical-content,
-.home-mechanical-content {
-  background-color: rgba(2, 1, 21, 0.615);
-  width: 100%;
-  height: 100%;
+.projects-buttons {
   display: flex;
-  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .home-video-section {
-  background: var(--primary-color);
+  background: var(--dark-gradient);
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -382,12 +406,11 @@ canvas {
 
 .home-video-title-container {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
-  font-size: 3rem;
 }
 
 @media (max-width: 700px) {
@@ -395,5 +418,110 @@ canvas {
     font-size: 1rem;
     margin-bottom: 0.7rem;
     padding: 0 1rem;
+  }
+}
+
+/* Projects Section Responsive Design */
+@media (max-width: 964px) {
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .home-projects-title {
+    font-size: 2.5rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .projects-buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .project-button {
+    width: 90%;
+    max-width: 350px;
+    min-height: 160px;
+    padding: 1.5rem;
+  }
+
+  .button-icon {
+    font-size: 2.5rem;
+  }
+
+  .button-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .button-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .home-projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-button {
+    width: 95%;
+    min-height: 140px;
+    padding: 1.25rem;
+  }
+
+  .button-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .button-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .button-content p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 2rem 0.75rem;
+  }
+
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+
+  .home-projects-title {
+    font-size: 1.8rem;
+  }
+
+  .projects-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .project-button {
+    width: 100%;
+    min-height: 130px;
+    padding: 1rem;
+  }
+
+  .button-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .button-content p {
+    font-size: 0.8rem;
   }
 }

@@ -2,7 +2,7 @@
   height: fit-content;
   overflow: hidden;
   width: 100%;
-  background-color: white;
+  background-color: var(--white-background);
   justify-content: center;
   align-items: center;
   margin: 2.5rem auto;

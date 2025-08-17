@@ -7,12 +7,13 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Model } from './model.jsx';
 import SponsorScroll from './sponsorScroll.jsx';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import ImageGallery from './ImageGallery.jsx';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [modelLoaded, setModelLoaded] = useState(false);
   const [showPage, setShowPage] = useState(false);
+  const [galleryImages, setGalleryImages] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,17 +21,11 @@ export default function Home() {
       setScrolled(window.scrollY > 100);
     };
 
-    // Preload critical images
-    const preloadImages = [
-      `${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`,
-      `${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`,
-      `${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`
-    ];
-
-    preloadImages.forEach(src => {
-      const img = new Image();
-      img.src = src;
-    });
+    // Load gallery images
+    fetch(`${process.env.PUBLIC_URL}/data/gallery.json`)
+      .then((response) => response.json())
+      .then((data) => setGalleryImages(data))
+      .catch((error) => console.error('Error loading gallery images:', error));
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -38,38 +33,44 @@ export default function Home() {
 
   if (!showPage) {
     return (
-      <div style={{ 
-        position: 'fixed', 
-        top: 0, 
-        left: 0, 
-        width: '100%', 
-        height: '100%', 
-        display: 'flex', 
-        flexDirection: 'column',
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        backgroundColor: '#000',
-        zIndex: 9999
-      }}>
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#000',
+          zIndex: 9999,
+        }}
+      >
         <div style={{ marginBottom: '30px' }}>
-          <span style={{ 
-            fontSize: '48px', 
-            fontWeight: '650', 
-            color: '#ffc300',
-            fontFamily: "'Open Sans', sans-serif",
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)'
-          }}>
+          <span
+            style={{
+              fontSize: '48px',
+              fontWeight: '650',
+              color: '#ffc300',
+              fontFamily: "'Open Sans', sans-serif",
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+            }}
+          >
             UBC SUBBOTS
           </span>
         </div>
-        <div style={{
-          width: '60px',
-          height: '60px',
-          border: '6px solid #333',
-          borderTop: '6px solid #ffc300',
-          borderRadius: '50%',
-          animation: 'spin 1s linear infinite'
-        }}></div>
+        <div
+          style={{
+            width: '60px',
+            height: '60px',
+            border: '6px solid #333',
+            borderTop: '6px solid #ffc300',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+          }}
+        ></div>
         <style>{`
           @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -80,10 +81,12 @@ export default function Home() {
         <div style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}>
           <Canvas>
             <Suspense fallback={null}>
-              <Model onLoad={() => {
-                setModelLoaded(true);
-                setTimeout(() => setShowPage(true), 500);
-              }} />
+              <Model
+                onLoad={() => {
+                  setModelLoaded(true);
+                  setTimeout(() => setShowPage(true), 500);
+                }}
+              />
             </Suspense>
           </Canvas>
         </div>
@@ -142,74 +145,51 @@ export default function Home() {
         <span className='home-subtitle1'>SUBSEA ENGINEERING.</span>
       </div>
       <About />
-      <div className='teams'>
-        <div className='home-electrical'>
-          <div className='team-image-container'>
-            <LazyLoadImage
-              src={`${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`}
-              alt='Electrical Team'
-              className='team-background-image'
-              effect='blur'
-              width='100%'
-              height='100%'
-              threshold={200}
-              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/electrical-team.jpg`}
-            />
-          </div>
-          <div className='home-electrical-content'>
-            <button
-              className='home-electrical-title'
-              onClick={() => navigate('/projects#Electrical-section')}
-            >
-              Electrical Projects
-            </button>
-          </div>
+      <div className='projects-section'>
+        <div className='projects-header'>
+          <h2 className='home-projects-title'>See more about what we do</h2>
+          <p className='projects-subtitle'>
+            Discover our innovative work across different engineering
+            disciplines
+          </p>
         </div>
-        <div className='home-mechanical'>
-          <div className='team-image-container'>
-            <LazyLoadImage
-              src={`${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`}
-              alt='Mechanical Team'
-              className='team-background-image'
-              effect='blur'
-              width='100%'
-              height='100%'
-              threshold={200}
-              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/mechanical-team.jpg`}
-            />
-          </div>
-          <div className='home-mechanical-content'>
-            <button
-              className='home-mechanical-title'
-              onClick={() => navigate('/projects#Mechanical-section')}
-            >
-              Mechanical Projects
-            </button>
-          </div>
-        </div>
-        <div className='home-software'>
-          <div className='team-image-container'>
-            <LazyLoadImage
-              src={`${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`}
-              alt='Software Team'
-              className='team-background-image'
-              effect='blur'
-              width='100%'
-              height='100%'
-              threshold={200}
-              placeholderSrc={`${process.env.PUBLIC_URL}/images/main-page/software-team.jpg`}
-            />
-          </div>
-          <div className='home-software-content'>
-            <button
-              className='home-software-title'
-              onClick={() => navigate('/projects#Software-section')}
-            >
-              Software Projects
-            </button>
-          </div>
+        <div className='projects-buttons'>
+          <button
+            className='project-button electrical-button'
+            onClick={() => navigate('/projects#Electrical-section')}
+          >
+            <div className='button-icon'>⚡</div>
+            <div className='button-content'>
+              <h3>Electrical</h3>
+              <p>Power systems & electronics</p>
+            </div>
+          </button>
+          <button
+            className='project-button mechanical-button'
+            onClick={() => navigate('/projects#Mechanical-section')}
+          >
+            <div className='button-icon'>⚙️</div>
+            <div className='button-content'>
+              <h3>Mechanical</h3>
+              <p>Design & engineering</p>
+            </div>
+          </button>
+          <button
+            className='project-button software-button'
+            onClick={() => navigate('/projects#Software-section')}
+          >
+            <div className='button-icon'>💻</div>
+            <div className='button-content'>
+              <h3>Software</h3>
+              <p>Code & algorithms</p>
+            </div>
+          </button>
         </div>
       </div>
+
+      {/* Image Gallery Section */}
+      <ImageGallery images={galleryImages} />
+
       {/* Embedded YouTube Video Section */}
       <div className='home-video-section'>
         <div className='home-video-title-container'>

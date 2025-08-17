@@ -23,7 +23,6 @@
     padding-right: 1rem;
   }
 
-
   .card-content {
     padding: 1rem 2rem;
   }
@@ -41,16 +40,12 @@
     padding: 0.5rem 0;
     word-break: break-word;
   }
-
-
 }
 
 @media screen and (max-width: 1000px) {
   .projects-cards {
     flex-direction: column;
   }
-
-
 
   .featured-projects-description {
     width: 90%;
@@ -230,8 +225,7 @@
     font-size: 2rem;
   }
 
-
   .card-content {
-    padding: 2rem 4rem
+    padding: 2rem 4rem;
   }
 }

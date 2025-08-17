@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "src": "/images/gallery/underwater_1.jpg",
+    "alt": "Underwater Operation",
+    "caption": "Out submarine during semi-final practice"
+  },
+  {
+    "id": 2,
+    "src": "/images/gallery/technical_inspectation.jpg",
+    "alt": "Technical Inspection",
+    "caption": "Technical inspection and system check by judges"
+  },
+  {
+    "id": 3,
+    "src": "/images/gallery/daveman.jpg",
+    "alt": "Picture with Daveman",
+    "caption": "Picture with organizer 'Daveman' after completing our semi-final run!"
+  },
+  {
+    "id": 4,
+    "src": "/images/gallery/competition_setup.jpg",
+    "alt": "Competition Setup",
+    "caption": "Setting up our submarine for testing"
+  },
+  {
+    "id": 5,
+    "src": "/images/gallery/team_meeting.jpg",
+    "alt": "Team Meeting",
+    "caption": "End of day team meeting"
+  },
+  {
+    "id": 6,
+    "src": "/images/gallery/pool_view.jpg",
+    "alt": "Pool Testing View",
+    "caption": "RoboSub 2025 Competition Pool, Woollett Aquatics Center, Irvine, CA"
+  }
+]
