@@ -19,24 +19,42 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Calculate scroll progress (0 to 1) over first 200px of scroll
-      const progress = Math.min(window.scrollY / 200, 1);
-      setScrollProgress(progress);
+    let ticking = false;
 
-      // Show navbar after scrolling down 100px on home page
-      if (location.pathname === '/') {
-        setShowNavbar(window.scrollY > 100);
-      } else {
-        setShowNavbar(true);
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+
+          // Calculate scroll progress (0 to 1) over first 200px of scroll
+          const progress = Math.min(currentScrollY / 200, 1);
+          setScrollProgress(progress);
+
+          // Show navbar after scrolling down 150px on home page (increased threshold for mobile stability)
+          if (location.pathname === '/') {
+            // Add hysteresis: show at 150px, hide at 50px to prevent flickering
+            if (currentScrollY > 150) {
+              setShowNavbar(true);
+            } else if (currentScrollY < 50) {
+              setShowNavbar(false);
+            }
+            // Keep current state if between 50-150px
+          } else {
+            setShowNavbar(true);
+          }
+
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    // Throttled scroll event listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Initialize navbar visibility based on current scroll position
     if (location.pathname === '/') {
-      setShowNavbar(window.scrollY > 100);
+      setShowNavbar(window.scrollY > 150);
     } else {
       setShowNavbar(true);
     }
