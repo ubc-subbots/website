@@ -21,4 +21,6 @@ body {
   --light-blue-color: #003566;
   --light-yellow-color: rgb(255, 230, 0);
   --dark-yellow-color: #ffc300;
+  --dark-gradient: linear-gradient(135deg, rgba(0, 29, 61, 0.95) 0%, rgba(0, 8, 20, 0.98) 100%);
+  --white-background: #ffffff;
 }
