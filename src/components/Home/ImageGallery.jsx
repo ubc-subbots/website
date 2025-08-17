@@ -69,7 +69,7 @@ export default function ImageGallery({ images }) {
   return (
     <div className='image-gallery'>
       <div className='gallery-header'>
-        <h2 className='gallery-title'>Project Gallery</h2>
+        <h2 className='gallery-title'>RoboSub 2025 Competition</h2>
       </div>
 
       <div className='gallery-container'>
