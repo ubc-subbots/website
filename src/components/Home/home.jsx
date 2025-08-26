@@ -8,10 +8,11 @@ import { OrbitControls } from '@react-three/drei';
 import { Model } from './model.jsx';
 import SponsorScroll from './sponsorScroll.jsx';
 import ImageGallery from './ImageGallery.jsx';
+import { faBolt, faCogs, faCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
-  const [modelLoaded, setModelLoaded] = useState(false);
   const [showPage, setShowPage] = useState(false);
   const [galleryImages, setGalleryImages] = useState([]);
   const navigate = useNavigate();
@@ -28,7 +29,14 @@ export default function Home() {
       .catch((error) => console.error('Error loading gallery images:', error));
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Show page after a brief delay instead of waiting for model load
+    const timer = setTimeout(() => setShowPage(true), 1000);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timer);
+    };
   }, []);
 
   if (!showPage) {
@@ -77,19 +85,7 @@ export default function Home() {
             100% { transform: rotate(360deg); }
           }
         `}</style>
-        {/* Hidden canvas to load the model */}
-        <div style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}>
-          <Canvas>
-            <Suspense fallback={null}>
-              <Model
-                onLoad={() => {
-                  setModelLoaded(true);
-                  setTimeout(() => setShowPage(true), 500);
-                }}
-              />
-            </Suspense>
-          </Canvas>
-        </div>
+        {/* Remove the hidden canvas completely */}
       </div>
     );
   }
@@ -108,6 +104,11 @@ export default function Home() {
             shadows
             camera={{ position: [0, 0, 5], fov: 12 }}
             style={{ background: 'transparent' }}
+            gl={{
+              preserveDrawingBuffer: true,
+              powerPreference: 'high-performance',
+              antialias: false,
+            }}
           >
             <Suspense fallback={null}>
               <ambientLight intensity={0.6} />
@@ -175,7 +176,9 @@ export default function Home() {
             className='project-button electrical-button'
             onClick={() => navigate('/projects#Electrical-section')}
           >
-            <div className='button-icon'>⚡</div>
+            <div className='button-icon'>
+              <FontAwesomeIcon icon={faBolt} />
+            </div>
             <div className='button-content'>
               <h3>Electrical</h3>
               <p>Power systems & electronics</p>
@@ -185,7 +188,9 @@ export default function Home() {
             className='project-button mechanical-button'
             onClick={() => navigate('/projects#Mechanical-section')}
           >
-            <div className='button-icon'>⚙️</div>
+            <div className='button-icon'>
+              <FontAwesomeIcon icon={faCogs} />
+            </div>
             <div className='button-content'>
               <h3>Mechanical</h3>
               <p>Design & engineering</p>
@@ -195,7 +200,9 @@ export default function Home() {
             className='project-button software-button'
             onClick={() => navigate('/projects#Software-section')}
           >
-            <div className='button-icon'>💻</div>
+            <div className='button-icon'>
+              <FontAwesomeIcon icon={faCode} />
+            </div>
             <div className='button-content'>
               <h3>Software</h3>
               <p>Code & algorithms</p>

@@ -66,12 +66,14 @@ export default function Mechanical() {
           </div>
           <div className='projects-software-text'>
             <span className='projects-software-text1'>
-              With access to in-person workspaces limited during the COVID-era,
-              we have focused primarily on CAD design, and on figuring out
-              manufacturing techniques for said designs once in-person work is
-              allowed again. The mechanical team is divided into three
-              sub-teams, represented by the divs below. Feel free to click on
-              each one to see what they've been working on.
+              The mechanical team designs the robot's layout and many of the
+              individual components that you see on an AUV. Using Onshape, the
+              team generates comprehensive CAD models of all projects and
+              conducts simulations like FEA on elements that must withstand
+              significant hydrostatic pressures. With a heavy emphasis on the
+              engineering design process, the mechanical team prototypes and
+              manufactures nearly all enclosures and internal mounting schemes
+              using machine shop facilities on campus.
             </span>
             <button
               className='projects-mechanical-key-point'

@@ -30,10 +30,7 @@ const content = {
               'scenery and placements of Lena. Even when Lena was only partially in frame or occluded by other objects, ' +
               'our program could still recognize her. In fact, after 2000 iterations on our 800 image dataset, our model ' +
               'achieved a mean average precision (mAP) score of 95%. ' +
-              '<br ><br >' +
-              'Once pool is access is readily available again, we plan on collecting in-water data for use as a validation ' +
-              'dataset, as real-world performance will be the true test for our model.',
-
+              '<br ><br >',
             carousel: {
               images: [
                 '/images/projects/CameraSim1.png',

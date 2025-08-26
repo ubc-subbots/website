@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import './ImageGallery.css';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ImageGallery({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -105,7 +107,7 @@ export default function ImageGallery({ images }) {
           onClick={togglePlayPause}
           aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
         >
-          {isPlaying ? '⏸' : '▶'}
+          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
         </button>
       </div>
 
