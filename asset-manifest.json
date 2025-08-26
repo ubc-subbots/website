@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.0925bb0f.css",
-    "main.js": "/static/js/main.65384361.js",
-    "static/media/elec4.png": "/static/media/elec4.66b734be8d814f34ee7e.png",
-    "static/media/elec5.jpg": "/static/media/elec5.d75e20f232e55be7c352.jpg",
-    "static/media/software2.png": "/static/media/software2.ad14f9b8cd9601c6f2a2.png",
-    "static/media/mech4.jpg": "/static/media/mech4.da8004252c5fb269a86d.jpg",
+    "main.js": "/static/js/main.10a97922.js",
     "static/media/mech2.jpg": "/static/media/mech2.53509a43c8689453d1ef.jpg",
     "static/media/mech1.jpg": "/static/media/mech1.9179993107f0fcbdc634.jpg",
     "static/media/mech3.jpg": "/static/media/mech3.ce3d71e85b59e2654ffe.jpg",
-    "static/media/mech5.jpg": "/static/media/mech5.109425ce6a7c633cc23c.jpg",
     "static/media/robot.jpg": "/static/media/robot.d454882add5984eec2e1.jpg",
+    "static/media/elec4.png": "/static/media/elec4.1fb4514fa8255439096d.png",
     "static/media/goal.jpg": "/static/media/goal.eab979105a3cc6b52bf2.jpg",
     "static/media/software3.png": "/static/media/software3.4b62b5bcad43f34c3c07.png",
-    "static/media/elec3.jpg": "/static/media/elec3.fe49b25ca01f6beee48c.jpg",
     "static/media/software1.png": "/static/media/software1.cad1aeabdec836738b06.png",
+    "static/media/software2.png": "/static/media/software2.cfb26e7084125b6ffab5.png",
+    "static/media/mech4.jpg": "/static/media/mech4.65050b9e9cc2a582ccb2.jpg",
+    "static/media/elec5.jpg": "/static/media/elec5.ae655391944d3168fe13.jpg",
+    "static/media/elec3.jpg": "/static/media/elec3.043f76fd4387cca14f1a.jpg",
+    "static/media/mech5.jpg": "/static/media/mech5.ad14865a44038703bcee.jpg",
     "static/media/elec2.PNG": "/static/media/elec2.d4406faf8952b31cafb4.PNG",
     "static/media/insta4.png": "/static/media/insta4.7a1cdb8176cf53a9c9e1.png",
     "static/media/elec1.PNG": "/static/media/elec1.70612b9cf6ba6eeba51c.PNG",
@@ -25,10 +25,10 @@
     "static/media/facebook3.png": "/static/media/facebook3.6dad2a6a390d0dbd3060.png",
     "index.html": "/index.html",
     "main.0925bb0f.css.map": "/static/css/main.0925bb0f.css.map",
-    "main.65384361.js.map": "/static/js/main.65384361.js.map"
+    "main.10a97922.js.map": "/static/js/main.10a97922.js.map"
   },
   "entrypoints": [
     "static/css/main.0925bb0f.css",
-    "static/js/main.65384361.js"
+    "static/js/main.10a97922.js"
   ]
 }
