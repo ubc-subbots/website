@@ -34,6 +34,13 @@
 .joinus-subcontent1 {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.joinus-subcontent2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .joinus-socials {
@@ -49,7 +56,12 @@
 .joinus-github,
 .joinus-mail {
   height: 6rem;
-  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .joinus-linkedin:hover,
@@ -57,7 +69,31 @@
 .joinus-facebook:hover,
 .joinus-github:hover,
 .joinus-mail:hover {
-  transform: scale(1.1);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  filter: brightness(1.1);
+}
+
+.joinus-form-section {
+  margin: 2rem 0;
+}
+
+.joinus-form-button {
+  display: inline-block;
+  background: var(--dark-yellow-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.joinus-form-button:hover {
+  background: var(--light-yellow-color);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1000px) {
@@ -73,7 +109,14 @@
   .joinus-github,
   .joinus-mail {
     height: 5rem;
-    transition: all 0.3s ease-in-out;
+    padding: 6px;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .joinus-subcontent1,
+  .joinus-subcontent2 {
+    margin-bottom: 1rem;
   }
 }
 
@@ -82,7 +125,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
   }
 }

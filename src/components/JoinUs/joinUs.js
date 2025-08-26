@@ -17,9 +17,22 @@ export default function joinUs() {
             hands-on learning in a supportive, beginner-friendly environment.
           </span>
           <span className='joinus-subcontent1'>
-            Our current application cycle has now closed. Thank you to everyone
-            who applied!
+            Our current application for 2025/26 is open! Please fill out the
+            form below to apply.
           </span>
+
+          {/* Application Form Button */}
+          <div className='joinus-form-section'>
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLSdDVtnGzB9UYMgdWIYMJseUc-fO0aFcaSABoe9QLt9R51JNFg/viewform'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='joinus-form-button'
+            >
+              Apply Now - 2025/26 Recruitment
+            </a>
+          </div>
+
           <span className='joinus-subcontent2'>
             Stay tuned to our social media channels for updates on future
             opportunities!!

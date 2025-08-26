@@ -8,14 +8,6 @@ const content = {
       body: "Here's a video outlining the features and design rationale behind our current robot's (Triton) propulsion system from each sub-team's perspective. This video was originally made for the RoboSub 2021 AUV Competiton.",
       software: {
         header: 'Software Projects',
-        body:
-          'With little pool access due to the COVID pandemic, ' +
-          'we made the decision to shift our focus to developing our ' +
-          'simulation environment. Simulation provides us with a cheaper and ' +
-          'safer way to test our AUV, as well as ample synthetic data. To collect ' +
-          'ample synthetic data for use in future design decisions, we decided to delevop ' +
-          "two simulations. One to emulate what our robot's onboard cameras see and another to " +
-          "simulate our robot's dynamics. You can learn more about each of these simulations below:",
         detail: [
           {
             header: 'Computer Vision',
@@ -104,11 +96,6 @@ const content = {
       },
       electrical: {
         header: 'Electrical Projects',
-        body:
-          'The electrical team develops the electrical systems that allow the robot to read and respond to the world. ' +
-          'The team designs systems to control and power thrusters, process signals, interface and communicate between sub-systems, ' +
-          'and protect valuable electrical components from unexpected power surges. Robust and reliable electrical systems are critical ' +
-          'for allowing a robot to react well to a dynamic environment. Here are some of the projects the electrical team is currently working on:',
         detail: [
           {
             header: 'Power Distribution',
@@ -194,11 +181,6 @@ const content = {
       },
       mechanical: {
         header: 'Mechanical Projects',
-        body:
-          'With access to in-person workspaces limited during the COVID-era, we have focused primarily  ' +
-          'on CAD design, and on figuring out manufacturing techniques for said designs once in-person work is allowed  ' +
-          'again. The mechanical team is divided into three sub-teams, represented by the buttons below. Feel free to click  ' +
-          "on each one to see what they've been working on.",
         detail: [
           {
             header: 'Waterproofing and Enclosures',

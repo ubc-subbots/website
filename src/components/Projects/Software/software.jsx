@@ -69,14 +69,18 @@ export default function Software() {
           </div>
           <div className='projects-software-text'>
             <span className='projects-software-text1'>
-              With little pool access due to the COVID pandemic, we made the
-              decision to shift our focus to developing our simulation
-              environment. Simulation provides us with a cheaper and safer way
-              to test our AUV, as well as ample synthetic data. To collect ample
-              synthetic data for use in future design decisions, we decided to
-              delevop two simulations. One to emulate what our robot's onboard
-              cameras see and another to simulate our robot's dynamics. You can
-              learn more about each of these simulations below:
+              The software team plays a critical role in bringing our underwater
+              robot to life. Working with the hardware designed by our
+              electrical and mechanical teams, we develop the autonomous systems
+              that enable the robot to navigate underwater environments,
+              maintain stability, and complete complex tasks. Our
+              responsibilities include implementing computer vision algorithms
+              to identify and interact with objects through onboard cameras,
+              controlling thrusters for precise movement, managing actuators
+              like torpedoes and manipulator arms, and integrating all these
+              systems into a cohesive autonomous platform. We have extensive
+              ongoing projects and welcome motivated individuals who are eager
+              to learn and contribute to cutting-edge robotics development.
             </span>
             <button
               className='projects-software-key-point'

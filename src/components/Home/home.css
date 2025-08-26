@@ -90,6 +90,71 @@ canvas {
   letter-spacing: 1px;
 }
 
+.hiring-banner {
+  background: var(--primary-color);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 3px solid var(--dark-yellow-color);
+  border-bottom: 3px solid var(--dark-yellow-color);
+}
+
+.hiring-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffd60a" fill-opacity="0.1"><circle cx="7" cy="7" r="1"/></g></g></svg>');
+  animation: drift 20s linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+}
+
+.hiring-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hiring-title {
+  color: var(--dark-yellow-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hiring-subtitle {
+  color: #f7f0ff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hiring-cta-button {
+  background: var(--dark-yellow-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hiring-cta-button:hover {
+  background: var(--light-yellow-color);
+  transform: scale(1.05);
+}
+
 .projects-section {
   background: var(--dark-gradient);
   padding: 4rem 2rem;
@@ -524,4 +589,39 @@ canvas {
   .button-content p {
     font-size: 0.8rem;
   }
+}
+
+.joinus-subcontent2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.joinus-form-section {
+  margin: 2rem 0;
+}
+
+.joinus-form-button {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--dark-yellow-color)
+  );
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid transparent;
+}
+
+.joinus-form-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+  border-color: var(--dark-yellow-color);
 }
