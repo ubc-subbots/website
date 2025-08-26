@@ -20,6 +20,9 @@ export default function joinUs() {
             Our current application for 2025/26 is open! Please fill out the
             form below to apply.
           </span>
+          <span className='joinus-subcontent1'>
+            <strong>Application Deadline: September 8th at 11:59 PM</strong>
+          </span>
 
           {/* Application Form Button */}
           <div className='joinus-form-section'>
