@@ -111,6 +111,8 @@ canvas {
   bottom: 0;
   background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffd60a" fill-opacity="0.1"><circle cx="7" cy="7" r="1"/></g></g></svg>');
   animation: drift 20s linear infinite;
+  z-index: 0; /* Add this line */
+  pointer-events: none; /* Add this line */
 }
 
 @keyframes drift {
@@ -123,6 +125,8 @@ canvas {
 }
 
 .hiring-content {
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
   max-width: 800px;
   margin: 0 auto;
 }
