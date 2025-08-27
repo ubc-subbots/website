@@ -38,7 +38,7 @@
     /* Prevent reflow issues on mobile browsers */
     will-change: transform, opacity;
   }
-  
+
   /* Reduce animation sensitivity on mobile */
   .nav-container {
     transition:
