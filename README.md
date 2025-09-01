@@ -80,10 +80,6 @@ Originally created by:
 
 Modified and maintained by the UBC Subbots Software Team.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🤝 Contact
 
 UBC Subbots - [Website](https://ubcsubbots.com) | [LinkedIn](https://www.linkedin.com/company/ubc-subbots/) | [Instagram](https://www.instagram.com/ubcsubbots/)
