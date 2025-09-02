@@ -1,18 +1,18 @@
 import React from 'react';
 import './robots.css';
 import ImageCarousel from '../Projects/picture';
-import Orca1 from '../../assets/robots/orca1.png';
-import Orca2 from '../../assets/robots/orca2.png';
-import Orca3 from '../../assets/robots/orca3.png';
-import Orca4 from '../../assets/robots/orca4.png';
-import Orca5 from '../../assets/robots/orca5.png';
+import Orca1 from '../../assets/robots/orca1.jpg';
+import Orca2 from '../../assets/robots/orca2.jpg';
+import Orca3 from '../../assets/robots/orca3.jpg';
+import Orca4 from '../../assets/robots/orca4.jpg';
+import Orca5 from '../../assets/robots/orca5.jpg';
 
-import Triton1 from '../../assets/robots/triton1.png';
-import Triton2 from '../../assets/robots/triton2.png';
-import Triton3 from '../../assets/robots/triton3.png';
-import Triton4 from '../../assets/robots/triton4.png';
-import Triton5 from '../../assets/robots/triton5.png';
-import Triton6 from '../../assets/robots/triton6.png';
+import Triton1 from '../../assets/robots/triton1.jpg';
+import Triton2 from '../../assets/robots/triton2.jpg';
+import Triton3 from '../../assets/robots/triton3.jpg';
+import Triton4 from '../../assets/robots/triton4.jpg';
+import Triton5 from '../../assets/robots/triton5.jpg';
+import Triton6 from '../../assets/robots/triton6.jpg';
 
 const imagesOrca = [Orca1, Orca2, Orca3, Orca4, Orca5];
 
