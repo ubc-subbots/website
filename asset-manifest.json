@@ -1,34 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.5e8a7ed0.css",
-    "main.js": "/static/js/main.10a97922.js",
-    "static/media/mech2.jpg": "/static/media/mech2.53509a43c8689453d1ef.jpg",
-    "static/media/mech1.jpg": "/static/media/mech1.9179993107f0fcbdc634.jpg",
-    "static/media/mech3.jpg": "/static/media/mech3.ce3d71e85b59e2654ffe.jpg",
-    "static/media/robot.jpg": "/static/media/robot.d454882add5984eec2e1.jpg",
-    "static/media/elec4.png": "/static/media/elec4.1fb4514fa8255439096d.png",
-    "static/media/goal.jpg": "/static/media/goal.eab979105a3cc6b52bf2.jpg",
-    "static/media/software3.png": "/static/media/software3.4b62b5bcad43f34c3c07.png",
-    "static/media/software1.png": "/static/media/software1.cad1aeabdec836738b06.png",
-    "static/media/software2.png": "/static/media/software2.cfb26e7084125b6ffab5.png",
-    "static/media/mech4.jpg": "/static/media/mech4.65050b9e9cc2a582ccb2.jpg",
-    "static/media/elec5.jpg": "/static/media/elec5.ae655391944d3168fe13.jpg",
-    "static/media/elec3.jpg": "/static/media/elec3.043f76fd4387cca14f1a.jpg",
-    "static/media/mech5.jpg": "/static/media/mech5.ad14865a44038703bcee.jpg",
-    "static/media/elec2.PNG": "/static/media/elec2.d4406faf8952b31cafb4.PNG",
+    "main.js": "/static/js/main.94dac86b.js",
+    "static/media/robot.jpg": "/static/media/robot.ad9fad208c3cb7c6c532.jpg",
+    "static/media/mech4.jpg": "/static/media/mech4.22bc38f62bfe1c0ebf24.jpg",
+    "static/media/elec5.jpg": "/static/media/elec5.87666aa045849738ad30.jpg",
+    "static/media/elec3.jpg": "/static/media/elec3.49be929589ba78a86267.jpg",
+    "static/media/mech5.jpg": "/static/media/mech5.dddf2a3ef3f18305c642.jpg",
+    "static/media/software2.png": "/static/media/software2.c8140abd3a18b472bfaf.png",
+    "static/media/mech3.jpg": "/static/media/mech3.31c80dc96c1bc6043a72.jpg",
+    "static/media/mech1.jpg": "/static/media/mech1.862fd2eb3d926041e74f.jpg",
     "static/media/insta4.png": "/static/media/insta4.7a1cdb8176cf53a9c9e1.png",
-    "static/media/elec1.PNG": "/static/media/elec1.70612b9cf6ba6eeba51c.PNG",
+    "static/media/goal.jpg": "/static/media/goal.1f3a61059076ad543c58.jpg",
+    "static/media/mech2.jpg": "/static/media/mech2.95fb46ec0b25ae030fab.jpg",
+    "static/media/elec4.jpg": "/static/media/elec4.4a06921d220c7b490841.jpg",
+    "static/media/elec2.PNG": "/static/media/elec2.0077804dbd7492f5a710.PNG",
+    "static/media/software3.png": "/static/media/software3.0017ef0d68a126ab0e89.png",
+    "static/media/software1.png": "/static/media/software1.24210dc5fae0681e7a1b.png",
     "static/media/linkedin2.png": "/static/media/linkedin2.aa05b465ee37cd3c39bc.png",
+    "static/media/elec1.PNG": "/static/media/elec1.fb470d9cecff130a8013.PNG",
     "static/media/github3.png": "/static/media/github3.6c7b58a3f617d89777dd.png",
     "static/media/insta2.png": "/static/media/insta2.8f207529be0cbb136191.png",
     "static/media/mail.png": "/static/media/mail.16c4036728b58e352120.png",
     "static/media/facebook3.png": "/static/media/facebook3.6dad2a6a390d0dbd3060.png",
     "index.html": "/index.html",
     "main.5e8a7ed0.css.map": "/static/css/main.5e8a7ed0.css.map",
-    "main.10a97922.js.map": "/static/js/main.10a97922.js.map"
+    "main.94dac86b.js.map": "/static/js/main.94dac86b.js.map"
   },
   "entrypoints": [
     "static/css/main.5e8a7ed0.css",
-    "static/js/main.10a97922.js"
+    "static/js/main.94dac86b.js"
   ]
 }
