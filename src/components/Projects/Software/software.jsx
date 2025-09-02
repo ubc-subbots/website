@@ -3,8 +3,9 @@ import './software.css';
 import {
   faCode,
   faEye,
-  faDharmachakra,
+  faFan,
   faMobile,
+  faLaptop,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Learning from '../learning';
@@ -50,7 +51,7 @@ export default function Software() {
         point12='Computer Vision'
         desc12='Process raw camera signals into meaningful information'
         point13='Linux Development'
-        desc13='Develop in the open-source wonder that is Linux'
+        desc13="Dive deep into the best operating system ever (we don't use Arch btw)"
         point21='ROS'
         desc21='Work on a widely used platform that combines modularity and efficiency'
         point22='Python'
@@ -94,10 +95,20 @@ export default function Software() {
               onClick={() => openModal('Control System')}
             >
               <FontAwesomeIcon
-                icon={faDharmachakra}
+                icon={faFan}
                 style={{ marginRight: '0.5rem' }}
               />
               Control System
+            </button>
+            <button
+              className='projects-software-key-point'
+              onClick={() => openModal('DevOps')}
+            >
+              <FontAwesomeIcon
+                icon={faLaptop}
+                style={{ marginRight: '0.5rem' }}
+              />
+              DevOps
             </button>
           </div>
         </div>

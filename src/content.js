@@ -89,6 +89,41 @@ const content = {
               captions: [''],
             },
           },
+          {
+            header: 'DevOps',
+            bodyFull:
+              '<strong>Shown above:</strong> The Radxa X4, the computer powering our robot. ' +
+              '<br ><br > ' +
+              'DevOps is the part of our Software team that enables our great to be executed on the robot. ' +
+              'We build the pipelines, tools, and interfaces that keep our software easy to build, test, deploy, and operate. ' +
+              'We partner closely with other Software subteams to spot pain points and remove them. ' +
+              '<br ><br > ' +
+              'One of our main focus has been on making our ROS stack easier to use. Our legacy environment depended on a specific ' +
+              'Ubuntu release and a long manual install list, which made onboarding and new robot bring-up slow and error-prone. ' +
+              'We rebuilt the environment around a Dockerfile and set up GitHub Actions to build ' +
+              'multi-architecture images (x86 and arm64) on every commit. The new setup now is OS-agnostic, and as simple as ' +
+              'pulling a container and run it, while CI checks each commit and catch bugs early. ' +
+              '<br ><br > ' +
+              'We also made day-to-day operation friendlier by introducing a graphical console for the robot. ' +
+              'Instead of SSH and the command line, which is difficult to non-software members and has limited feedback: ' +
+              'debugging vision, for example, meant going through arrays of pixel values (usually without success). ' +
+              'The team can now use a graphical console built with Foxglove Studio to click controls and see live telemetry ' +
+              'and vision streams, making life much easier for newcomers and a faster feedback loop for debugging. ' +
+              '<br ><br > ' +
+              'Beyond the big projects, we invest in small, quality-of-life projects that add up: ' +
+              'a shared internal network so multiple people can work with the robot at once without passing around ' +
+              'an Ethernet cable or manually configuring IPs, and autorun service for competitions and demos ' +
+              'to automatically trigger pre-determined routines on power-up. ' +
+              '<br ><br > ' +
+              'If you’re interested in DevOps but also want to contribute elsewhere, that’s encouraged. Many of us split time ' +
+              'across Software projects so tools stay grounded in real needs and improvements compound across the team. ',
+            carousel: {
+              images: [
+                '/images/projects/RadxaX4.png',
+              ],
+              captions: [''],
+            },
+          },
         ],
       },
       electrical: {
