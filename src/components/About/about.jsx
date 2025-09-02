@@ -6,7 +6,7 @@ import About from '../../assets/robot.jpg';
 export default function about() {
   const cards = [
     {
-      image: '/images/members/team_photo_2024.jpg',
+      image: '/images/members/team_photo_2024_resized.jpg',
       title: 'OUR MISSION',
       description:
         'UBC Subbots is a student team building autonomous underwater vehicles (AUVs) for the annual RoboSub competition in San Diego.',

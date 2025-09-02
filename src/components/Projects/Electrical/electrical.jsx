@@ -13,7 +13,7 @@ import content from '../../../content';
 import elec1 from '../../../assets/projects-image/elec1.PNG';
 import elec2 from '../../../assets/projects-image/elec2.PNG';
 import elec3 from '../../../assets/projects-image/elec3.jpg';
-import elec4 from '../../../assets/projects-image/elec4.png';
+import elec4 from '../../../assets/projects-image/elec4.jpg';
 import elec5 from '../../../assets/projects-image/elec5.jpg';
 
 const images = [elec1, elec2, elec3, elec4, elec5];
