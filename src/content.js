@@ -94,7 +94,7 @@ const content = {
             bodyFull:
               '<strong>Shown above:</strong> The Radxa X4, the computer powering our robot. ' +
               '<br ><br > ' +
-              'DevOps is the part of our Software team that enables our great to be executed on the robot. ' +
+              'DevOps is the part of our Software team that enables our great code be executed on the robot. ' +
               'We build the pipelines, tools, and interfaces that keep our software easy to build, test, deploy, and operate. ' +
               'We partner closely with other Software subteams to spot pain points and remove them. ' +
               '<br ><br > ' +
@@ -119,7 +119,7 @@ const content = {
               'across Software projects so tools stay grounded in real needs and improvements compound across the team. ',
             carousel: {
               images: [
-                '/images/projects/RadxaX4.png',
+                '/images/projects/RadxaX4.jpg',
               ],
               captions: [''],
             },
@@ -172,7 +172,7 @@ const content = {
               images: [
                 '/images/projects/SoundLocalizationPCB.jpg',
                 '/images/projects/SoundLocalizationFilters.jpg',
-                '/images/projects/SoundLocalizationTest.png',
+                '/images/projects/SoundLocalizationTest.jpg',
               ],
               captions: [
                 'Underwater microphone amplifiers and filters.',
