@@ -153,6 +153,9 @@ export default function Home() {
           <p className='hiring-subtitle'>
             Join our team and help engineer the future of subsea robotics
           </p>
+          <p className='hiring-deadline'>
+            Application deadline: September 9th at 11:59 PM
+          </p>
           <button
             className='hiring-cta-button'
             onClick={() => navigate('/joinus')}

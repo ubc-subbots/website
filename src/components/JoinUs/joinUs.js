@@ -21,7 +21,7 @@ export default function joinUs() {
             form below to apply.
           </span>
           <span className='joinus-subcontent1'>
-            <strong>Application Deadline: September 8th at 11:59 PM</strong>
+            <strong>Application Deadline: September 9th at 11:59 PM</strong>
           </span>
 
           {/* Application Form Button */}
