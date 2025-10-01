@@ -147,7 +147,7 @@ export default function Home() {
       </div>
 
       {/* Hiring Banner */}
-      <div className='hiring-banner'>
+      {/* <div className='hiring-banner'>
         <div className='hiring-content'>
           <h2 className='hiring-title'>Now Hiring for 2025/26!</h2>
           <p className='hiring-subtitle'>
@@ -163,7 +163,7 @@ export default function Home() {
             Apply Today
           </button>
         </div>
-      </div>
+      </div> */}
 
       <About />
       <div className='projects-section'>
@@ -180,7 +180,7 @@ export default function Home() {
             onClick={() => navigate('/projects#Electrical-section')}
           >
             <div className='button-icon'>
-              <FontAwesomeIcon icon={faBolt} />
+              <FontAwesomeIcon icon={faBolt} color={"white"} />
             </div>
             <div className='button-content'>
               <h3>Electrical</h3>
@@ -192,7 +192,7 @@ export default function Home() {
             onClick={() => navigate('/projects#Mechanical-section')}
           >
             <div className='button-icon'>
-              <FontAwesomeIcon icon={faCogs} />
+              <FontAwesomeIcon icon={faCogs} color={"white"} />
             </div>
             <div className='button-content'>
               <h3>Mechanical</h3>
@@ -204,7 +204,7 @@ export default function Home() {
             onClick={() => navigate('/projects#Software-section')}
           >
             <div className='button-icon'>
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faCode} color={"white"} />
             </div>
             <div className='button-content'>
               <h3>Software</h3>

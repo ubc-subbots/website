@@ -12,29 +12,26 @@ export default function joinUs() {
       <div className='joinus-title'>
         <span className='joinus-title1'>JOIN OUR TEAM</span>
         <div className='joinus-subcontent'>
-          <span className='joinus-subcontent1'>
+          <span className='joinus-subcontent2'>
             At UBC Subbots, we embrace students from all backgrounds and provide
             hands-on learning in a supportive, beginner-friendly environment.
           </span>
           <span className='joinus-subcontent1'>
-            Our current application for 2025/26 is open! Please fill out the
-            form below to apply.
-          </span>
-          <span className='joinus-subcontent1'>
-            <strong>Application Deadline: September 9th at 11:59 PM</strong>
+            Our current application cycle has now closed. Thank you to everyone
+            who applied!
           </span>
 
           {/* Application Form Button */}
-          <div className='joinus-form-section'>
+          {/* <div className='joinus-form-section'>
             <a
-              href='https://docs.google.com/forms/d/e/1FAIpQLSdDVtnGzB9UYMgdWIYMJseUc-fO0aFcaSABoe9QLt9R51JNFg/viewform'
+              href=''
               target='_blank'
               rel='noopener noreferrer'
               className='joinus-form-button'
             >
               Apply Now - 2025/26 Recruitment
             </a>
-          </div>
+          </div> */}
 
           <span className='joinus-subcontent2'>
             Stay tuned to our social media channels for updates on future
