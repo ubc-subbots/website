@@ -146,25 +146,6 @@ export default function Home() {
         <span className='home-subtitle1'>SUBSEA ENGINEERING.</span>
       </div>
 
-      {/* Hiring Banner */}
-      {/* <div className='hiring-banner'>
-        <div className='hiring-content'>
-          <h2 className='hiring-title'>Now Hiring for 2025/26!</h2>
-          <p className='hiring-subtitle'>
-            Join our team and help engineer the future of subsea robotics
-          </p>
-          <p className='hiring-deadline'>
-            Application deadline: September 9th at 11:59 PM
-          </p>
-          <button
-            className='hiring-cta-button'
-            onClick={() => navigate('/joinus')}
-          >
-            Apply Today
-          </button>
-        </div>
-      </div> */}
-
       <About />
       <div className='projects-section'>
         <div className='projects-header'>
