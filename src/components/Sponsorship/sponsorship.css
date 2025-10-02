@@ -78,8 +78,7 @@
   border: none;
   margin: 1.5rem 0;
   background-color: var(--light-yellow-color);
-  transition: transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .sponsor-button:hover {

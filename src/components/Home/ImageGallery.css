@@ -64,6 +64,9 @@
 .gallery-nav {
   position: absolute;
   top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateY(-50%);
   background: rgba(0, 29, 61, 0.1);
   border: 2px solid var(--primary-color);
@@ -80,10 +83,18 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
+.gallery-nav > svg {
+  width: 40px;
+  transition: 0.3s ease;
+}
+
 .gallery-nav:hover {
   background: var(--primary-color);
   color: white;
   transform: translateY(-50%) scale(1.1);
+}
+.gallery-nav:hover > svg {
+  fill: white;
 }
 
 .gallery-nav-left {
