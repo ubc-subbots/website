@@ -29,6 +29,7 @@ export default function SponsorScroll() {
   const [shouldAnimate, setShouldAnimate] = useState(true);
   const timeoutRef = useRef(null);
   const navigate = useNavigate();
+  
 
   useEffect(() => {
     images.forEach((src) => {
@@ -59,6 +60,7 @@ export default function SponsorScroll() {
     }
   };
 
+
   return (
     <div className='sponsor-section'>
       <div className='scroll-title'>
@@ -71,14 +73,16 @@ export default function SponsorScroll() {
       <div className='scroll-wrapper'>
         <motion.div
           className='scroll-track'
-          animate={shouldAnimate && !isDragging ? { x: ['-142%', '-10.5%'] } : {}}
+          // Must be full static width of container including overflow (2190)
+          // Using current.scrollwidth with a reference only returns the width of the visible container, likely due to the framer plugin
+          animate={shouldAnimate && !isDragging ? { x: [0, -2190] } : {}}
           transition={{
             repeat: Infinity,
-            duration: 17,
+            duration: 7, //17
             ease: 'linear',
           }}
           drag='x'
-          dragConstraints={{ left: -3500, right: 200 }}
+          dragConstraints={{ left: -2190, right: 0 }}
           dragMomentum={true}
           dragElastic={0.2}
           dragTransition={{ 
