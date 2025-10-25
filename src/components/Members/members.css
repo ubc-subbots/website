@@ -8,7 +8,7 @@
   margin-top: 6rem;
 }
 
-.members-title {
+.members-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,14 +17,14 @@
   margin-bottom: 3rem;
 }
 
-.group {
+.member-header-photo {
   width: 100%;
   /* -webkit-mask-
     image: linear-gradient(to bottom, black 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%); */
 }
 
-.member-title1 {
+.member-header-title {
   /* color: rgb(9, 7, 69); */
   color: var(--primary-color);
   font-size: 3rem;
@@ -32,7 +32,7 @@
   padding-top: 1rem;
 }
 
-.member-title2 {
+.member-header-content {
   font-size: 1.2rem;
   max-width: 80%;
   font-weight: 400;
@@ -48,48 +48,14 @@
   margin-top: 2rem;
 }
 
-.align {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 75vw;
-}
-
-.CoCaptains,
-.admin,
-.mechanical,
-.electrical,
-.actuator,
-.software,
-.sound-localization,
-.frames-enclosures,
-.co-captains {
+.subteam {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.CoCaptains-title,
-.admin-title,
-.software-title,
-.mechanical-title,
-.actuator-title,
-.electrical-title,
-.sound-localization-title,
-.frames-enclosures-title,
-.co-captains-title {
-  letter-spacing: 1.5px;
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-  height: 2.5rem;
-  color: var(--primary-color);
-  line-height: 1;
-}
-
-.align1 {
+.subteam-header {
   margin: 1rem 0;
 
   display: flex;
@@ -99,12 +65,27 @@
   align-items: center;
 }
 
-.icon-common {
+.subteam-header > span {
+  letter-spacing: 1.5px;
   font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.subteam-members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75vw;
+}
+
+.icon-common {
+  height: 2rem;
   color: var(--primary-color);
   display: flex;
   align-items: center;
-  line-height: 1;
   margin-left: 0.5rem;
 }
 
@@ -122,14 +103,7 @@
     font-size: 2rem;
   }
 
-  .admin-title,
-  .software-title,
-  .mechanical-title,
-  .actuator-title,
-  .electrical-title,
-  .sound-localization-title,
-  .frames-enclosures-title,
-  .co-captains-title {
+  .subteam-title {
     font-size: 1.5rem;
   }
 

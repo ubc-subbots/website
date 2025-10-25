@@ -207,8 +207,10 @@
     "role": "member",
     "image": "samuel_wu.jpg",
     "media": {
-      "linkedin": "",
-      "mail": ""
+      "linkedIn": "",
+      "instagram": "",
+      "github": "",
+      "email": ""
     }
   },
   {
@@ -579,19 +581,6 @@
       "instagram": "",
       "github": "",
       "email": "garchakri@gmail.com"
-    }
-  },
-  {
-    "team": "software",
-    "firstName": "Ajay",
-    "lastName": "Sharma",
-    "role": "member",
-    "image": "ajay_sharma.jpg",
-    "media": {
-      "linkedIn": "www.linkedin.com/in/ajaysh998",
-      "instagram": "",
-      "github": "",
-      "email": ""
     }
   },
 
