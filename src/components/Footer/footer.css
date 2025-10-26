@@ -28,32 +28,25 @@ body {
 .footer-links {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .copywrite {
   font-size: 1rem;
 }
 
-.instagram2,
-.facebook2 {
-  margin: 0 0.5rem;
-  width: 3rem;
-  height: auto;
-  transition: transform 0.2s ease;
+.footer-icon {
+  height: 2.5rem;
+  color: white;
+  transition: 0.3s ease;
 }
 
-.linkedin2 {
-  margin: 0 0.5rem;
-  width: 3.5rem;
-  height: auto;
-  transition: transform 0.2s ease;
+.footer-icon.square {
+  height: 2.8rem;
 }
 
 /* Add hover effect for social icons */
-.instagram2:hover,
-.facebook2:hover,
-.linkedin2:hover {
+.footer-icon:hover {
   transform: scale(1.1);
 }
 
@@ -64,15 +57,12 @@ body {
     padding: 0 1.5rem;
   }
 
-  .instagram2,
-  .facebook2 {
-    width: 2.5rem;
-    margin: 0 0.4rem;
+  .footer-icon {
+    height: 2.2rem;
   }
 
-  .linkedin2 {
-    width: 3rem;
-    margin: 0 0.4rem;
+  .footer-icon.square {
+    height: 2.5rem;
   }
 
   .copywrite {
@@ -91,18 +81,15 @@ body {
   }
 
   .footer-links {
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 
-  .instagram2,
-  .facebook2 {
-    width: 2rem;
-    margin: 0 0.3rem;
+  .footer-icon {
+    height: 1.75rem;
   }
 
-  .linkedin2 {
-    width: 2.5rem;
-    margin: 0 0.3rem;
+  .footer-icon.square {
+    height: 2rem;
   }
 
   .copywrite {

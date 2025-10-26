@@ -1,8 +1,11 @@
 import './member.css';
-import Linkedin from '../../assets/linkedin3.png';
-import Mail from '../../assets/mail.png';
-import Instagram from '../../assets/insta4.png';
-import GitHub from '../../assets/github3.png';
+import Linkedin from '../../assets/logos/linkedin/linkedin3.png';
+import Mail from '../../assets/logos/email/mail.png';
+import Instagram from '../../assets/logos/instagram/insta4.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function member(props) {
@@ -55,7 +58,7 @@ export default function member(props) {
               rel='noopener noreferrer'
               className='media-icon'
             >
-              <img src={GitHub} alt='GitHub' />
+              <FontAwesomeIcon icon={faGithub} className="fa-github" />
             </a>
           )}
 

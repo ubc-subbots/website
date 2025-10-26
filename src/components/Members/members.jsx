@@ -14,7 +14,7 @@ import Member from './member';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const TEAM_META = {
-  captain:           { title: 'CO-CAPTAINS', icon: faCrown },
+  captain:            { title: 'CO-CAPTAINS', icon: faCrown },
   admin:              { title: 'ADMIN + BUSINESS', icon: faBriefcase },
   actuators:          { title: 'ACTUATORS', icon: faTools },
   electrical:         { title: 'ELECTRICAL', icon: faBolt },

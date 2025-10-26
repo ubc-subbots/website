@@ -1,9 +1,12 @@
 import React from 'react';
 import '../Footer/footer.css';
-import Linkedin from '../../assets/linkedin2.png';
-import Instagram from '../../assets/insta2.png';
-import Facebook from '../../assets/facebook2.png';
-import Github from '../../assets/github4.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faFacebook
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function () {
   return (
@@ -12,22 +15,22 @@ export default function () {
       <div className='footer-links'>
         {/* Linkedin */}
         <a href='https://www.linkedin.com/company/ubc-subbots/'>
-          <img src={Linkedin} alt='linkedin' className='linkedin2' />
+          <FontAwesomeIcon icon={faLinkedin} className="footer-icon square" />
         </a>
 
         {/* Instagram */}
         <a href='https://www.instagram.com/ubcsubbots/'>
-          <img src={Instagram} alt='instagram' className='instagram2' />
+          <FontAwesomeIcon icon={faInstagram} className="footer-icon square" />
         </a>
 
         {/* Facebook */}
         <a href='https://www.facebook.com/ubc.subbots/'>
-          <img src={Facebook} alt='facebook' className='facebook2' />
+          <FontAwesomeIcon icon={faFacebook} className="footer-icon" />
         </a>
 
         {/* Github */}
         <a href='https://github.com/ubc-subbots'>
-          <img src={Github} alt='github' width='50' height='50' />
+          <FontAwesomeIcon icon={faGithub} className="footer-icon" />
         </a>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logos/logo.png';
 import './navbar.css';
 import {
   faBarsStaggered,
@@ -8,9 +8,9 @@ import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Linkedin from '../../assets/linkedin2.png';
-import Instagram from '../../assets/insta2.png';
-import Github from '../../assets/github4.png';
+import Linkedin from '../../assets/logos/linkedin/linkedin2.png';
+import Instagram from '../../assets/logos/instagram/insta2.png';
+import Github from '../../assets/logos/github/github4.png';
 
 const Navbar = () => {
   const location = useLocation();

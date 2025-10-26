@@ -68,7 +68,7 @@
   aspect-ratio: 1 / 1; /* Ensures the image is always square */
 }
 
-/* LinkedIn icon styling */
+/* Icon styling */
 .media-icon img {
   width: 2.5rem;
   height: 2.5rem;
@@ -76,5 +76,16 @@
 }
 
 .media-icon img:hover {
+  transform: scale(1.1);
+}
+
+.media-icon .fa-github {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.media-icon .fa-github:hover {
   transform: scale(1.1);
 }

@@ -94,8 +94,15 @@
   /* Add this */
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  width: 4.5rem;
+  height: auto;
 }
 
 .nav-content {
@@ -107,16 +114,11 @@
   justify-content: space-between;
 }
 
-.logo {
-  width: 5.5rem;
-  height: auto;
-}
-
 .nav-title {
   font-size: 3rem;
   font-weight: 600;
   color: var(--light-blue-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); I think this is a little old */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -274,7 +276,7 @@
 
   /* Logo icon */
   .logo {
-    width: 3.5rem;
+    width: 3.2rem;
   }
 
   /* was 5.5rem */
