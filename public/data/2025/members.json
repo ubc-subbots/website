@@ -121,9 +121,9 @@
     "firstName": "Vincent",
     "lastName": "Vong",
     "role": "member",
-    "image": "",
+    "image": "vincent_vong.jpg",
     "media": {
-      "linkedIn": "",
+      "linkedIn": "www.linkedin.com/in/vincentvong39",
       "instagram": "",
       "github": "",
       "email": ""
@@ -257,9 +257,9 @@
     "firstName": "Jennifer",
     "lastName": "Tran",
     "role": "member",
-    "image": "",
+    "image": "jennifer_tran.jpeg",
     "media": {
-      "linkedIn": "",
+      "linkedIn": "www.linkedin.com/in/jennifertran6",
       "instagram": "",
       "github": "",
       "email": ""
@@ -432,12 +432,12 @@
     "firstName": "Joel",
     "lastName": "Hempel",
     "role": "lead",
-    "image": "joel_hempel.png",
+    "image": "joel_hempel.jpg",
     "media": {
-      "linkedIn": "",
+      "linkedIn": "https://www.linkedin.com/in/joelhempel",
       "instagram": "",
       "github": "",
-      "email": ""
+      "email": "joelhempel35@gmail.com"
     }
   },
   {
@@ -458,10 +458,10 @@
     "firstName": "Triston",
     "lastName": "Tsui",
     "role": "member",
-    "image": "",
+    "image": "triston_tsui.jpg",
     "media": {
       "linkedIn": "",
-      "instagram": "",
+      "instagram": "https://www.instagram.com/tristont08/",
       "github": "",
       "email": ""
     }
@@ -484,7 +484,7 @@
     "firstName": "Kevin",
     "lastName": "Zhai",
     "role": "member",
-    "image": "",
+    "image": "kevin_zhai.jpg",
     "media": {
       "linkedIn": "",
       "instagram": "",
@@ -562,9 +562,9 @@
     "firstName": "Hank",
     "lastName": "Wu",
     "role": "member",
-    "image": "",
+    "image": "hank_wu.jpg",
     "media": {
-      "linkedIn": "",
+      "linkedIn": "https://www.linkedin.com/in/hank-wu-bb1606251/",
       "instagram": "",
       "github": "",
       "email": ""
