@@ -5,12 +5,14 @@ import './navbar.css';
 import {
   faBarsStaggered,
   faTimes,
-  faChevronDown,
+  faChevronDown
 } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Linkedin from '../../assets/logos/linkedin/linkedin2.png';
-import Instagram from '../../assets/logos/instagram/insta2.png';
-import Github from '../../assets/logos/github/github4.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -173,13 +175,13 @@ const Navbar = () => {
           </NavLink>
           <div className='navbar-socials'>
             <a href='https://www.linkedin.com/company/ubc-subbots/'>
-              <img src={Linkedin} alt='linkedin' width='48' height='48' />
+              <FontAwesomeIcon icon={faLinkedin} className="navbar-icon" />
             </a>
             <a href='https://www.instagram.com/ubcsubbots/'>
-              <img src={Instagram} alt='instagram' width='46' height='46' />
+              <FontAwesomeIcon icon={faInstagram} className="navbar-icon" />
             </a>
             <a href='https://github.com/ubc-subbots'>
-              <img src={Github} alt='github' width='50' height='50' />
+              <FontAwesomeIcon icon={faGithub} className="navbar-icon" />
             </a>
           </div>
         </div>

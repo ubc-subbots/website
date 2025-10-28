@@ -233,27 +233,14 @@
   justify-content: center;
 }
 
-.linkedin,
-.instagram,
-.facebook {
-  transition: transform 0.2s ease-in-out;
+.navbar-icon {
+  height: 2.5rem;
+  color: white;
+  transition: 0.3s ease;
 }
 
-.linkedin:hover,
-.instagram:hover,
-.facebook:hover {
-  transform: scale(1.2);
-}
-
-.instagram,
-.facebook {
-  width: 3rem;
-  height: auto;
-}
-
-.linkedin {
-  width: 3.5rem;
-  height: auto;
+.navbar-icon:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1183px) {
