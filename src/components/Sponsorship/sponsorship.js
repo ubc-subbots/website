@@ -19,7 +19,7 @@ export default function sponsorship() {
         </span>
         <div className='buttons'>
           <a
-            href='https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561'
+            href='https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561'
             target='_blank'
             rel='noopener noreferrer'
             className='sponsor-button-link'
