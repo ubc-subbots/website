@@ -1,10 +1,10 @@
 import React from 'react';
 import './joinUs.css';
-import Linkedin from '../../assets/linkedin3.png';
-import Instagram from '../../assets/insta4.png';
-import Github from '../../assets/github3.png';
-import Facebook from '../../assets/facebook3.png';
-import Mail from '../../assets/mail.png';
+import Linkedin from '../../assets/logos/linkedin/linkedin3.png';
+import Instagram from '../../assets/logos/instagram/insta4.png';
+import Github from '../../assets/logos/github/github3.png';
+import Facebook from '../../assets/logos/facebook/facebook3.png';
+import Mail from '../../assets/logos/email/mail.png';
 
 export default function joinUs() {
   return (
